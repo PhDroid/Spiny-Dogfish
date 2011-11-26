@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B75A9CC0148156C30095D36A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A9CBF148156C30095D36A /* UIKit.framework */; };
+		B75A9CC2148156C30095D36A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A9CC1148156C30095D36A /* Foundation.framework */; };
+		B75A9CC4148156C30095D36A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A9CC3148156C30095D36A /* CoreGraphics.framework */; };
+		B75A9CCA148156C30095D36A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B75A9CC8148156C30095D36A /* InfoPlist.strings */; };
+		B75A9CCC148156C30095D36A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B75A9CCB148156C30095D36A /* main.m */; };
+		B75A9CD0148156C30095D36A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B75A9CCF148156C30095D36A /* AppDelegate.m */; };
+		B75A9CD3148156C30095D36A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B75A9CD1148156C30095D36A /* MainStoryboard.storyboard */; };
+		B75A9CD6148156C30095D36A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B75A9CD5148156C30095D36A /* ViewController.m */; };
+		B75A9CDE148156C30095D36A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A9CDD148156C30095D36A /* SenTestingKit.framework */; };
+		B75A9CDF148156C30095D36A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A9CBF148156C30095D36A /* UIKit.framework */; };
+		B75A9CE0148156C30095D36A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A9CC1148156C30095D36A /* Foundation.framework */; };
+		B75A9CE8148156C30095D36A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B75A9CE6148156C30095D36A /* InfoPlist.strings */; };
+		B75A9CEB148156C30095D36A /* Spiny_DogfishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B75A9CEA148156C30095D36A /* Spiny_DogfishTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B75A9CE1148156C30095D36A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B75A9CB2148156C20095D36A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B75A9CBA148156C30095D36A;
+			remoteInfo = "Spiny Dogfish";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B75A9CBB148156C30095D36A /* Spiny Dogfish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spiny Dogfish.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75A9CBF148156C30095D36A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B75A9CC1148156C30095D36A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B75A9CC3148156C30095D36A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B75A9CC7148156C30095D36A /* Spiny Dogfish-Info.plist */ = {isa = PBXFileReference; path = "Spiny Dogfish-Info.plist"; sourceTree = "<group>"; };
+		B75A9CC9148156C30095D36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B75A9CCB148156C30095D36A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B75A9CCD148156C30095D36A /* Spiny Dogfish-Prefix.pch */ = {isa = PBXFileReference; path = "Spiny Dogfish-Prefix.pch"; sourceTree = "<group>"; };
+		B75A9CCE148156C30095D36A /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		B75A9CCF148156C30095D36A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B75A9CD2148156C30095D36A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B75A9CD4148156C30095D36A /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		B75A9CD5148156C30095D36A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B75A9CDC148156C30095D36A /* Spiny DogfishTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spiny DogfishTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75A9CDD148156C30095D36A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B75A9CE5148156C30095D36A /* Spiny DogfishTests-Info.plist */ = {isa = PBXFileReference; path = "Spiny DogfishTests-Info.plist"; sourceTree = "<group>"; };
+		B75A9CE7148156C30095D36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B75A9CE9148156C30095D36A /* Spiny_DogfishTests.h */ = {isa = PBXFileReference; path = Spiny_DogfishTests.h; sourceTree = "<group>"; };
+		B75A9CEA148156C30095D36A /* Spiny_DogfishTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Spiny_DogfishTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B75A9CB8148156C30095D36A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75A9CC0148156C30095D36A /* UIKit.framework in Frameworks */,
+				B75A9CC2148156C30095D36A /* Foundation.framework in Frameworks */,
+				B75A9CC4148156C30095D36A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B75A9CD8148156C30095D36A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75A9CDE148156C30095D36A /* SenTestingKit.framework in Frameworks */,
+				B75A9CDF148156C30095D36A /* UIKit.framework in Frameworks */,
+				B75A9CE0148156C30095D36A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B75A9CB0148156C20095D36A = {
+			isa = PBXGroup;
+			children = (
+				B75A9CC5148156C30095D36A /* Spiny Dogfish */,
+				B75A9CE3148156C30095D36A /* Spiny DogfishTests */,
+				B75A9CBE148156C30095D36A /* Frameworks */,
+				B75A9CBC148156C30095D36A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B75A9CBC148156C30095D36A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B75A9CBB148156C30095D36A /* Spiny Dogfish.app */,
+				B75A9CDC148156C30095D36A /* Spiny DogfishTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B75A9CBE148156C30095D36A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B75A9CBF148156C30095D36A /* UIKit.framework */,
+				B75A9CC1148156C30095D36A /* Foundation.framework */,
+				B75A9CC3148156C30095D36A /* CoreGraphics.framework */,
+				B75A9CDD148156C30095D36A /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B75A9CC5148156C30095D36A /* Spiny Dogfish */ = {
+			isa = PBXGroup;
+			children = (
+				B75A9CCE148156C30095D36A /* AppDelegate.h */,
+				B75A9CCF148156C30095D36A /* AppDelegate.m */,
+				B75A9CD1148156C30095D36A /* MainStoryboard.storyboard */,
+				B75A9CD4148156C30095D36A /* ViewController.h */,
+				B75A9CD5148156C30095D36A /* ViewController.m */,
+				B75A9CC6148156C30095D36A /* Supporting Files */,
+			);
+			path = "Spiny Dogfish";
+			sourceTree = "<group>";
+		};
+		B75A9CC6148156C30095D36A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B75A9CC7148156C30095D36A /* Spiny Dogfish-Info.plist */,
+				B75A9CC8148156C30095D36A /* InfoPlist.strings */,
+				B75A9CCB148156C30095D36A /* main.m */,
+				B75A9CCD148156C30095D36A /* Spiny Dogfish-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B75A9CE3148156C30095D36A /* Spiny DogfishTests */ = {
+			isa = PBXGroup;
+			children = (
+				B75A9CE9148156C30095D36A /* Spiny_DogfishTests.h */,
+				B75A9CEA148156C30095D36A /* Spiny_DogfishTests.m */,
+				B75A9CE4148156C30095D36A /* Supporting Files */,
+			);
+			path = "Spiny DogfishTests";
+			sourceTree = "<group>";
+		};
+		B75A9CE4148156C30095D36A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B75A9CE5148156C30095D36A /* Spiny DogfishTests-Info.plist */,
+				B75A9CE6148156C30095D36A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B75A9CBA148156C30095D36A /* Spiny Dogfish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B75A9CEE148156C30095D36A /* Build configuration list for PBXNativeTarget "Spiny Dogfish" */;
+			buildPhases = (
+				B75A9CB7148156C30095D36A /* Sources */,
+				B75A9CB8148156C30095D36A /* Frameworks */,
+				B75A9CB9148156C30095D36A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Spiny Dogfish";
+			productName = "Spiny Dogfish";
+			productReference = B75A9CBB148156C30095D36A /* Spiny Dogfish.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B75A9CDB148156C30095D36A /* Spiny DogfishTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B75A9CF1148156C30095D36A /* Build configuration list for PBXNativeTarget "Spiny DogfishTests" */;
+			buildPhases = (
+				B75A9CD7148156C30095D36A /* Sources */,
+				B75A9CD8148156C30095D36A /* Frameworks */,
+				B75A9CD9148156C30095D36A /* Resources */,
+				B75A9CDA148156C30095D36A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B75A9CE2148156C30095D36A /* PBXTargetDependency */,
+			);
+			name = "Spiny DogfishTests";
+			productName = "Spiny DogfishTests";
+			productReference = B75A9CDC148156C30095D36A /* Spiny DogfishTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B75A9CB2148156C20095D36A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = B75A9CB5148156C20095D36A /* Build configuration list for PBXProject "Spiny Dogfish" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B75A9CB0148156C20095D36A;
+			productRefGroup = B75A9CBC148156C30095D36A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B75A9CBA148156C30095D36A /* Spiny Dogfish */,
+				B75A9CDB148156C30095D36A /* Spiny DogfishTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B75A9CB9148156C30095D36A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75A9CCA148156C30095D36A /* InfoPlist.strings in Resources */,
+				B75A9CD3148156C30095D36A /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B75A9CD9148156C30095D36A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75A9CE8148156C30095D36A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B75A9CDA148156C30095D36A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B75A9CB7148156C30095D36A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75A9CCC148156C30095D36A /* main.m in Sources */,
+				B75A9CD0148156C30095D36A /* AppDelegate.m in Sources */,
+				B75A9CD6148156C30095D36A /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B75A9CD7148156C30095D36A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75A9CEB148156C30095D36A /* Spiny_DogfishTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B75A9CE2148156C30095D36A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B75A9CBA148156C30095D36A /* Spiny Dogfish */;
+			targetProxy = B75A9CE1148156C30095D36A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B75A9CC8148156C30095D36A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B75A9CC9148156C30095D36A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B75A9CD1148156C30095D36A /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B75A9CD2148156C30095D36A /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		B75A9CE6148156C30095D36A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B75A9CE7148156C30095D36A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B75A9CEC148156C30095D36A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B75A9CED148156C30095D36A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B75A9CEF148156C30095D36A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spiny Dogfish/Spiny Dogfish-Prefix.pch";
+				INFOPLIST_FILE = "Spiny Dogfish/Spiny Dogfish-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B75A9CF0148156C30095D36A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spiny Dogfish/Spiny Dogfish-Prefix.pch";
+				INFOPLIST_FILE = "Spiny Dogfish/Spiny Dogfish-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B75A9CF2148156C30095D36A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Spiny Dogfish.app/Spiny Dogfish";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spiny Dogfish/Spiny Dogfish-Prefix.pch";
+				INFOPLIST_FILE = "Spiny DogfishTests/Spiny DogfishTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B75A9CF3148156C30095D36A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Spiny Dogfish.app/Spiny Dogfish";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spiny Dogfish/Spiny Dogfish-Prefix.pch";
+				INFOPLIST_FILE = "Spiny DogfishTests/Spiny DogfishTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B75A9CB5148156C20095D36A /* Build configuration list for PBXProject "Spiny Dogfish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B75A9CEC148156C30095D36A /* Debug */,
+				B75A9CED148156C30095D36A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B75A9CEE148156C30095D36A /* Build configuration list for PBXNativeTarget "Spiny Dogfish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B75A9CEF148156C30095D36A /* Debug */,
+				B75A9CF0148156C30095D36A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B75A9CF1148156C30095D36A /* Build configuration list for PBXNativeTarget "Spiny DogfishTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B75A9CF2148156C30095D36A /* Debug */,
+				B75A9CF3148156C30095D36A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B75A9CB2148156C20095D36A /* Project object */;
+}
