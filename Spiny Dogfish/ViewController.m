@@ -30,17 +30,18 @@
 	
     // [self.tableView reloadData];
     self.tableView.scrollEnabled = YES;
-    
-    NSArray *items = [[NSArray alloc] initWithObjects:
-                      @"Code Geass",
-                      @"Asura Cryin'",
-                      @"Voltes V",
-                      @"Mazinger Z",
-                      @"Daimos",
+
+    //todo: load from SQL databases
+    NSMutableArray *items = [[NSMutableArray alloc] initWithObjects:
+                      @"Closure",
+                      @"America",
+                      @"Voltage",
+                      @"Merchant",
+                      @"Demo",
                       nil];
     
     self.allItems = items;
-    
+
     [self.tableView reloadData];
 }
 
@@ -79,6 +80,10 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)theTableView {
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)theTableView
@@ -126,36 +131,51 @@
     return cell;
 }
 
-- (void)filterContentForSearchText:(NSString*)searchText 
-                             scope:(NSString*)scope
+- (void)filterContentForSearchText:(NSString*)searchText
 {
     NSPredicate *resultPredicate = [NSPredicate 
                                     predicateWithFormat:@"SELF contains[cd] %@",
                                     searchText];
-    
+
     self.searchResults = [self.allItems filteredArrayUsingPredicate:resultPredicate];
 }
 
-#pragma mark - UISearchDisplayController delegate methods
--(BOOL)searchDisplayController:(UISearchDisplayController *)controller 
-shouldReloadTableForSearchString:(NSString *)searchString
-{
-    [self filterContentForSearchText:searchString 
-                               scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
-                                      objectAtIndex:[self.searchDisplayController.searchBar
-                                                     selectedScopeButtonIndex]]];
-    
-    return YES;
+- (void)searchBar:(UISearchBar *)theSearchBar textDidChange:(NSString *)searchText {
+    //[self.searchResults removeAllObjects];// remove all data that belongs to previous search
+    if([searchText isEqualToString:@""] || searchText==nil) {
+        [self.tableView reloadData];
+        return;
+    }
+    [self filterContentForSearchText:searchText];
+    [self.tableView reloadData];
 }
 
-- (BOOL)searchDisplayController:(UISearchDisplayController *)controller 
-shouldReloadTableForSearchScope:(NSInteger)searchOption
+- (void)searchBarCancelButtonClicked:(UISearchBar *)theSearchBar
 {
-    [self filterContentForSearchText:[self.searchDisplayController.searchBar text] 
-                               scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
-                                      objectAtIndex:searchOption]];
-    
-    return YES;
+    [self.tableView reloadData];
+    [theSearchBar resignFirstResponder];
+    theSearchBar.text = @"";
 }
+
+#pragma mark UISearchBarDelegate
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)theSearchBar {
+    theSearchBar.showsCancelButton = YES;
+
+    [self.textView setHidden:TRUE];
+}
+
+- (void)searchBarTextDidEndEditing:(UISearchBar *)theSearchBar {
+    theSearchBar.showsCancelButton = NO;
+}
+
+// called when Search button pressed
+- (void)searchBarSearchButtonClicked:(UISearchBar *)theSearchBar{
+    [self.tableView reloadData];
+
+    [self.textView setHidden:FALSE];
+    [self.tableView setHidden:TRUE];
+    [self.textView becomeFirstResponder];
+}
+
 
 @end
