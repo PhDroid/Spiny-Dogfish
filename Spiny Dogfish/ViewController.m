@@ -81,12 +81,12 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-- (NSInteger)tableView:(UITableView *)tableView 
+- (NSInteger)tableView:(UITableView *)theTableView
  numberOfRowsInSection:(NSInteger)section
 {
     NSInteger rows = 0;
     
-    if ([self.tableView 
+    if ([theTableView
          isEqual:self.searchDisplayController.searchResultsTableView]){
         rows = [self.searchResults count];
     }
@@ -98,12 +98,12 @@
 }
 
 // Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView 
+- (UITableViewCell *)tableView:(UITableView *)theTableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
     
-    UITableViewCell *cell = [self.tableView 
+    UITableViewCell *cell = [theTableView
                              dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] 
@@ -114,7 +114,7 @@
     }
     
     /* Configure the cell. */
-    if ([self.tableView isEqual:self.searchDisplayController.searchResultsTableView]){
+    if ([theTableView isEqual:self.searchDisplayController.searchResultsTableView]){
         cell.textLabel.text = 
         [self.searchResults objectAtIndex:indexPath.row];
     }
