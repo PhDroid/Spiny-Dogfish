@@ -13,6 +13,8 @@
 @synthesize searchDisplayController;
 @synthesize textView;
 @synthesize tableView;
+@synthesize allItems;
+@synthesize searchResults;
 
 - (void)didReceiveMemoryWarning
 {
@@ -25,7 +27,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    // [self.tableView reloadData];
+    self.tableView.scrollEnabled = YES;
+    
+    NSArray *items = [[NSArray alloc] initWithObjects:
+                      @"Code Geass",
+                      @"Asura Cryin'",
+                      @"Voltes V",
+                      @"Mazinger Z",
+                      @"Daimos",
+                      nil];
+    
+    self.allItems = items;
+    
+    [self.tableView reloadData];
 }
 
 - (void)viewDidUnload
@@ -63,6 +79,83 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (NSInteger)tableView:(UITableView *)tableView 
+ numberOfRowsInSection:(NSInteger)section
+{
+    NSInteger rows = 0;
+    
+    if ([self.tableView 
+         isEqual:self.searchDisplayController.searchResultsTableView]){
+        rows = [self.searchResults count];
+    }
+    else{
+        rows = [self.allItems count];
+    }
+    
+    return rows;
+}
+
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView 
+         cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [self.tableView 
+                             dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] 
+                 initWithStyle:UITableViewCellStyleDefault 
+                 reuseIdentifier:CellIdentifier];
+        
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
+    
+    /* Configure the cell. */
+    if ([self.tableView isEqual:self.searchDisplayController.searchResultsTableView]){
+        cell.textLabel.text = 
+        [self.searchResults objectAtIndex:indexPath.row];
+    }
+    else{
+        cell.textLabel.text =
+        [self.allItems objectAtIndex:indexPath.row];
+    }
+    
+    return cell;
+}
+
+- (void)filterContentForSearchText:(NSString*)searchText 
+                             scope:(NSString*)scope
+{
+    NSPredicate *resultPredicate = [NSPredicate 
+                                    predicateWithFormat:@"SELF contains[cd] %@",
+                                    searchText];
+    
+    self.searchResults = [self.allItems filteredArrayUsingPredicate:resultPredicate];
+}
+
+#pragma mark - UISearchDisplayController delegate methods
+-(BOOL)searchDisplayController:(UISearchDisplayController *)controller 
+shouldReloadTableForSearchString:(NSString *)searchString
+{
+    [self filterContentForSearchText:searchString 
+                               scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
+                                      objectAtIndex:[self.searchDisplayController.searchBar
+                                                     selectedScopeButtonIndex]]];
+    
+    return YES;
+}
+
+- (BOOL)searchDisplayController:(UISearchDisplayController *)controller 
+shouldReloadTableForSearchScope:(NSInteger)searchOption
+{
+    [self filterContentForSearchText:[self.searchDisplayController.searchBar text] 
+                               scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
+                                      objectAtIndex:searchOption]];
+    
+    return YES;
 }
 
 @end

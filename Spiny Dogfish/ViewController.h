@@ -14,5 +14,7 @@
 @property (strong, nonatomic) IBOutlet UISearchDisplayController *searchDisplayController;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, copy) NSArray *allItems;
+@property (nonatomic, copy) NSArray *searchResults;
 
 @end
