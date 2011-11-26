@@ -9,6 +9,10 @@
 #import "ViewController.h"
 
 @implementation ViewController
+@synthesize searchBar;
+@synthesize searchDisplayController;
+@synthesize textView;
+@synthesize tableView;
 
 - (void)didReceiveMemoryWarning
 {
@@ -26,6 +30,10 @@
 
 - (void)viewDidUnload
 {
+    [self setSearchBar:nil];
+    [self setSearchDisplayController:nil];
+    [self setTextView:nil];
+    [self setTableView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
