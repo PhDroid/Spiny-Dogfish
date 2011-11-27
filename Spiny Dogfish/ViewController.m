@@ -169,12 +169,36 @@
 }
 
 // called when Search button pressed
-- (void)searchBarSearchButtonClicked:(UISearchBar *)theSearchBar{
+- (void)searchBarSearchButtonClicked:(UISearchBar *)theSearchBar {
+    //sending POST request to lingvo.yandex.ru
+    /*
+    NSString *post = @"key1=val1&key2=val2";
+    NSData *postData = [post dataUsingEncoding:NSUTF8StringEncoding];
+
+    NSString *postLength = [NSString stringWithFormat:@"%d", [postData length]];
+
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    //"http://lingvo.yandex.ru/word-enterred/перевод/"
+    [request setURL:[NSURL URLWithString:@"http://www.nowhere.com/sendFormHere.php"]];
+    [request setHTTPMethod:@"POST"];
+    [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
+    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+    [request setHTTPBody:postData];
+
+    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+    */
+    //end of POST request
+
+    NSMutableArray *items = [[NSMutableArray alloc] initWithObjects:
+                          @"Hello World!",
+                          nil];
+    self.searchResults = items;
+    [self.searchDisplayController.searchResultsTableView reloadData];
     [self.tableView reloadData];
 
-    [self.textView setHidden:FALSE];
-    [self.tableView setHidden:TRUE];
-    [self.textView becomeFirstResponder];
+    //[self.textView setHidden:FALSE];
+    //[self.tableView setHidden:TRUE];
+    //[self.textView becomeFirstResponder];
 }
 
 
