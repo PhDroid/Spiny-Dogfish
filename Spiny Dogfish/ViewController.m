@@ -15,6 +15,7 @@
 @synthesize tableView;
 @synthesize allItems;
 @synthesize searchResults;
+@synthesize searching;
 
 - (void)didReceiveMemoryWarning
 {
@@ -28,7 +29,7 @@
 {
     [super viewDidLoad];
 	
-    // [self.tableView reloadData];
+    self.searching = FALSE;
     self.tableView.scrollEnabled = YES;
 
     //todo: load from SQL databases
@@ -160,8 +161,6 @@
 #pragma mark UISearchBarDelegate
 - (void)searchBarTextDidBeginEditing:(UISearchBar *)theSearchBar {
     theSearchBar.showsCancelButton = YES;
-
-    [self.textView setHidden:TRUE];
 }
 
 - (void)searchBarTextDidEndEditing:(UISearchBar *)theSearchBar {
@@ -170,36 +169,59 @@
 
 // called when Search button pressed
 - (void)searchBarSearchButtonClicked:(UISearchBar *)theSearchBar {
-    //sending POST request to lingvo.yandex.ru
-    /*
-    NSString *post = @"key1=val1&key2=val2";
-    NSData *postData = [post dataUsingEncoding:NSUTF8StringEncoding];
-
-    NSString *postLength = [NSString stringWithFormat:@"%d", [postData length]];
-
+    //sending request to lingvo
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-    //"http://lingvo.yandex.ru/word-enterred/перевод/"
-    [request setURL:[NSURL URLWithString:@"http://www.nowhere.com/sendFormHere.php"]];
-    [request setHTTPMethod:@"POST"];
-    [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
-    [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
-    [request setHTTPBody:postData];
+    NSString *url = [[NSString alloc] initWithFormat:@"http://eng2.ru/%@", self.searchBar.text];
+    NSLog(@"URL: %@", url);
+    [request setURL:[NSURL URLWithString: url]];
+    [request setHTTPMethod:@"GET"];
+    [request addValue:@"SpinyDogfish/1.0" forHTTPHeaderField:@"User-Agent"];
+    [request addValue:@"text/plain, text/html" forHTTPHeaderField:@"Accept"];
+    NSURLConnection* connection = [[NSURLConnection alloc] initWithRequest:request delegate:self startImmediately:TRUE]; // release later
 
-    NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
-    */
-    //end of POST request
+    //end of request
 
+
+    /*
     NSMutableArray *items = [[NSMutableArray alloc] initWithObjects:
                           @"Hello World!",
                           nil];
     self.searchResults = items;
     [self.searchDisplayController.searchResultsTableView reloadData];
     [self.tableView reloadData];
-
+    */
     //[self.textView setHidden:FALSE];
     //[self.tableView setHidden:TRUE];
     //[self.textView becomeFirstResponder];
 }
 
+NSMutableData *_data;
+-(void)connection:(NSURLConnection*)connection didReceiveResponse:(NSURLResponse*)response
+{
+    NSLog( @"From didReceiveResponse" );
+    _data = [[NSMutableData alloc] init]; // _data being an ivar
+}
+-(void)connection:(NSURLConnection*)connection didReceiveData:(NSData*)data
+{
+    NSLog( @"From didReceiveData" );
+    [_data appendData:data];
+}
+-(void)connection:(NSURLConnection*)connection didFailWithError:(NSError*)error
+{
+    //todo:Handle the error properly
+    NSLog( @"Error: %@", error.description);
+}
+-(void)connectionDidFinishLoading:(NSURLConnection*)connection
+{
+    NSString *receivedString = [[NSString alloc] initWithData:_data
+            encoding:NSUTF8StringEncoding];
+    NSLog( @"From connectionDidFinishLoading: %@", receivedString );
 
+    NSString *start_pattern = @"<div class=\"data card\">";
+    for(int i = 0; i < receivedString.length; i++) {
+        //unichar * buffer;
+        //[receivedString getCharacters:&buffer range:1,2][i];
+    }
+    //[receivedString substringToIndex:<#(NSUInteger)to#>]
+}
 @end

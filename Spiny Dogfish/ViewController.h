@@ -16,5 +16,6 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, copy) NSArray *allItems;
 @property (nonatomic, copy) NSArray *searchResults;
+@property (nonatomic) Boolean *searching;
 
 @end
