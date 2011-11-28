@@ -171,6 +171,7 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)theSearchBar {
     //sending request to lingvo
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    //todo:to lower case
     NSString *url = [[NSString alloc] initWithFormat:@"http://eng2.ru/%@", self.searchBar.text];
     NSLog(@"URL: %@", url);
     [request setURL:[NSURL URLWithString: url]];
@@ -238,6 +239,13 @@ NSMutableData *_data;
         }
         NSString *m = [receivedString substringWithRange:NSMakeRange(i, 1)];
 
+        //ignore characters
+        if ([m isEqualToString: @"\r"] ||
+                [m isEqualToString: @"\n"] ||
+                [m isEqualToString: @"\t"]) {
+            continue;
+        }
+        
         if ([m isEqualToString: @"'"] || [m isEqualToString: @"\""]) { //property value mode
             javascriptMode = !javascriptMode;
             continue;
