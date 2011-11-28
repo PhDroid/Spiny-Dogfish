@@ -218,10 +218,67 @@ NSMutableData *_data;
     NSLog( @"From connectionDidFinishLoading: %@", receivedString );
 
     NSString *start_pattern = @"<div class=\"data card\">";
-    for(int i = 0; i < receivedString.length; i++) {
-        //unichar * buffer;
-        //[receivedString getCharacters:&buffer range:1,2][i];
+
+    NSRange match;
+
+    match = [receivedString rangeOfString: start_pattern];
+    
+    NSUInteger position = match.location;
+    int depthCount = 0;
+    bool javascriptMode = false;
+    bool ignoreNextSymbol = false;
+    bool opening = false;
+    bool closing = false;
+    NSMutableString *resultText = [[NSMutableString alloc] initWithString:@""];
+
+    for (NSUInteger i = position; true; i++) {
+        if (ignoreNextSymbol) {
+            ignoreNextSymbol = false;
+            continue;
+        }
+        NSString *m = [receivedString substringWithRange:NSMakeRange(i, 1)];
+
+        if ([m isEqualToString: @"'"] || [m isEqualToString: @"\""]) { //property value mode
+            javascriptMode = !javascriptMode;
+            continue;
+        }
+        if ([m isEqualToString: @"\\"]) { //escape symbol
+            ignoreNextSymbol = true;
+            continue;
+        }
+        if (javascriptMode) { //ignore everything while in property value mode
+            continue;
+        }
+        if ([m isEqualToString: @"/"]) {
+            closing = true;
+            opening = false;
+            continue;
+        }
+        if ([m isEqualToString: @">"]) {
+            if (closing) {
+                closing = false;
+                depthCount--;
+            }
+            if (opening) {
+                opening = false;
+                depthCount++;
+            }
+            continue;
+        }
+        if ([m isEqualToString: @"<"]) {
+            opening = true;
+            continue;
+        }
+        
+        if (!opening && !closing) { // main logic
+            [resultText appendString:m];
+        }
+        
+        if (!opening && depthCount == 0) {
+            break;
+        }
     }
-    //[receivedString substringToIndex:<#(NSUInteger)to#>]
+
+    NSLog( @"Result text: %@", resultText );
 }
 @end
