@@ -226,10 +226,11 @@ NSMutableData *_data;
     
     NSUInteger position = match.location;
     int depthCount = 0;
-    bool javascriptMode = false;
+    bool propertyValueMode = false;
     bool ignoreNextSymbol = false;
     bool opening = false;
     bool closing = false;
+    bool writing = false;
     NSMutableString *resultText = [[NSMutableString alloc] initWithString:@""];
 
     for (NSUInteger i = position; true; i++) {
@@ -247,14 +248,14 @@ NSMutableData *_data;
         }
         
         if ([m isEqualToString: @"'"] || [m isEqualToString: @"\""]) { //property value mode
-            javascriptMode = !javascriptMode;
+            propertyValueMode = !propertyValueMode;
             continue;
         }
         if ([m isEqualToString: @"\\"]) { //escape symbol
             ignoreNextSymbol = true;
             continue;
         }
-        if (javascriptMode) { //ignore everything while in property value mode
+        if (propertyValueMode) { //ignore everything while in property value mode
             continue;
         }
         if ([m isEqualToString: @"/"]) {
@@ -271,6 +272,10 @@ NSMutableData *_data;
                 opening = false;
                 depthCount++;
             }
+            if (writing) {
+                [resultText appendString:@" "];
+                writing = false;
+            }
             continue;
         }
         if ([m isEqualToString: @"<"]) {
@@ -279,7 +284,14 @@ NSMutableData *_data;
         }
         
         if (!opening && !closing) { // main logic
-            [resultText appendString:m];
+            //ignore more than one space
+            if (resultText.length > 0 &&
+                    ![[resultText substringWithRange:NSMakeRange(resultText.length, 1)] isEqualToString: @" "]) {
+                [resultText appendString:m];
+            }
+            writing = true;
+        } else {
+            writing = false;
         }
         
         if (!opening && depthCount == 0) {
