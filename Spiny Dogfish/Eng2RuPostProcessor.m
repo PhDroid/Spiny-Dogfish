@@ -32,7 +32,39 @@
     NSMutableString *dictionary = [[NSMutableString alloc] initWithString:@""];
     NSMutableString *transcriptionURL = [[NSMutableString alloc] initWithString:@""];
     NSMutableString *translation = [[NSMutableString alloc] initWithString:@""];
+    whitespaceCounter = 0;
+    bool transcriptionMode = false;
+    bool transcriptionModeWriting = false;
     for (NSUInteger i = 0; i < endOfInput; i++) {
+        NSString *m = [translationSrc substringWithRange:NSMakeRange(i, 1)];
+        if ([m isEqualToString:@" "]) {
+            whitespaceCounter++;
+        }
+        if (whitespaceCounter == 0) {
+            [word appendString:m];
+        } else if (whitespaceCounter > 0 && whitespaceCounter < 2) {
+            [dictionary appendString:m];
+        }
+        if ([m isEqualToString:@"["]) {
+            transcriptionMode = true;
+        }
+        if ([m isEqualToString:@"]"]) {
+            transcriptionMode = false;
+        }
+        if (transcriptionModeWriting) {
+            [transcriptionURL appendString: m];
+            continue;
+        }
+        if (transcriptionMode) {
+            if ([m isEqualToString: @"'"] || [m isEqualToString: @"\""]) {
+                transcriptionModeWriting = true;
+                continue;
+            }
+            if (transcriptionModeWriting && [m isEqualToString: @"'"] || [m isEqualToString: @"\""]) {
+                transcriptionModeWriting = false;
+                continue;
+            }
+        }
 
     }
 }
