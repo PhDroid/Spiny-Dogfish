@@ -34,7 +34,6 @@
                                                   encoding:NSUTF8StringEncoding
                                                      error:&error];
 
-    NSLog(error.localizedDescription);
     Eng2RuHTMLParser *parser = [[Eng2RuHTMLParser alloc] init];
     @try {
         NSMutableString *result = [parser parseHTMLString:content];

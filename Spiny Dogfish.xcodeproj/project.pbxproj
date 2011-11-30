@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B71D77551486CD2300523D1C /* en2ru-html in Resources */ = {isa = PBXBuildFile; fileRef = B71D77541486CD2300523D1C /* en2ru-html */; };
 		B75A9CC0148156C30095D36A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A9CBF148156C30095D36A /* UIKit.framework */; };
 		B75A9CC2148156C30095D36A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A9CC1148156C30095D36A /* Foundation.framework */; };
 		B75A9CC4148156C30095D36A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A9CC3148156C30095D36A /* CoreGraphics.framework */; };
@@ -23,7 +22,7 @@
 		B75A9CEB148156C30095D36A /* Spiny_DogfishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B75A9CEA148156C30095D36A /* Spiny_DogfishTests.m */; };
 		B75A9CF3148156C30095D36D /* Eng2RuHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B75A9CF3148156C30095D36C /* Eng2RuHTMLParser.m */; };
 		B75A9CF3148156C30095D370 /* Eng2RuNotFoundException.m in Sources */ = {isa = PBXBuildFile; fileRef = B75A9CF3148156C30095D36F /* Eng2RuNotFoundException.m */; };
-		B75A9CF3148156C30095D373 /* word-random.txt in Resources */ = {isa = PBXBuildFile; fileRef = B75A9CF3148156C30095D372 /* word-random.txt */; };
+		B77A25131486D0DA00316BD7 /* word-random.txt in Resources */ = {isa = PBXBuildFile; fileRef = B77A25121486D0DA00316BD7 /* word-random.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B71D77541486CD2300523D1C /* en2ru-html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "en2ru-html"; sourceTree = "<group>"; };
 		B75A9CBB148156C30095D36A /* Spiny Dogfish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spiny Dogfish.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75A9CBF148156C30095D36A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B75A9CC1148156C30095D36A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,7 +59,7 @@
 		B75A9CF3148156C30095D36C /* Eng2RuHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Eng2RuHTMLParser.m; sourceTree = "<group>"; };
 		B75A9CF3148156C30095D36F /* Eng2RuNotFoundException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Eng2RuNotFoundException.m; sourceTree = "<group>"; };
 		B75A9CF3148156C30095D371 /* Eng2RuNotFoundException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eng2RuNotFoundException.h; sourceTree = "<group>"; };
-		B75A9CF3148156C30095D372 /* word-random.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "word-random.txt"; path = "Spiny DogfishTests/en2ru-html/word-random.txt"; sourceTree = "<group>"; };
+		B77A25121486D0DA00316BD7 /* word-random.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "word-random.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +89,6 @@
 		B75A9CB0148156C20095D36A = {
 			isa = PBXGroup;
 			children = (
-				B75A9CF3148156C30095D372 /* word-random.txt */,
 				B75A9CC5148156C30095D36A /* Spiny Dogfish */,
 				B75A9CE3148156C30095D36A /* Spiny DogfishTests */,
 				B75A9CBE148156C30095D36A /* Frameworks */,
@@ -150,8 +147,8 @@
 		B75A9CE3148156C30095D36A /* Spiny DogfishTests */ = {
 			isa = PBXGroup;
 			children = (
+				B77A25111486D0DA00316BD7 /* en2ru-html */,
 				B75A9CE9148156C30095D36A /* Spiny_DogfishTests.h */,
-				B71D77541486CD2300523D1C /* en2ru-html */,
 				B75A9CEA148156C30095D36A /* Spiny_DogfishTests.m */,
 				B75A9CE4148156C30095D36A /* Supporting Files */,
 			);
@@ -165,6 +162,14 @@
 				B75A9CE6148156C30095D36A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B77A25111486D0DA00316BD7 /* en2ru-html */ = {
+			isa = PBXGroup;
+			children = (
+				B77A25121486D0DA00316BD7 /* word-random.txt */,
+			);
+			path = "en2ru-html";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +244,7 @@
 			files = (
 				B75A9CCA148156C30095D36A /* InfoPlist.strings in Resources */,
 				B75A9CD3148156C30095D36A /* MainStoryboard.storyboard in Resources */,
+				B77A25131486D0DA00316BD7 /* word-random.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,8 +253,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B75A9CE8148156C30095D36A /* InfoPlist.strings in Resources */,
-				B71D77551486CD2300523D1C /* en2ru-html in Resources */,
-				B75A9CF3148156C30095D373 /* word-random.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
