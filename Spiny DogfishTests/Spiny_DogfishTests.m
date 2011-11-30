@@ -37,7 +37,7 @@
     Eng2RuHTMLParser *parser = [[Eng2RuHTMLParser alloc] init];
     @try {
         NSMutableString *result = [parser parseHTMLString:content];
-        NSString *expected = @"random LingvoUniversal (En-Ru) [";
+        NSString *expected = @"random LingvoUniversal (En-Ru) [ ] брит.                      амер.                      прил. сделанный или выбранный наугад ; случайный , произвольный Розгорнути статтю &#187; &#171; Згорнути статтю ";
         STAssertTrue( [result isEqualToString: expected], @"Not expected result: %@", result);
     } @catch (Eng2RuNotFoundException *e) {
         STFail(@"Parsing this word should not give errors.");

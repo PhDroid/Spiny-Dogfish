@@ -216,12 +216,10 @@
 NSMutableData *_data;
 -(void)connection:(NSURLConnection*)connection didReceiveResponse:(NSURLResponse*)response
 {
-    NSLog( @"From didReceiveResponse" );
     _data = [[NSMutableData alloc] init]; // _data being an ivar
 }
 -(void)connection:(NSURLConnection*)connection didReceiveData:(NSData*)data
 {
-    NSLog( @"From didReceiveData" );
     [_data appendData:data];
 }
 -(void)connection:(NSURLConnection*)connection didFailWithError:(NSError*)error

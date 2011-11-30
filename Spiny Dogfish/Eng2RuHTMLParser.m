@@ -32,6 +32,7 @@
     NSUInteger position = match.location;
     int depthCount = 0;
     bool propertyValueMode = false;
+    NSString *propertyModeInitiator = @"";
     bool ignoreNextSymbol = false;
     bool opening = false;
     bool closing = false;
@@ -53,7 +54,13 @@
         }
 
         if ([m isEqualToString: @"'"] || [m isEqualToString: @"\""]) { //property value mode
-            propertyValueMode = !propertyValueMode;
+            if (!propertyValueMode) {
+                propertyModeInitiator = m;
+                propertyValueMode = true;
+            } else if ([propertyModeInitiator isEqualToString: m]) {
+                propertyModeInitiator = @"";
+                propertyValueMode = false;
+            }
             continue;
         }
         if ([m isEqualToString: @"\\"]) { //escape symbol
