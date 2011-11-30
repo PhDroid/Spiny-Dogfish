@@ -220,6 +220,7 @@ NSMutableData *_data;
 }
 
 -(void)dataCardNotFound {
+    //todo:Handle the error properly
     NSLog( @"word not found" );
 }
 -(void)dataCardParsed:(NSMutableString *)result {
