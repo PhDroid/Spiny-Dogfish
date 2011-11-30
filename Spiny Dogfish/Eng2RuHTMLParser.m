@@ -37,6 +37,10 @@
     bool opening = false;
     bool closing = false;
     bool writing = false;
+    bool transcriptionMode = false;
+    bool transcriptionURLMode = false;
+    NSMutableString * lastProperty_TranscriptionMode = [[NSMutableString alloc] initWithString:@""];
+    NSMutableString * transcriptionUrl = [[NSMutableString alloc] initWithString:@""];
     NSMutableString *resultText = [[NSMutableString alloc] initWithString:@""];
 
     for (NSUInteger i = position; i < receivedString.length; i++) {
@@ -52,6 +56,36 @@
                 [m isEqualToString: @"\t"]) {
             continue;
         }
+        
+        if ([m isEqualToString:@"["]) {
+            transcriptionMode = true;
+        }
+        if ([m isEqualToString:@"]"]) {
+            transcriptionMode = false;
+            if (transcriptionURLMode) {
+                [resultText appendString:transcriptionUrl];
+                transcriptionURLMode = false;
+            }
+            lastProperty_TranscriptionMode = [[NSMutableString alloc] initWithString:@""];
+        }
+        if (transcriptionMode) {
+            if ([m isEqualToString: @"="]) {
+                if ([lastProperty_TranscriptionMode isEqualToString:@"src"]) {
+                    transcriptionURLMode = true;
+                }
+                lastProperty_TranscriptionMode = [[NSMutableString alloc] initWithString:@""];
+            }
+            if ([m isEqualToString: @" "]){
+                lastProperty_TranscriptionMode = [[NSMutableString alloc] initWithString:@""];
+            } else if ([m isEqualToString: @">"]) {
+                //do nothing
+            } else if (!transcriptionURLMode) {
+                [lastProperty_TranscriptionMode appendString:m];
+            } else {
+                [transcriptionUrl appendString:m];
+            }
+        }
+        
 
         if ([m isEqualToString: @"'"] || [m isEqualToString: @"\""]) { //property value mode
             if (!propertyValueMode) {
