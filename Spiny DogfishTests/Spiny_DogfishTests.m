@@ -29,11 +29,12 @@
 {
     NSString* path = [[NSBundle mainBundle] pathForResource:@"word-random"
                                                      ofType:@"txt"];
-
+    NSError *error;
     NSString* content = [NSString stringWithContentsOfFile:path
                                                   encoding:NSUTF8StringEncoding
-                                                     error:NULL];
+                                                     error:&error];
 
+    NSLog(error.localizedDescription);
     Eng2RuHTMLParser *parser = [[Eng2RuHTMLParser alloc] init];
     @try {
         NSMutableString *result = [parser parseHTMLString:content];
