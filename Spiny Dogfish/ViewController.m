@@ -179,7 +179,7 @@
     [request setHTTPMethod:@"GET"];
     [request addValue:@"SpinyDogfish/1.0" forHTTPHeaderField:@"User-Agent"];
     [request addValue:@"text/plain, text/html" forHTTPHeaderField:@"Accept"];
-    NSURLConnection* connection = [[NSURLConnection alloc] initWithRequest:request delegate:self startImmediately:TRUE]; // release later
+    [[NSURLConnection alloc] initWithRequest:request delegate:self startImmediately:TRUE]; // release later
 
     //end of request
 
@@ -215,6 +215,7 @@ NSMutableData *_data;
 }
 -(void)connectionDidFinishLoading:(NSURLConnection*)connection {
     Eng2RuHTMLParser *parser = [[Eng2RuHTMLParser alloc] init];
+    [parser setDelegate:self];
     [parser parse:_data];
 }
 
