@@ -23,6 +23,7 @@
 		B75A9CF3148156C30095D36D /* Eng2RuHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B75A9CF3148156C30095D36C /* Eng2RuHTMLParser.m */; };
 		B75A9CF3148156C30095D370 /* Eng2RuNotFoundException.m in Sources */ = {isa = PBXBuildFile; fileRef = B75A9CF3148156C30095D36F /* Eng2RuNotFoundException.m */; };
 		B77A25131486D0DA00316BD7 /* word-random.txt in Resources */ = {isa = PBXBuildFile; fileRef = B77A25121486D0DA00316BD7 /* word-random.txt */; };
+		B77A25131486D0DA00316BD9 /* word-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BD8 /* word-test.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		B75A9CF3148156C30095D36F /* Eng2RuNotFoundException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Eng2RuNotFoundException.m; sourceTree = "<group>"; };
 		B75A9CF3148156C30095D371 /* Eng2RuNotFoundException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eng2RuNotFoundException.h; sourceTree = "<group>"; };
 		B77A25121486D0DA00316BD7 /* word-random.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "word-random.txt"; sourceTree = "<group>"; };
+		B77A25131486D0DA00316BD8 /* word-test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "word-test.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +169,7 @@
 		B77A25111486D0DA00316BD7 /* en2ru-html */ = {
 			isa = PBXGroup;
 			children = (
+				B77A25131486D0DA00316BD8 /* word-test.txt */,
 				B77A25121486D0DA00316BD7 /* word-random.txt */,
 			);
 			path = "en2ru-html";
@@ -245,6 +248,7 @@
 				B75A9CCA148156C30095D36A /* InfoPlist.strings in Resources */,
 				B75A9CD3148156C30095D36A /* MainStoryboard.storyboard in Resources */,
 				B77A25131486D0DA00316BD7 /* word-random.txt in Resources */,
+				B77A25131486D0DA00316BD9 /* word-test.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
