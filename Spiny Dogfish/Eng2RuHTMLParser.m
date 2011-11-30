@@ -18,6 +18,7 @@
 }
 
 - (NSMutableString *)parseHTMLString:(NSString *) receivedString {
+    NSLog( @"HTML: %@", receivedString);
     NSString *start_pattern = @"<div class=\"data card\">";
 
     NSRange match;
@@ -37,7 +38,7 @@
     bool writing = false;
     NSMutableString *resultText = [[NSMutableString alloc] initWithString:@""];
 
-    for (NSUInteger i = position; true; i++) {
+    for (NSUInteger i = position; i < receivedString.length; i++) {
         if (ignoreNextSymbol) {
             ignoreNextSymbol = false;
             continue;
@@ -77,7 +78,10 @@
                 depthCount++;
             }
             if (writing) {
-                [resultText appendString:@" "];
+                if (resultText.length > 0 &&
+                    ![[resultText substringWithRange:NSMakeRange(resultText.length-1, 1)] isEqualToString: @" "]) {
+                    [resultText appendString:@" "];
+                }
                 writing = false;
             }
             continue;
@@ -88,17 +92,24 @@
         }
 
         if (!opening && !closing) { // main logic
-            //ignore more than one space
-            if (resultText.length > 0 &&
-                    ![[resultText substringWithRange:NSMakeRange(resultText.length, 1)] isEqualToString: @" "]) {
+            if (resultText.length == 0) {
                 [resultText appendString:m];
+            } else if (resultText.length > 0) {
+                if ([m isEqualToString:@" "] &&
+                        ![[resultText substringWithRange:NSMakeRange(resultText.length-1, 1)] isEqualToString: @" "]) {
+                    //ignore more than one space
+                    [resultText appendString:m];
+                }
+                else {
+                    [resultText appendString:m];
+                }
             }
             writing = true;
         } else {
             writing = false;
         }
 
-        if (!opening && depthCount == 0) {
+        if (!opening && depthCount <= 0) {
             break;
         }
     }
