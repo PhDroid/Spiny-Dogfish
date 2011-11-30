@@ -404,6 +404,7 @@
 				GCC_PREFIX_HEADER = "Spiny Dogfish/Spiny Dogfish-Prefix.pch";
 				INFOPLIST_FILE = "Spiny DogfishTests/Spiny DogfishTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -421,6 +422,7 @@
 				GCC_PREFIX_HEADER = "Spiny Dogfish/Spiny Dogfish-Prefix.pch";
 				INFOPLIST_FILE = "Spiny DogfishTests/Spiny DogfishTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_AFTER_BUILD = YES;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -445,6 +447,7 @@
 				B75A9CF0148156C30095D36A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B75A9CF1148156C30095D36A /* Build configuration list for PBXNativeTarget "Spiny DogfishTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +456,7 @@
 				B75A9CF3148156C30095D36A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
