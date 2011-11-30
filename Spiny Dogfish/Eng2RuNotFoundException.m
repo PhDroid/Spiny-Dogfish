@@ -4,8 +4,6 @@
 // To change the template use AppCode | Preferences | File Templates.
 //
 
-
-#import <c++/4.2.1/bits/locale_facets.h>
 #import "Eng2RuNotFoundException.h"
 
 
