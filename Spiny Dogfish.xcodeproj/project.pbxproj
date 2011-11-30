@@ -24,6 +24,7 @@
 		B75A9CF3148156C30095D370 /* Eng2RuNotFoundException.m in Sources */ = {isa = PBXBuildFile; fileRef = B75A9CF3148156C30095D36F /* Eng2RuNotFoundException.m */; };
 		B77A25131486D0DA00316BD7 /* word-random.txt in Resources */ = {isa = PBXBuildFile; fileRef = B77A25121486D0DA00316BD7 /* word-random.txt */; };
 		B77A25131486D0DA00316BD9 /* word-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BD8 /* word-test.txt */; };
+		B77A25131486D0DA00316BDB /* Eng2RuPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BDA /* Eng2RuPostProcessor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		B75A9CF3148156C30095D371 /* Eng2RuNotFoundException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eng2RuNotFoundException.h; sourceTree = "<group>"; };
 		B77A25121486D0DA00316BD7 /* word-random.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "word-random.txt"; sourceTree = "<group>"; };
 		B77A25131486D0DA00316BD8 /* word-test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "word-test.txt"; sourceTree = "<group>"; };
+		B77A25131486D0DA00316BDA /* Eng2RuPostProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Eng2RuPostProcessor.m; sourceTree = "<group>"; };
+		B77A25131486D0DA00316BDC /* Eng2RuPostProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eng2RuPostProcessor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 		B75A9CC5148156C30095D36A /* Spiny Dogfish */ = {
 			isa = PBXGroup;
 			children = (
+				B77A25131486D0DA00316BDC /* Eng2RuPostProcessor.h */,
+				B77A25131486D0DA00316BDA /* Eng2RuPostProcessor.m */,
 				B75A9CF3148156C30095D371 /* Eng2RuNotFoundException.h */,
 				B75A9CF3148156C30095D36F /* Eng2RuNotFoundException.m */,
 				B75A9CF3148156C30095D36C /* Eng2RuHTMLParser.m */,
@@ -288,6 +293,7 @@
 				B75A9CD6148156C30095D36A /* ViewController.m in Sources */,
 				B75A9CF3148156C30095D36D /* Eng2RuHTMLParser.m in Sources */,
 				B75A9CF3148156C30095D370 /* Eng2RuNotFoundException.m in Sources */,
+				B77A25131486D0DA00316BDB /* Eng2RuPostProcessor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
