@@ -173,10 +173,17 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)theSearchBar {
     //sending request to lingvo
     NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-    //todo:to lower case
-    NSString *url = [[NSString alloc] initWithFormat:@"http://eng2.ru/%@", self.searchBar.text];
+    //trimming and removing whitespaces
+    NSString *search = [self.searchBar.text lowercaseString];
+    NSCharacterSet* charsToTrim = [NSCharacterSet characterSetWithCharactersInString:@" \n\r\t"];
+    NSString* trimmedSearch = [search stringByTrimmingCharactersInSet:charsToTrim];
+
+    NSString *url = [[NSString alloc] initWithFormat:@"http://eng2.ru/%@", trimmedSearch];
     NSLog(@"URL: %@", url);
-    [request setURL:[NSURL URLWithString: url]];
+
+    //todo:check symbols @"!*'();:@&=+$,/?%#[]",
+
+    [request setURL:[NSURL URLWithString: [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] ]];
     [request setHTTPMethod:@"GET"];
     [request addValue:@"SpinyDogfish/1.0" forHTTPHeaderField:@"User-Agent"];
     [request addValue:@"text/plain, text/html" forHTTPHeaderField:@"Accept"];
