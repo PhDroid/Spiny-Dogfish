@@ -187,7 +187,7 @@
     [request setHTTPMethod:@"GET"];
     [request addValue:@"SpinyDogfish/1.0" forHTTPHeaderField:@"User-Agent"];
     [request addValue:@"text/plain, text/html" forHTTPHeaderField:@"Accept"];
-    [[NSURLConnection alloc] initWithRequest:request delegate:self startImmediately:TRUE]; // release later
+    [[NSURLConnection alloc] initWithRequest:request delegate:self startImmediately:TRUE];
 
     //end of request
 

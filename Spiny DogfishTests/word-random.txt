@@ -1,0 +1,23 @@
+<div class="lingvo lingvo-dictionaries">
+	<div class="data card">
+		<div class="js-article-html">
+			<h2><span class="Bold">random</span></h2><span class="name-dictionaries"><a class="helpopen" href="/uk/LingvoDictionaries/Details?dictionary=LingvoUniversal%20(En-Ru)">LingvoUniversal (En-Ru)</a></span><p class="P">[<img class="transcription" alt="transcription" title="transcription" src="/Handlers/TranscriptionHandler.ashx?Text='r%C3%A6nd%C9%99m">] <span class="Abbrev" title="британский вариант английского языка; употребляется в Великобритании">брит.</span> <span class="soundAll js-voice-trans"><span class="soundJS js-lingvo-sound" id="sound1c6db40d07b84a519cbb9f5a6fa69f8f" data-flash-url="/soundPlayer.swf?song_url=/Sound?FileName=cmFuZG9tLndhdg==%26DictionaryName=LingvoUniversal (En-Ru)"></span><noscript><span class="soundNoScript"><object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="20" height="28" align="middle"><param name="movie" value="/soundPlayer.swf?song_url=/Sound?FileName=cmFuZG9tLndhdg==%26DictionaryName=LingvoUniversal (En-Ru)">
+          <param name="quality" value="high">
+          <param name="bgcolor" value="#ffffff"><embed quality="high" bgcolor="#ffffff" width="28" height="28" align="middle" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" src="/soundPlayer.swf?song_url=/Sound?FileName=cmFuZG9tLndhdg==%26DictionaryName=LingvoUniversal (En-Ru)"></embed></object></span></noscript></span>/ <span class="Abbrev" title="американский вариант английского языка; употребляется в США">амер.</span> <span class="soundAll js-voice-trans"><span class="soundJS js-lingvo-sound" id="sound759a783f906b4b4ea2b6a86de0f4de65" data-flash-url="/soundPlayer.swf?song_url=/Sound?FileName=MTAzNjYud2F2%26DictionaryName=LingvoUniversal (En-Ru)"></span><noscript><span class="soundNoScript"><object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="20" height="28" align="middle"><param name="movie" value="/soundPlayer.swf?song_url=/Sound?FileName=MTAzNjYud2F2%26DictionaryName=LingvoUniversal (En-Ru)">
+          <param name="quality" value="high">
+          <param name="bgcolor" value="#ffffff"><embed quality="high" bgcolor="#ffffff" width="28" height="28" align="middle" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" src="/soundPlayer.swf?song_url=/Sound?FileName=MTAzNjYud2F2%26DictionaryName=LingvoUniversal (En-Ru)"></embed></object></span></noscript></span></p>
+<p class="P1"><span class="Abbrev" title="имя прилагательное">прил.</span></p>
+<p class="P1"><a href="/uk/Search/GlossaryItemExtraInfo?text=random&amp;translation=%d1%81%d0%b4%d0%b5%d0%bb%d0%b0%d0%bd%d0%bd%d1%8b%d0%b9%20%d0%b8%d0%bb%d0%b8%20%d0%b2%d1%8b%d0%b1%d1%80%d0%b0%d0%bd%d0%bd%d1%8b%d0%b9%20%d0%bd%d0%b0%d1%83%d0%b3%d0%b0%d0%b4&amp;srcLang=en&amp;destLang=ru" title="Показати приклади вживання" class="show-examples"><span class="translation">сделанный </span><span class="translation"><span class="Italic">или </span></span><span class="translation">выбранный наугад</span></a><span class="translation">; </span><a href="/uk/Search/GlossaryItemExtraInfo?text=random&amp;translation=%d1%81%d0%bb%d1%83%d1%87%d0%b0%d0%b9%d0%bd%d1%8b%d0%b9&amp;srcLang=en&amp;destLang=ru" title="Показати приклади вживання" class="show-examples"><span class="translation">случайный</span></a><span class="translation">, </span><a href="/uk/Search/GlossaryItemExtraInfo?text=random&amp;translation=%d0%bf%d1%80%d0%be%d0%b8%d0%b7%d0%b2%d0%be%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9&amp;srcLang=en&amp;destLang=ru" title="Показати приклади вживання" class="show-examples"><span class="translation">произвольный</span></a></p>
+		</div>
+			<div class="source">
+					<a class="expandcardlink lingvo-card-links" data-ajax-url="/uk/Search/LingvoArticleWithExamples?dictionarySystemName=LingvoUniversal%20(En-Ru)&amp;title=random" title="Розгорнути статтю &#187;" href="#">Розгорнути статтю &#187;</a>
+					<a class="reducecardlink lingvo-card-links g-hidden" title="&#171; Згорнути статтю" href="#">&#171; Згорнути статтю</a>
+			</div>
+	</div>
+</div>
+
+			</div>
+		</div>
+		<div class="ao-gc">
+			<div class="ao-u first">
+				<div class="lingvo lingvo-dictionaries">

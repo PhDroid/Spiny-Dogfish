@@ -22,6 +22,7 @@
 		B75A9CEB148156C30095D36A /* Spiny_DogfishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B75A9CEA148156C30095D36A /* Spiny_DogfishTests.m */; };
 		B75A9CF3148156C30095D36D /* Eng2RuHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B75A9CF3148156C30095D36C /* Eng2RuHTMLParser.m */; };
 		B75A9CF3148156C30095D370 /* Eng2RuNotFoundException.m in Sources */ = {isa = PBXBuildFile; fileRef = B75A9CF3148156C30095D36F /* Eng2RuNotFoundException.m */; };
+		B75A9CF3148156C30095D373 /* word-random.txt in Resources */ = {isa = PBXBuildFile; fileRef = B75A9CF3148156C30095D372 /* word-random.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		B75A9CF3148156C30095D36C /* Eng2RuHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Eng2RuHTMLParser.m; sourceTree = "<group>"; };
 		B75A9CF3148156C30095D36F /* Eng2RuNotFoundException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Eng2RuNotFoundException.m; sourceTree = "<group>"; };
 		B75A9CF3148156C30095D371 /* Eng2RuNotFoundException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eng2RuNotFoundException.h; sourceTree = "<group>"; };
+		B75A9CF3148156C30095D372 /* word-random.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "word-random.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		B75A9CE3148156C30095D36A /* Spiny DogfishTests */ = {
 			isa = PBXGroup;
 			children = (
+				B75A9CF3148156C30095D372 /* word-random.txt */,
 				B75A9CE9148156C30095D36A /* Spiny_DogfishTests.h */,
 				B75A9CEA148156C30095D36A /* Spiny_DogfishTests.m */,
 				B75A9CE4148156C30095D36A /* Supporting Files */,
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B75A9CE8148156C30095D36A /* InfoPlist.strings in Resources */,
+				B75A9CF3148156C30095D373 /* word-random.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

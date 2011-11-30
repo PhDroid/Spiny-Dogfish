@@ -78,11 +78,11 @@
                 depthCount++;
             }
             if (writing) {
-                if (resultText.length > 0 &&
-                    ![[resultText substringWithRange:NSMakeRange(resultText.length-1, 1)] isEqualToString: @" "]) {
-                    [resultText appendString:@" "];
-                }
                 writing = false;
+            }
+            if (resultText.length > 0 &&
+                ![[resultText substringWithRange:NSMakeRange(resultText.length-1, 1)] isEqualToString: @" "]) {
+                [resultText appendString:@" "];
             }
             continue;
         }

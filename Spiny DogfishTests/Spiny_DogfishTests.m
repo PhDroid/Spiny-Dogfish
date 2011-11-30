@@ -11,7 +11,6 @@
 #import "Eng2RuNotFoundException.h"
 
 @implementation Spiny_DogfishTests
-
 - (void)setUp
 {
     [super setUp];
@@ -28,9 +27,17 @@
 
 - (void)testExample
 {
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"word-random"
+                                                     ofType:@"txt"];
+
+    NSString* content = [NSString stringWithContentsOfFile:path
+                                                  encoding:NSUTF8StringEncoding
+                                                     error:NULL];
+
     Eng2RuHTMLParser *parser = [[Eng2RuHTMLParser alloc] init];
     @try {
-        NSMutableString *result = [parser parseHTMLString:@""];
+        NSMutableString *result = [parser parseHTMLString:content];
+        NSLog(result);
         NSString *expected = @"";
         STAssertEquals(result, expected, @"Not expected result");
     } @catch (Eng2RuNotFoundException *e) {
