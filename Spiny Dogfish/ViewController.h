@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Eng2RuHTMLParserDelegate.h"
 
-@interface ViewController : UIViewController < Eng2RuHTMLParserDelegate >
+@interface ViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) IBOutlet UISearchDisplayController *searchDisplayController;

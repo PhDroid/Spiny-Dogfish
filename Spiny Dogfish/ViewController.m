@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Eng2RuHTMLParser.h"
+#import "Eng2RuNotFoundException.h"
 
 @implementation ViewController
 @synthesize searchBar;
@@ -197,6 +198,14 @@
     //[self.textView becomeFirstResponder];
 }
 
+-(void)dataCardNotFound {
+    //todo:Handle the error properly
+    NSLog( @"word not found" );
+}
+-(void)dataCardParsed:(NSMutableString *)result {
+    NSLog( @"Result text: %@", result );
+}
+
 NSMutableData *_data;
 -(void)connection:(NSURLConnection*)connection didReceiveResponse:(NSURLResponse*)response
 {
@@ -213,17 +222,15 @@ NSMutableData *_data;
     //todo:Handle the error properly
     NSLog( @"Error: %@", error.description);
 }
+
 -(void)connectionDidFinishLoading:(NSURLConnection*)connection {
     Eng2RuHTMLParser *parser = [[Eng2RuHTMLParser alloc] init];
-    [parser setDelegate:self];
-    [parser parse:_data];
+    @try {
+        NSMutableString *result = [parser parse:_data];
+        [self dataCardParsed:result];
+    } @catch (Eng2RuNotFoundException *e) {
+        [self dataCardNotFound];
+    }
 }
 
--(void)dataCardNotFound {
-    //todo:Handle the error properly
-    NSLog( @"word not found" );
-}
--(void)dataCardParsed:(NSMutableString *)result {
-    NSLog( @"Result text: %@", result );
-}
 @end

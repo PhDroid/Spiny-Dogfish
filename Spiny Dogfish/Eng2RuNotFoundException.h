@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Eng2RuHTMLParser : NSObject
--(NSMutableString *) parse: (NSData *) bareHTML;
+
+@interface Eng2RuNotFoundException : NSException
++ (void)raise:(NSString *)string;
 @end

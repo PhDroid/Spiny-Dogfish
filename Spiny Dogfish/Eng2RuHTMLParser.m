@@ -6,23 +6,12 @@
 
 
 #import "Eng2RuHTMLParser.h"
-#import "Eng2RuHTMLParserDelegate.h"
+#import "Eng2RuNotFoundException.h"
 
 
 @implementation Eng2RuHTMLParser
-@synthesize delegate;
 
-- (void)failed {
-    //todo: check delegate is present
-    [delegate dataCardNotFound];
-}
-
-- (void)OK:(NSMutableString *)result {
-    //todo: check delegate is present
-    [delegate dataCardParsed:result];
-}
-
-- (void)parse:(NSData *) bareHTML {
+- (NSMutableString *)parse:(NSData *) bareHTML {
     NSString *receivedString = [[NSString alloc] initWithData:bareHTML
             encoding:NSUTF8StringEncoding];
     NSLog( @"From connectionDidFinishLoading: %@", receivedString );
@@ -34,7 +23,7 @@
     match = [receivedString rangeOfString: start_pattern];
 
     if (match.location == NSNotFound){
-        [self failed];
+        [Eng2RuNotFoundException raise:@"Data block was not found"];
     }
     
     NSUInteger position = match.location;
@@ -112,7 +101,7 @@
         }
     }
 
-    [self OK:resultText];
+    return resultText;
 }
 
 @end
