@@ -25,7 +25,7 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)test_translate_enru_random
 {
     NSString* path = [[NSBundle mainBundle] pathForResource:@"word-random"
                                                      ofType:@"txt"];
@@ -38,8 +38,8 @@
     @try {
         NSMutableString *result = [parser parseHTMLString:content];
         NSLog(result);
-        NSString *expected = @"";
-        STAssertEquals(result, expected, @"Not expected result");
+        NSString *expected = @"random LingvoUniversal (En-Ru) [";
+        STAssertTrue( [result isEqualToString: expected], @"Not expected result");
     } @catch (Eng2RuNotFoundException *e) {
         STFail(@"Parsing this word should not give errors.");
     }
