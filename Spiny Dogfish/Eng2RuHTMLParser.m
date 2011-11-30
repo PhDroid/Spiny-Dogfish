@@ -11,11 +11,13 @@
 
 @implementation Eng2RuHTMLParser
 
-- (NSMutableString *)parse:(NSData *) bareHTML {
+- (NSMutableString *)parseHTMLData:(NSData *) bareHTML {
     NSString *receivedString = [[NSString alloc] initWithData:bareHTML
             encoding:NSUTF8StringEncoding];
-    NSLog( @"From connectionDidFinishLoading: %@", receivedString );
+    return [self parseHTMLString:receivedString];
+}
 
+- (NSMutableString *)parseHTMLString:(NSString *) receivedString {
     NSString *start_pattern = @"<div class=\"data card\">";
 
     NSRange match;

@@ -7,6 +7,8 @@
 //
 
 #import "Spiny_DogfishTests.h"
+#import "Eng2RuHTMLParser.h"
+#import "Eng2RuNotFoundException.h"
 
 @implementation Spiny_DogfishTests
 
@@ -26,7 +28,14 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in Spiny DogfishTests");
+    Eng2RuHTMLParser *parser = [[Eng2RuHTMLParser alloc] init];
+    @try {
+        NSMutableString *result = [parser parseHTMLString:@""];
+        NSString *expected = @"";
+        STAssertEquals(result, expected, @"Not expected result");
+    } @catch (Eng2RuNotFoundException *e) {
+        STFail(@"Parsing this word should not give errors.");
+    }
 }
 
 @end

@@ -226,7 +226,7 @@ NSMutableData *_data;
 -(void)connectionDidFinishLoading:(NSURLConnection*)connection {
     Eng2RuHTMLParser *parser = [[Eng2RuHTMLParser alloc] init];
     @try {
-        NSMutableString *result = [parser parse:_data];
+        NSMutableString *result = [parser parseHTMLData:_data];
         [self dataCardParsed:result];
     } @catch (Eng2RuNotFoundException *e) {
         [self dataCardNotFound];

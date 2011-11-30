@@ -8,5 +8,6 @@
 #import <Foundation/Foundation.h>
 
 @interface Eng2RuHTMLParser : NSObject
--(NSMutableString *) parse: (NSData *) bareHTML;
+-(NSMutableString *) parseHTMLData: (NSData *) bareHTML;
+-(NSMutableString *) parseHTMLString: (NSString *) bareHTML;
 @end
