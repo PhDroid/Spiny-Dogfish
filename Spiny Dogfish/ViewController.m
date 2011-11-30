@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Eng2RuHTMLParser.h"
 
 @implementation ViewController
 @synthesize searchBar;
@@ -212,93 +213,15 @@ NSMutableData *_data;
     //todo:Handle the error properly
     NSLog( @"Error: %@", error.description);
 }
--(void)connectionDidFinishLoading:(NSURLConnection*)connection
-{
-    NSString *receivedString = [[NSString alloc] initWithData:_data
-            encoding:NSUTF8StringEncoding];
-    NSLog( @"From connectionDidFinishLoading: %@", receivedString );
+-(void)connectionDidFinishLoading:(NSURLConnection*)connection {
+    Eng2RuHTMLParser *parser = [[Eng2RuHTMLParser alloc] init];
+    [parser parse:_data];
+}
 
-    NSString *start_pattern = @"<div class=\"data card\">";
-
-    NSRange match;
-
-    match = [receivedString rangeOfString: start_pattern];
-    
-    NSUInteger position = match.location;
-    int depthCount = 0;
-    bool propertyValueMode = false;
-    bool ignoreNextSymbol = false;
-    bool opening = false;
-    bool closing = false;
-    bool writing = false;
-    NSMutableString *resultText = [[NSMutableString alloc] initWithString:@""];
-
-    for (NSUInteger i = position; true; i++) {
-        if (ignoreNextSymbol) {
-            ignoreNextSymbol = false;
-            continue;
-        }
-        NSString *m = [receivedString substringWithRange:NSMakeRange(i, 1)];
-
-        //ignore characters
-        if ([m isEqualToString: @"\r"] ||
-                [m isEqualToString: @"\n"] ||
-                [m isEqualToString: @"\t"]) {
-            continue;
-        }
-        
-        if ([m isEqualToString: @"'"] || [m isEqualToString: @"\""]) { //property value mode
-            propertyValueMode = !propertyValueMode;
-            continue;
-        }
-        if ([m isEqualToString: @"\\"]) { //escape symbol
-            ignoreNextSymbol = true;
-            continue;
-        }
-        if (propertyValueMode) { //ignore everything while in property value mode
-            continue;
-        }
-        if ([m isEqualToString: @"/"]) {
-            closing = true;
-            opening = false;
-            continue;
-        }
-        if ([m isEqualToString: @">"]) {
-            if (closing) {
-                closing = false;
-                depthCount--;
-            }
-            if (opening) {
-                opening = false;
-                depthCount++;
-            }
-            if (writing) {
-                [resultText appendString:@" "];
-                writing = false;
-            }
-            continue;
-        }
-        if ([m isEqualToString: @"<"]) {
-            opening = true;
-            continue;
-        }
-        
-        if (!opening && !closing) { // main logic
-            //ignore more than one space
-            if (resultText.length > 0 &&
-                    ![[resultText substringWithRange:NSMakeRange(resultText.length, 1)] isEqualToString: @" "]) {
-                [resultText appendString:m];
-            }
-            writing = true;
-        } else {
-            writing = false;
-        }
-        
-        if (!opening && depthCount == 0) {
-            break;
-        }
-    }
-
-    NSLog( @"Result text: %@", resultText );
+-(void)dataCardNotFound {
+    NSLog( @"word not found" );
+}
+-(void)dataCardParsed:(NSMutableString *)result {
+    NSLog( @"Result text: %@", result );
 }
 @end

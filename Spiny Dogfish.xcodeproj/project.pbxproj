@@ -20,6 +20,7 @@
 		B75A9CE0148156C30095D36A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A9CC1148156C30095D36A /* Foundation.framework */; };
 		B75A9CE8148156C30095D36A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B75A9CE6148156C30095D36A /* InfoPlist.strings */; };
 		B75A9CEB148156C30095D36A /* Spiny_DogfishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B75A9CEA148156C30095D36A /* Spiny_DogfishTests.m */; };
+		B75A9CF3148156C30095D36D /* Eng2RuHTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = B75A9CF3148156C30095D36C /* Eng2RuHTMLParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,9 @@
 		B75A9CE7148156C30095D36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B75A9CE9148156C30095D36A /* Spiny_DogfishTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spiny_DogfishTests.h; sourceTree = "<group>"; };
 		B75A9CEA148156C30095D36A /* Spiny_DogfishTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Spiny_DogfishTests.m; sourceTree = "<group>"; };
+		B75A9CF3148156C30095D36B /* Eng2RuHTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eng2RuHTMLParser.h; sourceTree = "<group>"; };
+		B75A9CF3148156C30095D36C /* Eng2RuHTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Eng2RuHTMLParser.m; sourceTree = "<group>"; };
+		B75A9CF3148156C30095D36E /* Eng2RuHTMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eng2RuHTMLParserDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,9 @@
 		B75A9CC5148156C30095D36A /* Spiny Dogfish */ = {
 			isa = PBXGroup;
 			children = (
+				B75A9CF3148156C30095D36E /* Eng2RuHTMLParserDelegate.h */,
+				B75A9CF3148156C30095D36C /* Eng2RuHTMLParser.m */,
+				B75A9CF3148156C30095D36B /* Eng2RuHTMLParser.h */,
 				B75A9CCE148156C30095D36A /* AppDelegate.h */,
 				B75A9CCF148156C30095D36A /* AppDelegate.m */,
 				B75A9CD1148156C30095D36A /* MainStoryboard.storyboard */,
@@ -260,6 +267,7 @@
 				B75A9CCC148156C30095D36A /* main.m in Sources */,
 				B75A9CD0148156C30095D36A /* AppDelegate.m in Sources */,
 				B75A9CD6148156C30095D36A /* ViewController.m in Sources */,
+				B75A9CF3148156C30095D36D /* Eng2RuHTMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
