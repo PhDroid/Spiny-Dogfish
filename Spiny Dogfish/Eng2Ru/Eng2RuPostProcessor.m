@@ -136,4 +136,12 @@ NSMutableString *translation;
         }
     }
 }
+
+-(NSMutableString *) fixIdentation: (NSMutableString *) translation {
+    NSMutableString *result = [[NSMutableString alloc] initWithString:@""];
+    for(NSUInteger i = 0; i < translation.length; i++) {
+        NSString *m = [translation substringWithRange:NSMakeRange(i, 1)];
+    }
+    return result;
+}
 @end
