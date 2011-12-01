@@ -54,6 +54,7 @@ NSMutableString *translation;
     bool transcriptionModeWriting = false;
     int phase = 0;
     int phase3WordCount = 0;
+    NSString *phase3PrevChar = @"";
     bool phase4Writing = false;
     for (NSUInteger i = 0; i < endOfInput; i++) {
         NSString *m = [translationSrc substringWithRange:NSMakeRange(i, 1)];
@@ -63,7 +64,8 @@ NSMutableString *translation;
         }
         if (phase == 0 && whitespaceCounter == 0) {
             [word appendString:m];
-        } else if (whitespaceCounter == 1 || whitespaceCounter == 2) {
+        }
+        if (whitespaceCounter == 1 || whitespaceCounter == 2) {
             if (phase == 0){
                 phase = 1;
                 continue;
@@ -74,13 +76,15 @@ NSMutableString *translation;
         }
         //phase 2 - transcription url
         if ([m isEqualToString:@"["]) {
-            if (phase == 1)
+            if (phase == 1) {
                 phase = 2;
+                continue;
+            }
         }
         if ([m isEqualToString:@"]"]) {
             if (phase == 2) {
                 phase = 3;
-                whitespaceCounter = 0;
+                continue;
             }
         }
         if (phase == 2) {
@@ -102,13 +106,15 @@ NSMutableString *translation;
         }
         // skip 2 words in phase#3
         if (phase == 3) {
-            if(isWhitespace && 
-                    ![[translationSrc substringWithRange:NSMakeRange(i-1, 1)] isEqualToString: @" "]){
-                phase3WordCount++;        
+            if(isWhitespace &&
+                    ![phase3PrevChar isEqualToString:@""] &&
+                    ![phase3PrevChar isEqualToString: @" "]){
+                phase3WordCount++;
             }
             if (phase3WordCount == 2) {
                 phase = 4;
             }
+            phase3PrevChar = m;
         }
         // in phase#4 - all the rest except whitespaces
         if (phase == 4) {
