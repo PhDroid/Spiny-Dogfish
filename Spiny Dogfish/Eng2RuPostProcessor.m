@@ -51,7 +51,6 @@ NSMutableString *translation;
     transcriptionURL = [[NSMutableString alloc] initWithString:@""];
     translation = [[NSMutableString alloc] initWithString:@""];
     whitespaceCounter = 0;
-    bool transcriptionMode = false;
     bool transcriptionModeWriting = false;
     int phase = 0;
     int phase3WordCount = 0;
@@ -62,32 +61,42 @@ NSMutableString *translation;
         if (isWhitespace) {
             whitespaceCounter++;
         }
-        if (whitespaceCounter == 0) {
+        if (phase == 0 && whitespaceCounter == 0) {
             [word appendString:m];
-        } else if (whitespaceCounter > 0 && whitespaceCounter < 2) {
-            phase = 1;
-            [dictionary appendString:m];
-        }
-        if ([m isEqualToString:@"["]) {
-            transcriptionMode = true;
-        }
-        if ([m isEqualToString:@"]"]) {
-            transcriptionMode = false;
-        }
-        if (transcriptionModeWriting) {
-            [transcriptionURL appendString: m];
-            continue;
-        }
-        if (transcriptionMode) {
-            if ([m isEqualToString: @"'"] || [m isEqualToString: @"\""]) {
-                transcriptionModeWriting = true;
-                phase = 2;
+        } else if (whitespaceCounter == 1 || whitespaceCounter == 2) {
+            if (phase == 0){
+                phase = 1;
                 continue;
             }
-            if (transcriptionModeWriting && [m isEqualToString: @"'"] || [m isEqualToString: @"\""]) {
-                transcriptionModeWriting = false;
+            if (phase == 1) {
+                [dictionary appendString:m];
+            }
+        }
+        //phase 2 - transcription url
+        if ([m isEqualToString:@"["]) {
+            if (phase == 1)
+                phase = 2;
+        }
+        if ([m isEqualToString:@"]"]) {
+            if (phase == 2) {
                 phase = 3;
                 whitespaceCounter = 0;
+            }
+        }
+        if (phase == 2) {
+            if (!transcriptionModeWriting &&
+                    ([m isEqualToString: @"'"] || [m isEqualToString: @"\""])) {
+                transcriptionModeWriting = true;
+                continue;
+            }
+            if (transcriptionModeWriting &&
+                    ([m isEqualToString: @"'"] || [m isEqualToString: @"\""])) {
+                transcriptionModeWriting = false;
+                continue;
+            }
+            if (transcriptionModeWriting)
+            {
+                [transcriptionURL appendString: m];
                 continue;
             }
         }
