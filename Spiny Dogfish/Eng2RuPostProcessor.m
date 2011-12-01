@@ -52,6 +52,7 @@ NSMutableString *translation;
     translation = [[NSMutableString alloc] initWithString:@""];
     whitespaceCounter = 0;
     bool transcriptionModeWriting = false;
+    NSString * transcriptionModeTrigger = @"";
     int phase = 0;
     int phase3WordCount = 0;
     const int PHASE3_EXPECTED_WORD_COUNT = 2;
@@ -92,10 +93,11 @@ NSMutableString *translation;
             if (!transcriptionModeWriting &&
                     ([m isEqualToString: @"'"] || [m isEqualToString: @"\""])) {
                 transcriptionModeWriting = true;
+                transcriptionModeTrigger = m;
                 continue;
             }
             if (transcriptionModeWriting &&
-                    ([m isEqualToString: @"'"] || [m isEqualToString: @"\""])) {
+                    [m isEqualToString: transcriptionModeTrigger]) {
                 transcriptionModeWriting = false;
                 continue;
             }
