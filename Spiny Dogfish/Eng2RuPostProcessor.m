@@ -54,6 +54,7 @@ NSMutableString *translation;
     bool transcriptionModeWriting = false;
     int phase = 0;
     int phase3WordCount = 0;
+    const int PHASE3_EXPECTED_WORD_COUNT = 2;
     NSString *phase3PrevChar = @"";
     bool phase4Writing = false;
     for (NSUInteger i = 0; i < endOfInput; i++) {
@@ -111,7 +112,7 @@ NSMutableString *translation;
                     ![phase3PrevChar isEqualToString: @" "]){
                 phase3WordCount++;
             }
-            if (phase3WordCount == 2) {
+            if (phase3WordCount == PHASE3_EXPECTED_WORD_COUNT) {
                 phase = 4;
             }
             phase3PrevChar = m;
