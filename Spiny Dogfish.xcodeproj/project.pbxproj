@@ -124,18 +124,13 @@
 		B75A9CC5148156C30095D36A /* Spiny Dogfish */ = {
 			isa = PBXGroup;
 			children = (
-				B77A25131486D0DA00316BDC /* Eng2RuPostProcessor.h */,
-				B77A25131486D0DA00316BDA /* Eng2RuPostProcessor.m */,
-				B75A9CF3148156C30095D371 /* Eng2RuNotFoundException.h */,
-				B75A9CF3148156C30095D36F /* Eng2RuNotFoundException.m */,
-				B75A9CF3148156C30095D36C /* Eng2RuHTMLParser.m */,
-				B75A9CF3148156C30095D36B /* Eng2RuHTMLParser.h */,
 				B75A9CCE148156C30095D36A /* AppDelegate.h */,
 				B75A9CCF148156C30095D36A /* AppDelegate.m */,
 				B75A9CD1148156C30095D36A /* MainStoryboard.storyboard */,
 				B75A9CD4148156C30095D36A /* ViewController.h */,
 				B75A9CD5148156C30095D36A /* ViewController.m */,
 				B75A9CC6148156C30095D36A /* Supporting Files */,
+				B77A25131486D0DA00316BDD /* Eng2Ru */,
 			);
 			path = "Spiny Dogfish";
 			sourceTree = "<group>";
@@ -178,6 +173,19 @@
 				B77A25121486D0DA00316BD7 /* word-random.txt */,
 			);
 			path = "en2ru-html";
+			sourceTree = "<group>";
+		};
+		B77A25131486D0DA00316BDD /* Eng2Ru */ = {
+			isa = PBXGroup;
+			children = (
+				B77A25131486D0DA00316BDA /* Eng2RuPostProcessor.m */,
+				B77A25131486D0DA00316BDC /* Eng2RuPostProcessor.h */,
+				B75A9CF3148156C30095D36F /* Eng2RuNotFoundException.m */,
+				B75A9CF3148156C30095D371 /* Eng2RuNotFoundException.h */,
+				B75A9CF3148156C30095D36C /* Eng2RuHTMLParser.m */,
+				B75A9CF3148156C30095D36B /* Eng2RuHTMLParser.h */,
+			);
+			path = Eng2Ru;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
