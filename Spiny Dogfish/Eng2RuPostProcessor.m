@@ -40,7 +40,7 @@ NSMutableString *translation;
         }
         if (whitespaceCounter == WHITESPACES_FOR_SIX_WORDS) {
             if (i > 0) {
-                endOfInput = i-1;
+                endOfInput = i;
             }
             break;
         }
