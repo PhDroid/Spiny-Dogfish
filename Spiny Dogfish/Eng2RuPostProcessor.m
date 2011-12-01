@@ -9,6 +9,24 @@
 
 
 @implementation Eng2RuPostProcessor
+NSMutableString *word;
+NSMutableString *dictionary;
+NSMutableString *transcriptionURL;
+NSMutableString *translation;
+
+-(NSString *) getWord{
+    return word;
+}
+-(NSString *) getDictionary{
+    return dictionary;
+}
+-(NSString *) getTranscriptionUrl{
+    return transcriptionURL;
+}
+-(NSString *) getTranslation {
+    return translation;
+}
+
 -(void) process: (NSMutableString *) translationSrc {
     int endOfInput = translationSrc.length-1;
     
@@ -28,21 +46,26 @@
         }
     }
 
-    NSMutableString *word = [[NSMutableString alloc] initWithString:@""];
-    NSMutableString *dictionary = [[NSMutableString alloc] initWithString:@""];
-    NSMutableString *transcriptionURL = [[NSMutableString alloc] initWithString:@""];
-    NSMutableString *translation = [[NSMutableString alloc] initWithString:@""];
+    word = [[NSMutableString alloc] initWithString:@""];
+    dictionary = [[NSMutableString alloc] initWithString:@""];
+    transcriptionURL = [[NSMutableString alloc] initWithString:@""];
+    translation = [[NSMutableString alloc] initWithString:@""];
     whitespaceCounter = 0;
     bool transcriptionMode = false;
     bool transcriptionModeWriting = false;
+    int phase = 0;
+    int phase3WordCount = 0;
+    bool phase4Writing = false;
     for (NSUInteger i = 0; i < endOfInput; i++) {
         NSString *m = [translationSrc substringWithRange:NSMakeRange(i, 1)];
-        if ([m isEqualToString:@" "]) {
+        bool isWhitespace = [m isEqualToString:@" "];
+        if (isWhitespace) {
             whitespaceCounter++;
         }
         if (whitespaceCounter == 0) {
             [word appendString:m];
         } else if (whitespaceCounter > 0 && whitespaceCounter < 2) {
+            phase = 1;
             [dictionary appendString:m];
         }
         if ([m isEqualToString:@"["]) {
@@ -58,14 +81,41 @@
         if (transcriptionMode) {
             if ([m isEqualToString: @"'"] || [m isEqualToString: @"\""]) {
                 transcriptionModeWriting = true;
+                phase = 2;
                 continue;
             }
             if (transcriptionModeWriting && [m isEqualToString: @"'"] || [m isEqualToString: @"\""]) {
                 transcriptionModeWriting = false;
+                phase = 3;
+                whitespaceCounter = 0;
                 continue;
             }
         }
-
+        // skip 2 words in phase#3
+        if (phase == 3) {
+            if(isWhitespace && 
+                    ![[translationSrc substringWithRange:NSMakeRange(i-1, 1)] isEqualToString: @" "]){
+                phase3WordCount++;        
+            }
+            if (phase3WordCount == 2) {
+                phase = 4;
+            }
+        }
+        // in phase#4 - all the rest except whitespaces
+        if (phase == 4) {
+            if (isWhitespace) {
+                if (!phase4Writing) {
+                    continue;
+                }
+            } else {
+                if (!phase4Writing) {
+                    phase4Writing = true;
+                }
+            }
+            if (phase4Writing) {
+                [translation appendString:m];
+            }
+        }
     }
 }
 @end

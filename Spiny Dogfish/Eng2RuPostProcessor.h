@@ -10,4 +10,8 @@
 
 @interface Eng2RuPostProcessor : NSObject
 -(void) process: (NSMutableString *) translation;
+-(NSString *) getWord;
+-(NSString *) getDictionary;
+-(NSString *) getTranscriptionUrl;
+-(NSString *) getTranslation;
 @end
