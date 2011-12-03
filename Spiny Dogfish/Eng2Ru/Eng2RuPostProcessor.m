@@ -137,11 +137,74 @@ NSMutableString *translation;
     }
 }
 
--(NSMutableString *) fixIdentation: (NSMutableString *) translation {
+-(bool) isDigit:(NSString *) value {
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    NSNumber *number = [numberFormatter numberFromString:value];
+    bool result = number != nil;
+    return result;
+}
+typedef enum {
+    None,
+    LevelOne,
+    LevelTwo,
+    LevelThree
+} IndentLevel;
+
+-(NSMutableString *) fixIndentation: (NSMutableString *)translation {
     NSMutableString *result = [[NSMutableString alloc] initWithString:@""];
+    NSMutableString *word = [[NSMutableString alloc] initWithString:@""];
+    IndentLevel level = None;
     for(NSUInteger i = 0; i < translation.length; i++) {
         NSString *m = [translation substringWithRange:NSMakeRange(i, 1)];
+        if ([m isEqualToString:@" "]) {
+            if (word.length > 1) {
+                NSString *w_last = [word substringWithRange:NSMakeRange(word.length-1, 1)];
+                NSString *w_before_last = [word substringToIndex:word.length-1];
+                if ([w_last isEqualToString:@"."] &&
+                        [self isDigit:w_before_last] ){
+                    [result appendString:word];
+                    level = LevelOne;
+                } else if ([w_last isEqualToString: @")"] &&
+                            [self isDigit:w_before_last]) {
+                    [result appendFormat:@"\r\n\t%@", word];
+                    switch (level) {
+                        case LevelOne:
+                            level = LevelTwo;
+                            break;
+                        case LevelTwo:
+                            break;
+                        case LevelThree:
+                            level = LevelTwo;
+                            break;
+                        default:
+                            [NSException raise:@"Invalid level value" format:@"level of %d is invalid", level];
+                    }
+                }   else if ([w_last isEqualToString: @")"] &&
+                                ![self isDigit:w_before_last]) {
+                    [result appendFormat:@"\r\n\t\t%@", word];
+                    switch (level) {
+                        case LevelTwo:
+                            level = LevelThree;
+                            break;
+                        case LevelThree:
+                            break;
+                        default:
+                            [NSException raise:@"Invalid level value" format:@"level of %d is invalid", level];
+                    }
+                } else {
+                    [result appendFormat:@" %@", word];
+                }
+            }
+
+            word = [[NSMutableString alloc] initWithString:@""];
+        } else {
+            [word appendString:m];
+            if (i == translation.length-1) {
+                [result appendFormat:@" %@", word];
+            }
+        }
     }
+    NSLog(result);
     return result;
 }
 @end
