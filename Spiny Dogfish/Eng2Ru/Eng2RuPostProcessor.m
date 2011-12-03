@@ -194,6 +194,8 @@ typedef enum {
                 } else {
                     [result appendFormat:@" %@", word];
                 }
+            } else {
+                [result appendString:word];
             }
 
             word = [[NSMutableString alloc] initWithString:@""];
