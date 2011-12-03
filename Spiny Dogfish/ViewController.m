@@ -190,30 +190,29 @@
     [[NSURLConnection alloc] initWithRequest:request delegate:self startImmediately:TRUE];
 
     //end of request
-
-
-    /*
-    NSMutableArray *items = [[NSMutableArray alloc] initWithObjects:
-                          @"Hello World!",
-                          nil];
-    self.searchResults = items;
-    [self.searchDisplayController.searchResultsTableView reloadData];
-    [self.tableView reloadData];
-    */
     //[self.textView setHidden:FALSE];
     //[self.tableView setHidden:TRUE];
     //[self.textView becomeFirstResponder];
 }
 
+NSMutableData *_data;
+NSMutableString *_result;
+
 -(void)dataCardNotFound {
     //todo:Handle the error properly
     NSLog( @"word not found" );
 }
+
 -(void)dataCardParsed:(NSMutableString *)result {
-    NSLog( @"Result text: %@", result );
+    _result = result;
+    //todo: paste real word here
+    NSMutableArray *items = [[NSMutableArray alloc] initWithObjects:
+                              self.searchBar.text,
+                              nil];
+    self.searchResults = items;
+    [self.searchDisplayController.searchResultsTableView reloadData];
 }
 
-NSMutableData *_data;
 -(void)connection:(NSURLConnection*)connection didReceiveResponse:(NSURLResponse*)response
 {
     _data = [[NSMutableData alloc] init]; // _data being an ivar
