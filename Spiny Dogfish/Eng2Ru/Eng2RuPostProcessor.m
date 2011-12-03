@@ -182,9 +182,9 @@ typedef enum {
                         default:
                             [NSException raise:@"Invalid level value" format:@"level of %d is invalid", level];
                     }
-                }   else if ([w_last isEqualToString: @")"] &&
-                                word.length == 2 &&
-                                ![self isDigit:w_before_last]) {
+                } else if ([w_last isEqualToString: @")"] &&
+                            word.length == 2 &&
+                            ![self isDigit:w_before_last]) {
                     [result appendFormat:@"\r\n\t\t%@", word];
                     switch (level) {
                         case LevelTwo:
@@ -196,14 +196,22 @@ typedef enum {
                             [NSException raise:@"Invalid level value" format:@"level of %d is invalid", level];
                     }
                 } else {
-                    [result appendFormat:@" %@", word];
+                    if (result.length > 0 &&
+                            [[result substringWithRange:NSMakeRange(result.length-1, 1)] isEqualToString:@"("]) {
+                        [result appendString: word];
+                    } else {
+                        [result appendFormat:@" %@", word];
+                    }
+
+
                 }
             } else {
                 if ([word isEqualToString:@","] || 
                         [word isEqualToString:@")"] || 
                         [word isEqualToString:@";"]) {
                     [result appendString: word];
-                } else if ([word isEqualToString:@" "]) {
+                } else if ([word isEqualToString:@""] ||
+                        [word isEqualToString:@" "]) {
                     //skip
                 } else {
                     [result appendFormat:@" %@", word];

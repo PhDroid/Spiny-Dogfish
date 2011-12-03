@@ -135,7 +135,7 @@
         if (!opening && !closing) { // main logic
             if (resultText.length == 0) {
                 [resultText appendString:m];
-            } else if (resultText.length > 0) {
+            } else {
                 if ([m isEqualToString:@" "] &&
                         ![[resultText substringWithRange:NSMakeRange(resultText.length-1, 1)] isEqualToString: @" "]) {
                     //ignore more than one space
