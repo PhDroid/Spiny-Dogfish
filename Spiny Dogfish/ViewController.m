@@ -190,9 +190,6 @@
     [[NSURLConnection alloc] initWithRequest:request delegate:self startImmediately:TRUE];
 
     //end of request
-    //[self.textView setHidden:FALSE];
-    //[self.tableView setHidden:TRUE];
-    //[self.textView becomeFirstResponder];
 }
 
 NSMutableData *_data;
@@ -211,6 +208,9 @@ NSMutableString *_result;
                               nil];
     self.searchResults = items;
     [self.searchDisplayController.searchResultsTableView reloadData];
+    //[self.textView setHidden:FALSE];
+    //[self.tableView setHidden:TRUE];
+    //[self.textView becomeFirstResponder];
 }
 
 -(void)connection:(NSURLConnection*)connection didReceiveResponse:(NSURLResponse*)response
