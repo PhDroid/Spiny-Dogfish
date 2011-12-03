@@ -162,6 +162,9 @@ typedef enum {
                 NSString *w_before_last = [word substringToIndex:word.length-1];
                 if ([w_last isEqualToString:@"."] &&
                         [self isDigit:w_before_last] ){
+                    if (result.length > 0) {
+                        [result appendString:@"\r\n"];
+                    }
                     [result appendString:word];
                     level = LevelOne;
                 } else if ([w_last isEqualToString: @")"] &&
@@ -180,6 +183,7 @@ typedef enum {
                             [NSException raise:@"Invalid level value" format:@"level of %d is invalid", level];
                     }
                 }   else if ([w_last isEqualToString: @")"] &&
+                                word.length == 2 &&
                                 ![self isDigit:w_before_last]) {
                     [result appendFormat:@"\r\n\t\t%@", word];
                     switch (level) {
@@ -195,7 +199,16 @@ typedef enum {
                     [result appendFormat:@" %@", word];
                 }
             } else {
-                [result appendString:word];
+                if ([word isEqualToString:@","] || 
+                        [word isEqualToString:@")"] || 
+                        [word isEqualToString:@";"]) {
+                    [result appendString: word];
+                } else if ([word isEqualToString:@" "]) {
+                    //skip
+                } else {
+                    [result appendFormat:@" %@", word];
+                }
+
             }
 
             word = [[NSMutableString alloc] initWithString:@""];
