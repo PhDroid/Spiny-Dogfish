@@ -163,13 +163,13 @@ typedef enum {
                 if ([w_last isEqualToString:@"."] &&
                         [self isDigit:w_before_last] ){
                     if (result.length > 0) {
-                        [result appendString:@"\r\n"];
+                        [result appendString:@"\n"];
                     }
                     [result appendString:word];
                     level = LevelOne;
                 } else if ([w_last isEqualToString: @")"] &&
                             [self isDigit:w_before_last]) {
-                    [result appendFormat:@"\r\n\t%@", word];
+                    [result appendFormat:@"\n\t%@", word];
                     switch (level) {
                         case LevelOne:
                             level = LevelTwo;
@@ -185,7 +185,7 @@ typedef enum {
                 } else if ([w_last isEqualToString: @")"] &&
                             word.length == 2 &&
                             ![self isDigit:w_before_last]) {
-                    [result appendFormat:@"\r\n\t\t%@", word];
+                    [result appendFormat:@"\n\t\t%@", word];
                     switch (level) {
                         case LevelTwo:
                             level = LevelThree;
