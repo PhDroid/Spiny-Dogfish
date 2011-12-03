@@ -150,7 +150,7 @@ typedef enum {
     LevelThree
 } IndentLevel;
 
--(NSMutableString *) fixIndentation: (NSMutableString *)translation {
+-(NSMutableString *) fixComplexIndentation: (NSMutableString *)translation {
     NSMutableString *result = [[NSMutableString alloc] initWithString:@""];
     NSMutableString *word = [[NSMutableString alloc] initWithString:@""];
     IndentLevel level = None;
@@ -230,4 +230,73 @@ typedef enum {
     NSLog(result);
     return result;
 }
+
+-(NSMutableString *) fixSimpleIndentation: (NSMutableString *)translation {
+    NSMutableString *result = [[NSMutableString alloc] initWithString:@""];
+    NSMutableString *word = [[NSMutableString alloc] initWithString:@""];
+    int *wordCount = 0;
+    for(NSUInteger i = 0; i < translation.length; i++) {
+        NSString *m = [translation substringWithRange:NSMakeRange(i, 1)];
+        if ([m isEqualToString:@" "]) {
+            if (word.length > 1) {
+                NSString *w_last = [word substringWithRange:NSMakeRange(word.length-1, 1)];
+                if ([w_last isEqualToString:@"."] &&
+                        wordCount == 0){
+                    if (result.length > 0) {
+                        [result appendString:@"\n"];
+                    }
+                    [result appendFormat:@"%@\n", word];
+                } else {
+                    if (result.length > 0) {
+                        NSString *res_last = [result substringWithRange:NSMakeRange(result.length-1, 1)];
+                        if ([res_last isEqualToString:@"("] ||
+                                [res_last isEqualToString:@"\n"] ||
+                                [res_last isEqualToString:@" "]) {
+                            [result appendString: word];
+                        } else {
+                            [result appendFormat:@" %@", word];
+                        }
+                    }
+                    else {
+                        [result appendString:word];
+                    }
+                }
+            } else {
+                if ([word isEqualToString:@","] ||
+                        [word isEqualToString:@")"] ||
+                        [word isEqualToString:@";"]) {
+                    [result appendString: word];
+                } else if ([word isEqualToString:@""] ||
+                        [word isEqualToString:@" "]) {
+                    //skip
+                } else {
+                    [result appendFormat:@" %@", word];
+                }
+
+            }
+
+            word = [[NSMutableString alloc] initWithString:@""];
+            wordCount++;
+        } else {
+            [word appendString:m];
+            if (i == translation.length-1) {
+                [result appendFormat:@" %@", word];
+            }
+        }
+    }
+    NSLog(result);
+    return result;
+}
+
+-(NSMutableString *) fixIndentation: (NSMutableString *)translation {
+    if (translation.length == 0) {
+        return translation;
+    }
+    if ([self isDigit:[translation substringWithRange:NSMakeRange(0, 1)]]){
+        return [self fixComplexIndentation:translation];
+    } else {
+        return [self fixSimpleIndentation:translation];
+    }
+}
+
 @end

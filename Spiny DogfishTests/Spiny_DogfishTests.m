@@ -117,4 +117,14 @@
     STAssertTrue([result isEqualToString:expected], @"Not expected result: %@", result);
 }
 
+- (void)test_process_enru_random_indent
+{
+    NSString *src = @"прил. сделанный или выбранный наугад ; случайный , произвольный";
+    NSString *expected = @"прил.\n"
+            "сделанный или выбранный наугад; случайный, произвольный";
+    Eng2RuPostProcessor *processor = [[Eng2RuPostProcessor alloc]init];
+    NSMutableString *result = [processor fixIndentation:[[NSMutableString alloc] initWithString:src]];
+    STAssertTrue([result isEqualToString:expected], @"Not expected result: %@", result);
+}
+
 @end
