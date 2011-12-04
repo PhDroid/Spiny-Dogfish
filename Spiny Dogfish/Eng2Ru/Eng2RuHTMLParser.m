@@ -36,12 +36,12 @@
     bool ignoreNextSymbol = false;
     bool opening = false;
     bool closing = false;
-    bool writing = false;
     bool transcriptionMode = false;
     bool transcriptionURLMode = false;
     NSMutableString * lastProperty_TranscriptionMode = [[NSMutableString alloc] initWithString:@""];
     NSMutableString * transcriptionUrl = [[NSMutableString alloc] initWithString:@""];
     NSMutableString *resultText = [[NSMutableString alloc] initWithString:@""];
+    NSMutableString *tagName = [[NSMutableString alloc] initWithString:@""];
 
     for (NSUInteger i = position; i < receivedString.length; i++) {
         if (ignoreNextSymbol) {
@@ -118,9 +118,6 @@
                 opening = false;
                 depthCount++;
             }
-            if (writing) {
-                writing = false;
-            }
             if (resultText.length > 0 &&
                 ![[resultText substringWithRange:NSMakeRange(resultText.length-1, 1)] isEqualToString: @" "]) {
                 [resultText appendString:@" "];
@@ -145,9 +142,6 @@
                     [resultText appendString:m];
                 }
             }
-            writing = true;
-        } else {
-            writing = false;
         }
 
         if (!opening && depthCount <= 0) {
