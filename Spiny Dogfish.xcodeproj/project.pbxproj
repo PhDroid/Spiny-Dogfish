@@ -25,6 +25,8 @@
 		B77A25131486D0DA00316BD7 /* word-random.txt in Resources */ = {isa = PBXBuildFile; fileRef = B77A25121486D0DA00316BD7 /* word-random.txt */; };
 		B77A25131486D0DA00316BD9 /* word-test.txt in Resources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BD8 /* word-test.txt */; };
 		B77A25131486D0DA00316BDB /* Eng2RuPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BDA /* Eng2RuPostProcessor.m */; };
+		B77A25131486D0DA00316BDF /* html-random-2011-11.txt in Resources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BDE /* html-random-2011-11.txt */; };
+		B77A25131486D0DA00316BE1 /* SimpleStack.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BE0 /* SimpleStack.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,9 @@
 		B77A25131486D0DA00316BD8 /* word-test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "word-test.txt"; sourceTree = "<group>"; };
 		B77A25131486D0DA00316BDA /* Eng2RuPostProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Eng2RuPostProcessor.m; sourceTree = "<group>"; };
 		B77A25131486D0DA00316BDC /* Eng2RuPostProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eng2RuPostProcessor.h; sourceTree = "<group>"; };
+		B77A25131486D0DA00316BDE /* html-random-2011-11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "html-random-2011-11.txt"; sourceTree = "<group>"; };
+		B77A25131486D0DA00316BE0 /* SimpleStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleStack.m; sourceTree = "<group>"; };
+		B77A25131486D0DA00316BE2 /* SimpleStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleStack.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +174,7 @@
 		B77A25111486D0DA00316BD7 /* en2ru-html */ = {
 			isa = PBXGroup;
 			children = (
+				B77A25131486D0DA00316BDE /* html-random-2011-11.txt */,
 				B77A25131486D0DA00316BD8 /* word-test.txt */,
 				B77A25121486D0DA00316BD7 /* word-random.txt */,
 			);
@@ -178,6 +184,8 @@
 		B77A25131486D0DA00316BDD /* Eng2Ru */ = {
 			isa = PBXGroup;
 			children = (
+				B77A25131486D0DA00316BE2 /* SimpleStack.h */,
+				B77A25131486D0DA00316BE0 /* SimpleStack.m */,
 				B77A25131486D0DA00316BDA /* Eng2RuPostProcessor.m */,
 				B77A25131486D0DA00316BDC /* Eng2RuPostProcessor.h */,
 				B75A9CF3148156C30095D36F /* Eng2RuNotFoundException.m */,
@@ -262,6 +270,7 @@
 				B75A9CD3148156C30095D36A /* MainStoryboard.storyboard in Resources */,
 				B77A25131486D0DA00316BD7 /* word-random.txt in Resources */,
 				B77A25131486D0DA00316BD9 /* word-test.txt in Resources */,
+				B77A25131486D0DA00316BDF /* html-random-2011-11.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +311,7 @@
 				B75A9CF3148156C30095D36D /* Eng2RuHTMLParser.m in Sources */,
 				B75A9CF3148156C30095D370 /* Eng2RuNotFoundException.m in Sources */,
 				B77A25131486D0DA00316BDB /* Eng2RuPostProcessor.m in Sources */,
+				B77A25131486D0DA00316BE1 /* SimpleStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

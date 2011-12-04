@@ -45,6 +45,25 @@
     }
 }
 
+- (void)test_translate_enru_random2
+{
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"html-random-2011-11"
+                                                     ofType:@"txt"];
+    NSError *error;
+    NSString* content = [NSString stringWithContentsOfFile:path
+                                                  encoding:NSUTF8StringEncoding
+                                                     error:&error];
+
+    Eng2RuHTMLParser *parser = [[Eng2RuHTMLParser alloc] init];
+    @try {
+        NSMutableString *result = [parser parseHTMLString:content];
+        NSString *expected = @"random LingvoUniversal (En-Ru) [ =\"/Handlers/TranscriptionHandler.ashx?Text='r%C3%A6nd%C9%99m\"] брит.                      амер.                      прил. сделанный или выбранный наугад ; случайный , произвольный Розгорнути статтю &#187; &#171; Згорнути статтю ";
+        STAssertTrue( [result isEqualToString: expected], @"Not expected result: %@", result);
+    } @catch (Eng2RuNotFoundException *e) {
+        STFail(@"Parsing this word should not give errors.");
+    }
+}
+
 - (void)test_translate_enru_test
 {
     NSString* path = [[NSBundle mainBundle] pathForResource:@"word-test"
