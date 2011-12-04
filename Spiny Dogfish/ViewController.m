@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Eng2RuHTMLParser.h"
 #import "Eng2RuNotFoundException.h"
+#import "Eng2RuPostProcessor.h"
 
 @implementation ViewController
 @synthesize searchBar;
@@ -187,6 +188,7 @@ enum State {
             self.searchDisplayController.searchResultsTableView.hidden = true;
             self.progressView.hidden = false;
             self.tableView.hidden = true;
+            self.textView.hidden = true;
             self.progressView.progress = 0.05;
             [self.progressView becomeFirstResponder];
             break;
@@ -194,6 +196,7 @@ enum State {
             self.searchDisplayController.searchResultsTableView.hidden = false;
             self.progressView.hidden = true;
             self.tableView.hidden = false;
+            self.textView.hidden = true;
             [self.searchDisplayController.searchResultsTableView becomeFirstResponder];
             break;
         case ShowTranslation:
@@ -243,7 +246,6 @@ enum State {
 }
 
 NSMutableData *_data;
-NSMutableString *_result;
 
 -(void)dataCardNotFound {
     //todo:Handle the error properly
@@ -251,13 +253,16 @@ NSMutableString *_result;
 }
 
 -(void)dataCardParsed:(NSMutableString *)result {
-    _result = result;
     //todo: paste real word here
-    NSMutableArray *items = [[NSMutableArray alloc] initWithObjects:
-                              self.searchBar.text,
-                              nil];
-    self.searchResults = items;
-    [self.searchDisplayController.searchResultsTableView reloadData];
+//    NSMutableArray *items = [[NSMutableArray alloc] initWithObjects:
+//                              self.searchBar.text,
+//                              nil];
+//    self.searchResults = items;
+//    [self.searchDisplayController.searchResultsTableView reloadData];
+    Eng2RuPostProcessor *processor = [[Eng2RuPostProcessor alloc] init];
+    [processor process:result];
+    [self switchState:ShowTranslation];
+    self.textView.text = [processor fixIndentation:[processor getTranslation]];
 }
 
 -(void)connection:(NSURLConnection*)connection didReceiveResponse:(NSURLResponse*)response
@@ -285,7 +290,6 @@ NSMutableString *_result;
     } @catch (Eng2RuNotFoundException *e) {
         [self dataCardNotFound];
     }
-    [self switchState:FinishedSearching];
 }
 
 @end

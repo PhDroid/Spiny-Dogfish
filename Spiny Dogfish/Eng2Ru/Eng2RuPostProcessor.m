@@ -150,7 +150,7 @@ typedef enum {
     LevelThree
 } IndentLevel;
 
--(NSMutableString *) fixComplexIndentation: (NSMutableString *)translation {
+-(NSMutableString *) fixComplexIndentation: (NSString *)translation {
     NSMutableString *result = [[NSMutableString alloc] initWithString:@""];
     NSMutableString *word = [[NSMutableString alloc] initWithString:@""];
     IndentLevel level = None;
@@ -231,7 +231,7 @@ typedef enum {
     return result;
 }
 
--(NSMutableString *) fixSimpleIndentation: (NSMutableString *)translation {
+-(NSMutableString *) fixSimpleIndentation: (NSString *)translation {
     NSMutableString *result = [[NSMutableString alloc] initWithString:@""];
     NSMutableString *word = [[NSMutableString alloc] initWithString:@""];
     int *wordCount = 0;
@@ -288,9 +288,9 @@ typedef enum {
     return result;
 }
 
--(NSMutableString *) fixIndentation: (NSMutableString *)translation {
+-(NSMutableString *) fixIndentation: (NSString *)translation {
     if (translation.length == 0) {
-        return translation;
+        return [[NSMutableString alloc] initWithString:translation];
     }
     if ([self isDigit:[translation substringWithRange:NSMakeRange(0, 1)]]){
         return [self fixComplexIndentation:translation];

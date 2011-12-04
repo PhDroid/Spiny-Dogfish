@@ -113,7 +113,7 @@
             "\t\tв) определять пробу (драгоценного металла)\n"
             "3. прил. испытательный, пробный, контрольный, проверочный";
     Eng2RuPostProcessor *processor = [[Eng2RuPostProcessor alloc]init];
-    NSMutableString *result = [processor fixIndentation:[[NSMutableString alloc] initWithString:src]];
+    NSMutableString *result = [processor fixIndentation:src];
     STAssertTrue([result isEqualToString:expected], @"Not expected result: %@", result);
 }
 
@@ -123,7 +123,7 @@
     NSString *expected = @"прил.\n"
             "сделанный или выбранный наугад; случайный, произвольный";
     Eng2RuPostProcessor *processor = [[Eng2RuPostProcessor alloc]init];
-    NSMutableString *result = [processor fixIndentation:[[NSMutableString alloc] initWithString:src]];
+    NSMutableString *result = [processor fixIndentation:src];
     STAssertTrue([result isEqualToString:expected], @"Not expected result: %@", result);
 }
 
