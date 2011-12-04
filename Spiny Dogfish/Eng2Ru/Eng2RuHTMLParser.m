@@ -30,6 +30,7 @@
     }
     
     NSUInteger position = match.location;
+    //todo:change depthCount into stack
     int depthCount = 0;
     bool propertyValueMode = false;
     NSString *propertyModeInitiator = @"";
