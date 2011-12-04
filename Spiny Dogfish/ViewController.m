@@ -15,6 +15,7 @@
 @synthesize searchDisplayController;
 @synthesize textView;
 @synthesize tableView;
+@synthesize progressView;
 @synthesize allItems;
 @synthesize searchResults;
 @synthesize searching;
@@ -53,6 +54,8 @@
     [self setSearchBar:nil];
     [self setSearchDisplayController:nil];
     [self setTextView:nil];
+    [self setTableView:nil];
+    [self setProgressView:nil];
     [self setTableView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
@@ -169,6 +172,52 @@
     theSearchBar.showsCancelButton = NO;
 }
 
+enum State {
+    None,
+    Searching,
+    FinishedSearching,
+    ShowTranslation
+};
+
+- (void)switchState:(int) state {
+    switch (state) {
+        case None:
+            break;
+        case Searching:
+            self.searchDisplayController.searchResultsTableView.hidden = true;
+            self.progressView.hidden = false;
+            self.tableView.hidden = true;
+            self.progressView.progress = 0.05;
+            [self.progressView becomeFirstResponder];
+            break;
+        case FinishedSearching:
+            self.searchDisplayController.searchResultsTableView.hidden = false;
+            self.progressView.hidden = true;
+            self.tableView.hidden = false;
+            [self.searchDisplayController.searchResultsTableView becomeFirstResponder];
+            break;
+        case ShowTranslation:
+            self.searchDisplayController.searchResultsTableView.hidden = true;
+            self.progressView.hidden = true;
+            self.tableView.hidden = true;
+            self.textView.hidden = false;
+            [self.textView becomeFirstResponder];
+            break;
+        default:
+            //todo: throw error
+            break;
+    }    
+}
+
+-(void)makeProgress{
+    if (1 - self.progressView.progress < 0.17 ||
+            self.progressView.progress > 1) {
+        self.progressView.progress = 1;
+    } else {
+        self.progressView.progress += 0.17;
+    }
+}
+
 // called when Search button pressed
 - (void)searchBarSearchButtonClicked:(UISearchBar *)theSearchBar {
     //sending request to lingvo
@@ -190,6 +239,7 @@
     [[NSURLConnection alloc] initWithRequest:request delegate:self startImmediately:TRUE];
 
     //end of request
+    [self switchState:Searching];
 }
 
 NSMutableData *_data;
@@ -208,23 +258,23 @@ NSMutableString *_result;
                               nil];
     self.searchResults = items;
     [self.searchDisplayController.searchResultsTableView reloadData];
-    //[self.textView setHidden:FALSE];
-    //[self.tableView setHidden:TRUE];
-    //[self.textView becomeFirstResponder];
 }
 
 -(void)connection:(NSURLConnection*)connection didReceiveResponse:(NSURLResponse*)response
 {
     _data = [[NSMutableData alloc] init]; // _data being an ivar
+    [self makeProgress];
 }
 -(void)connection:(NSURLConnection*)connection didReceiveData:(NSData*)data
 {
     [_data appendData:data];
+    [self makeProgress];
 }
 -(void)connection:(NSURLConnection*)connection didFailWithError:(NSError*)error
 {
     //todo:Handle the error properly
     NSLog( @"Error: %@", error.description);
+    [self switchState:FinishedSearching];
 }
 
 -(void)connectionDidFinishLoading:(NSURLConnection*)connection {
@@ -235,6 +285,7 @@ NSMutableString *_result;
     } @catch (Eng2RuNotFoundException *e) {
         [self dataCardNotFound];
     }
+    [self switchState:FinishedSearching];
 }
 
 @end
