@@ -35,6 +35,7 @@
 	
     self.searching = FALSE;
     self.tableView.scrollEnabled = YES;
+    self.textView.scrollEnabled = true;
 
     //todo: load from SQL databases
     NSMutableArray *items = [[NSMutableArray alloc] initWithObjects:
