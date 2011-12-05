@@ -7,6 +7,8 @@
 
 #import "Eng2RuHTMLParser.h"
 #import "Eng2RuNotFoundException.h"
+#import "SimpleStack.h"
+#import "Eng2RuParsingException.h"
 
 
 @implementation Eng2RuHTMLParser
@@ -18,7 +20,6 @@
 }
 
 - (NSMutableString *)parseHTMLString:(NSString *) receivedString {
-    NSLog( @"HTML: %@", receivedString);
     NSString *start_pattern = @"<div class=\"data card\">";
 
     NSRange match;
@@ -31,6 +32,7 @@
     
     NSUInteger position = match.location;
     //todo:change depthCount into stack
+    SimpleStack *stack = [[SimpleStack alloc] init];
     int depthCount = 0;
     bool propertyValueMode = false;
     NSString *propertyModeInitiator = @"";
@@ -42,6 +44,7 @@
     NSMutableString * lastProperty_TranscriptionMode = [[NSMutableString alloc] initWithString:@""];
     NSMutableString * transcriptionUrl = [[NSMutableString alloc] initWithString:@""];
     NSMutableString *resultText = [[NSMutableString alloc] initWithString:@""];
+    bool writingTagName = false;
     NSMutableString *tagName = [[NSMutableString alloc] initWithString:@""];
 
     for (NSUInteger i = position; i < receivedString.length; i++) {
@@ -105,7 +108,7 @@
         if (propertyValueMode) { //ignore everything while in property value mode
             continue;
         }
-        if ([m isEqualToString: @"/"]) {
+        if (opening && [m isEqualToString: @"/"]) {
             closing = true;
             opening = false;
             continue;
@@ -113,39 +116,66 @@
         if ([m isEqualToString: @">"]) {
             if (closing) {
                 closing = false;
-                depthCount--;
+                NSString *openingTag = (NSString *)[stack pop];
+                if (![tagName isEqualToString:openingTag]) {
+                    //todo: change to own exception
+                    //[NSException raise:@"Opening and closing tag do not match %@ == %@", openingTag, tagName];
+                }
+                tagName = [[NSMutableString alloc] init];
+                writingTagName = false;
             }
             if (opening) {
                 opening = false;
-                depthCount++;
             }
             if (resultText.length > 0 &&
                 ![[resultText substringWithRange:NSMakeRange(resultText.length-1, 1)] isEqualToString: @" "]) {
                 [resultText appendString:@" "];
             }
-            continue;
         }
         if ([m isEqualToString: @"<"]) {
             opening = true;
-            continue;
+            writingTagName = true;
+        }
+
+        if (writingTagName) {
+            if ([m isEqualToString:@" "] ||
+                    [m isEqualToString:@">"]) {
+
+                if ([tagName isEqualToString:@"img"] ||
+                        [tagName isEqualToString:@"param"]){
+                    //skip
+                    tagName = [[NSMutableString alloc] init];
+                } else {
+                    [stack push:[[NSString alloc] initWithString:tagName]];
+                    tagName = [[NSMutableString alloc] init];
+                }
+                writingTagName = false;
+            } else if ([m isEqualToString:@"/"] ||
+                    [m isEqualToString:@"<"]) {
+                //skip
+            } else {
+                [tagName appendString:m];
+            }
         }
 
         if (!opening && !closing) { // main logic
-            if (resultText.length == 0) {
+            if ([m isEqualToString: @"<"] ||
+                    [m isEqualToString: @">"]){
+                //ignore
+            } else if (resultText.length == 0) {
                 [resultText appendString:m];
             } else {
-                if ([m isEqualToString:@" "] &&
+                 if ([m isEqualToString:@" "] &&
                         ![[resultText substringWithRange:NSMakeRange(resultText.length-1, 1)] isEqualToString: @" "]) {
                     //ignore more than one space
                     [resultText appendString:m];
-                }
-                else {
+                } else {
                     [resultText appendString:m];
                 }
             }
         }
 
-        if (!opening && depthCount <= 0) {
+        if (!opening && stack.length == 0) {
             break;
         }
     }

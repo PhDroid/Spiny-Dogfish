@@ -27,6 +27,7 @@
 		B77A25131486D0DA00316BDB /* Eng2RuPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BDA /* Eng2RuPostProcessor.m */; };
 		B77A25131486D0DA00316BDF /* html-random-2011-11.txt in Resources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BDE /* html-random-2011-11.txt */; };
 		B77A25131486D0DA00316BE1 /* SimpleStack.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BE0 /* SimpleStack.m */; };
+		B77A25131486D0DA00316BE4 /* Eng2RuParsingException.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BE3 /* Eng2RuParsingException.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		B77A25131486D0DA00316BDE /* html-random-2011-11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "html-random-2011-11.txt"; sourceTree = "<group>"; };
 		B77A25131486D0DA00316BE0 /* SimpleStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleStack.m; sourceTree = "<group>"; };
 		B77A25131486D0DA00316BE2 /* SimpleStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleStack.h; sourceTree = "<group>"; };
+		B77A25131486D0DA00316BE3 /* Eng2RuParsingException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Eng2RuParsingException.m; sourceTree = "<group>"; };
+		B77A25131486D0DA00316BE5 /* Eng2RuParsingException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eng2RuParsingException.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +187,8 @@
 		B77A25131486D0DA00316BDD /* Eng2Ru */ = {
 			isa = PBXGroup;
 			children = (
+				B77A25131486D0DA00316BE5 /* Eng2RuParsingException.h */,
+				B77A25131486D0DA00316BE3 /* Eng2RuParsingException.m */,
 				B77A25131486D0DA00316BE2 /* SimpleStack.h */,
 				B77A25131486D0DA00316BE0 /* SimpleStack.m */,
 				B77A25131486D0DA00316BDA /* Eng2RuPostProcessor.m */,
@@ -312,6 +317,7 @@
 				B75A9CF3148156C30095D370 /* Eng2RuNotFoundException.m in Sources */,
 				B77A25131486D0DA00316BDB /* Eng2RuPostProcessor.m in Sources */,
 				B77A25131486D0DA00316BE1 /* SimpleStack.m in Sources */,
+				B77A25131486D0DA00316BE4 /* Eng2RuParsingException.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

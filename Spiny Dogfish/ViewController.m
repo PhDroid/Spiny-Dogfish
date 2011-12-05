@@ -283,6 +283,8 @@ NSMutableData *_data;
 }
 
 -(void)connectionDidFinishLoading:(NSURLConnection*)connection {
+    NSLog( @"HTML: %@", [[NSString alloc] initWithData:_data
+                encoding:NSUTF8StringEncoding]);
     Eng2RuHTMLParser *parser = [[Eng2RuHTMLParser alloc] init];
     @try {
         NSMutableString *result = [parser parseHTMLData:_data];
