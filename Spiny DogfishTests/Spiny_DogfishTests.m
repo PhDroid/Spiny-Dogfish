@@ -62,6 +62,24 @@
     }
 }
 
+- (void)test_translate_enru_children {
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"html-children"
+                                                     ofType:@"txt"];
+    NSError *error;
+    NSString* content = [NSString stringWithContentsOfFile:path
+                                                  encoding:NSUTF8StringEncoding
+                                                     error:&error];
+
+    Eng2RuHTMLParser *parser = [[Eng2RuHTMLParser alloc] init];
+    @try {
+        NSMutableString *result = [parser parseHTMLString:content];
+        NSString *expected = @"children LingvoUniversal (En-Ru) [ =\"/Handlers/TranscriptionHandler.ashx?Text='%CA%A7%C9%AAldr(%C9%99)n\"] брит.                      / амер.                      мн.  от child ";
+        STAssertTrue( [result isEqualToString: expected], @"Not expected result: %@", result);
+    } @catch (Eng2RuNotFoundException *e) {
+        STFail(@"Parsing this word should not give errors.");
+    }
+}
+
 - (void)test_translate_enru_test {
     NSString* path = [[NSBundle mainBundle] pathForResource:@"word-test"
                                                      ofType:@"txt"];

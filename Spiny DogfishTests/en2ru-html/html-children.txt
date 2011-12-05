@@ -1,0 +1,1645 @@
+<!DOCTYPE HTML>
+<html xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+	<title>Англо-російська переклад &#171;children&#187; - ABBYY Lingvo.Pro</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=100" />
+<meta property="fb:admins" content="1322763283" />
+<meta name="EngineVersion" content="1.0.0.80 (private)" />
+<meta name="LISVersion" content="14.0.0.833 (private)" />
+
+
+<link href="//www.abbyyonline.com/Content/common.css?ver=1.7.15477.697" type="text/css" rel="Stylesheet" />
+
+
+
+<link href="/Content/1.7.15477.697/CssStandard" rel="stylesheet" type="text/css" />
+
+<!--[if lt IE 8]>
+<link href="/Content/1.7.15477.697/CssIE" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+<!--[if lte IE 8]>
+    <link href="/Content/1.7.15477.697/CssIE678" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+<link href="/favicon.png" rel="icon" type="image/png" />
+<link href="/uk/Rss" rel="alternate" type="application/rss+xml" title="RSS 2.0" />
+
+
+
+
+<script type="text/javascript">
+	var ContentPath = '/Content/1.7.15477.697';
+
+	(function (w, c) {
+		w[c] = w[c] || [];
+
+		w.Startup = function(func) {
+			if (window['$']) {
+				func();
+			} else {
+				w[c].push(func);
+			}
+		};
+	})(window, 'lingvopro_callbacks');
+</script>
+
+
+
+	<meta name="description" content="Переклад «children» з англо російська з англо-російської словника Lingvo" />
+	<meta name="keywords" content="Переклад «children» з англо російська з англо-російської словника Lingvo" />
+
+</head>
+<body class="nojs">
+	<script type="text/javascript">
+		document.body.className = "js";
+	</script>
+	<div class="b-popup js-popup-login-window b-popup_login-form b-popup_design">
+		<div class="top-line all-line">
+			<div class="l-t-c all-corn left-side"></div>
+			<div class="r-t-c all-corn right-side"></div>
+		</div>
+		<div class="b-popup-close"></div>
+		<div class="b-popup_cont">
+			<div class="b-popup_cont_bg"><div class="rdiv righty grey-border"><div class="rdiv-t2"></div ><div class="rdiv-cont"><form class="logon-right no_asterisk" action="http://www.abbyyonline.com/uk/Account/LogOn" method="post">
+<fieldset>
+	<legend>Вхід:</legend>
+	<input id="service" name="service" type="hidden" value="lingvoua" />
+	<input id="back" name="back" type="hidden" value="%2fuk%2fSearch%2fen-ru%2fchildren" />
+	<div class="rel">
+		<label for="username" class="active">E-mail</label>
+		<input class="text active" tabindex="1" id="username" maxlength="100" name="username" tabindex="1" type="text" />
+	</div>
+	<div class="rel">
+		<label for="password" class="active">Пароль</label>
+		<input class="text active" tabindex="2" id="password" maxlength="100" name="password" tabindex="2" type="password" />
+	</div>
+</fieldset>
+<a id="forgot_link" class="forgot_right" href="http://www.abbyyonline.com/uk/Account/ResetPassword" tabindex="5" onclick='ResetPasswordRememberEmail("http://www.abbyyonline.com/uk/Account/ResetPassword");'>Забули пароль?</a>
+<br class="cl"/>
+<label class="check" for="rememberMe">
+	<input tabindex="3" id="rememberMe" name="rememberMe" tabindex="3" type="checkbox" value="true" />
+	<input name="rememberMe" type="hidden" value="false" />Запам'ятати мене
+</label>
+<span class="btn-box red_color"><a href="#form" class="button"><div class="button_l"></div><div class="button_r"></div><input class="submit_form button_input" type="submit" value="Увійти до системи"  id="Submit" tabindex = 5 onclick="pageTracker._trackPageview('online_fine/login_button');" /></a></span>
+<br class="cl"/>
+<div class="login_with_service_right">
+	<div class="login_with_service_right_icons">
+		<a class="icon_google" href="http://www.abbyyonline.com/uk/OpenAuth/Google?origin=http://www.lingvo.ua/uk/Search/en-ru/children&loginType=google" onclick="pageTracker._trackPageview('online_fine/login_google');">Google</a>
+		<a class="icon_facebook" href="http://www.abbyyonline.com/uk/OpenAuth/LoginWith?origin=http://www.lingvo.ua/uk/Search/en-ru/children&loginType=facebook" onclick="pageTracker._trackPageview('online_fine/login_facebook');">Facebook</a>
+	</div>
+	Увійти через
+</div>
+<a class="register-right-link" href="http://www.abbyyonline.com/uk/Account/Register/?service=lingvoua&back=%2fuk%2fSearch%2fen-ru%2fchildren">Не зареєстровані?</a>
+</form></div><div class="rdiv-b2"></div></div></div>
+		</div>
+		<div class="bottom-line all-line">
+			<div class="l-b-c all-corn left-side"></div>
+			<div class="r-b-c all-corn right-side"></div>
+		</div>
+	</div>
+
+
+	<div class="b-popup js-popup-nickname-window b-popup_nickname-form b-popup_design"
+	style="position: fixed; margin-left: -108.5px; margin-top: -168px; display: hide;
+	overflow: visible;">
+	<div class="top-line all-line">
+		<div class="l-t-c all-corn left-side">
+		</div>
+		<div class="r-t-c all-corn right-side">
+		</div>
+	</div>
+	<div class="b-popup-close js-nickname-element-hide">
+	</div>
+	<div class="b-popup_cont">
+		<div class="b-popup_cont_bg">
+			<div class="righty grey-border">
+				<div class="rdiv-t2">
+				</div>
+				<div class="rdiv-cont">
+					<form method="post" action="" class="logon-right no_asterisk js-nickname-form">
+					<fieldset>
+						<div class="rel">
+							Введіть псевдонім:
+							<br />
+							<input type="text" class="nickNameTextBox" name="nickname" maxlength="100" id="js-nickname" tabindex="1" class="text active"
+							 value="351" />
+							<br />
+							<div>
+								<span id="js-nickname-error" class="error"></span>
+							</div>
+							<span class="description-text">
+								Псевдонім – це ім’я, під яким будуть публікуватися ваші переклади. Ви можете змінити псевдонім будь-коли.
+							</span>
+						</div>
+						<label class="active">
+						</label>
+						<span class="btn-box red_color"><a class="button" href="#form">
+							<div class="button_l">
+							</div>
+							<div class="button_r">
+							</div>
+							<input id="Submit" class="button_input js-nickname-button" type="button"
+								tabindex="5" value="Зберегти" />
+						</a></span>
+						<div class="clear">
+						</div>
+					</fieldset>
+					</form>
+				</div>
+				<div class="rdiv-b2">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-line all-line">
+		<div class="l-b-c all-corn left-side">
+		</div>
+		<div class="r-b-c all-corn right-side">
+		</div>
+	</div>
+</div>
+
+	<div class="page">
+
+	<div class="topmenu">
+		<div class="topmenu-group">
+				<img src="//www.abbyyonline.com/Content/cart.gif?ver=1.7.15477.697" width="19" height="15" alt="Кошик" title="Кошик" style="margin-bottom: -3px;" />
+			| <a href="http://store.abbyy.ua/">Магазин</a></div>
+			<div class="topmenu-group">
+				<a href="http://www.abbyyonline.com/uk/Account/Register?service=lingvoua&amp;back=%2fuk%2fSearch%2fen-ru%2fchildren%3fforceReAuth%3d1">Реєстрація</a>
+				| <a href="http://www.abbyyonline.com/uk/Account/LogOn?service=lingvoua&amp;back=%2fuk%2fSearch%2fen-ru%2fchildren">Вхід</a></div>
+		<div class="topmenu-group">
+				<a href="http://www.abbyyonline.com/uk/Account/Language/ru?service=lingvoua&amp;back=%2fuk%2fSearch%2fen-ru%2fchildren">Рус</a>
+			|
+				<span>Укр</span>
+		</div>
+	</div>
+	<div class="b-head_ua js-ua-head-menu">
+		<div class="b-head_ua__l-col">
+			<h1 class="b-head_ua__logo">
+				<a href="/uk">
+					<img width="180" height="38" src="/Content/1.7.15477.697/img/Logo_Lingvo.png" alt="ABBYY Lingvo Online" title="ABBYY Lingvo Online" />
+				</a>
+			</h1>
+			<p class="b-head_ua__seo-text js-additional-seotext ">
+				Lingvo Online – безкоштовний онлайн-словник. Російсько-англійський, українсько-англійський, тлумачний український словник та інші словники безкоштовно
+			</p>
+		</div>
+		<div class="b-head_ua__r-col">
+			<ul class="b-head_ua__menu">
+				<li class="b-head_ua__menu__item">
+					<a class="b-head_ua__link" href="http://www.abbyy.ua/products/linguistic/lingvo/" target="_blank">Словники для ПК</a>
+				</li>
+				<li class="b-head_ua__menu__item">
+					<a class="b-head_ua__link" href="http://www.abbyy.ua/solutions/business/translate/" target="_blank">Корпоративним клієнтам</a>
+				</li>
+				<li class="b-head_ua__menu__item js-additional-menu ">
+					<a class="b-head_ua__link" href="http://www.abbyy.ua/products/mobile/lingvomobile/" target="_blank">Мобільні словники</a>
+				</li>
+				<li class="b-head_ua__menu__item js-additional-menu ">
+					<a class="b-head_ua__link" href="http://www.abbyyonline.com/" target="_blank">ABBYY Online</a>
+				</li>
+			</ul>
+		</div>
+		<div class="b-head_ua__c-col">
+			<div class="b-head_ua__facebook">
+				<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Flingvo.ua&amp;width=238&amp;colorscheme=light&amp;show_faces=false&amp;border_color&amp;stream=false&amp;header=false&amp;height=62&amp;ref=LingvoProTop" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:238px; height:62px;" allowTransparency="true"></iframe>
+			</div>
+				<p class="b-head_ua__direction-search js-additional-seotext ">англо-російська переклад «<strong>children</strong>»</p>
+		</div>
+		<div class="clear"></div>
+		<div class="b-head_ua__border"></div>
+		<div class="b-head_ua__lb"></div>
+		<div class="b-head_ua__rb"></div>
+		<div class="b-head_ua__pointer js-additional-pointer b-head_ua__pointer_active"></div>
+	</div>
+
+		<div class="bd">
+				<div class="b-left-panel">
+
+
+
+
+<div class="b-window-examples g-hidden">
+	<a name="up"></a>
+	<div class="tl all-corn"></div>
+	<div class="tr all-corn"></div>
+	<div class="line-right">
+		<div class="line-left">
+			<div class="inside-content"></div>
+			<div class="appearance g-hidden"></div>
+		</div>
+	</div>
+	<div class="bl all-corn"></div>
+	<div class="br all-corn"></div>
+</div>
+
+
+
+<div class="js-correct-height">
+	<div class="b-search-panel-box js-search-panel">
+		<div class="b-search-panel_short__wrapper">
+			<div class="b-search-panel js-search-panel-trigger ">
+				<div class="b-search-panel__data">
+
+<form class="js-search-form" action="/uk/Search" method="get">
+	<input type="hidden" id="searchMode" name="searchMode" value="Translations"/>
+	<table class="b-search-panel__table">
+		<tr class="b-search-panel__navigation">
+			<td class="b-search-panel__navigation_field">
+				<div class="b-search-field-without-img"></div>
+				<table class="b-search-panel__field">
+					<tr>
+						<td class="b-search-panel__field_tl"></td>
+						<td class="b-search-panel__field_text" rowspan="2">
+							<div class="b-search-panel__field-wrap">
+								<textarea autocomplete="off" class="text general-text-field virtual-keyboard js-jq-watermark js-suggests-load js-submit-search-form auto-resizable" cols="20" data-url-suggests="/uk/Home/SuggestsLink" id="searchText" lang="en" maxlength="150" name="searchText" rows="2" tabindex="101" title="Введіть слово або речення ">
+children</textarea>
+								<table class="b-search-panel_droplang g-hidden js-search-dropdownlang">
+									<tr>
+										<td class="b-search-panel_droplang_srclang">
+											<div class="js-swap-first">
+												<div class="js-dropdown-parent b-dropdownlang_search-box">
+
+
+	<div class="b-dropdownlang b-dropdownlang_search js-dropdown">
+		<div class="b-dropdownlang__data">
+			<div class="b-dropdownlang_search__cont">
+				<span class="b-dropdownlang__icon-lang"></span>
+				<span class="b-dropdownlang__lang js-name-lang">EN</span>
+			</div>
+		</div>
+		<div class="b-dropdownlang__grad">
+			<div class="b-dropdownlang__grad__lt"></div>
+			<div class="b-dropdownlang__grad__rt"></div>
+			<div class="b-dropdownlang__grad__rb"></div>
+			<div class="b-dropdownlang__grad__lb"></div>
+		</div>
+	</div>
+
+	<div class="b-round-box_dropdown-list b-round-box js-dropdown-list b-round-box_dropdown-list_search g-hidden">
+		<div class="top-line all-line">
+			<div class="l-t-c left-side all-corn all-one-bg"></div>
+			<div class="r-t-c right-side all-corn all-one-bg"></div>
+		</div>
+		<div class="b-round-box_cont">
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">EN</span>
+						<span class="culture">en</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">EN</span>
+					</span>
+					<span class="text-lang">Англійська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">EL</span>
+						<span class="culture">el</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">EL</span>
+					</span>
+					<span class="text-lang">Грецька</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">DA</span>
+						<span class="culture">da</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">DA</span>
+					</span>
+					<span class="text-lang">Датська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">ES</span>
+						<span class="culture">es</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">ES</span>
+					</span>
+					<span class="text-lang">Іспанська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">IT</span>
+						<span class="culture">it</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">IT</span>
+					</span>
+					<span class="text-lang">Італійська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">KK</span>
+						<span class="culture">kk</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">KK</span>
+					</span>
+					<span class="text-lang">Казахська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">CH</span>
+						<span class="culture">zh-CN</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">CH</span>
+					</span>
+					<span class="text-lang">Китайська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">LA</span>
+						<span class="culture">la</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">LA</span>
+					</span>
+					<span class="text-lang">Латинська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">NL</span>
+						<span class="culture">nl</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">NL</span>
+					</span>
+					<span class="text-lang">Нідерландська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">DE</span>
+						<span class="culture">de</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">DE</span>
+					</span>
+					<span class="text-lang">Німецька</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">NO</span>
+						<span class="culture">nb-no</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">NO</span>
+					</span>
+					<span class="text-lang">Норвезька</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">PL</span>
+						<span class="culture">pl</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">PL</span>
+					</span>
+					<span class="text-lang">Польська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">PT</span>
+						<span class="culture">pt-br</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">PT</span>
+					</span>
+					<span class="text-lang">Португальська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">RU</span>
+						<span class="culture">ru</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">RU</span>
+					</span>
+					<span class="text-lang">Російська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">TT</span>
+						<span class="culture">tt</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">TT</span>
+					</span>
+					<span class="text-lang">Татарська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">TR</span>
+						<span class="culture">tr</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">TR</span>
+					</span>
+					<span class="text-lang">Турецька</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">HU</span>
+						<span class="culture">hu</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">HU</span>
+					</span>
+					<span class="text-lang">Угорська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">UK</span>
+						<span class="culture">uk</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">UK</span>
+					</span>
+					<span class="text-lang">Українська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">FI</span>
+						<span class="culture">fi</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">FI</span>
+					</span>
+					<span class="text-lang">Фінська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">FR</span>
+						<span class="culture">fr</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">FR</span>
+					</span>
+					<span class="text-lang">Французька</span>
+				</div>
+		</div>
+		<div class="bottom-line all-line">
+			<div class="l-b-c left-side all-corn all-one-bg"></div>
+			<div class="r-b-c right-side all-corn all-one-bg"></div>
+		</div>
+	</div>
+	<input type="hidden" name="SearchSrcLang" value="en" class="js-culture-name" disabled=&quot;disabled&quot; />
+</div>
+
+											</div>
+										</td>
+
+										<td class="b-search-panel_droplang_swaplang js-interpretations-tab-exclude ">
+											<img class="js-fancy-swap-trigger" width="14" height="23" src="/Content/1.7.15477.697/img/exchange_lang.gif" alt="&lt;-&gt;" title="Змінити напрямок перекладу" />
+										</td>
+										<td class="b-search-panel_droplang_destlang js-interpretations-tab-exclude ">
+											<div class="js-swap-second">
+												<div class="js-dropdown-parent b-dropdownlang_search-box">
+
+
+	<div class="b-dropdownlang b-dropdownlang_search js-dropdown">
+		<div class="b-dropdownlang__data">
+			<div class="b-dropdownlang_search__cont">
+				<span class="b-dropdownlang__icon-lang"></span>
+				<span class="b-dropdownlang__lang js-name-lang">RU</span>
+			</div>
+		</div>
+		<div class="b-dropdownlang__grad">
+			<div class="b-dropdownlang__grad__lt"></div>
+			<div class="b-dropdownlang__grad__rt"></div>
+			<div class="b-dropdownlang__grad__rb"></div>
+			<div class="b-dropdownlang__grad__lb"></div>
+		</div>
+	</div>
+
+	<div class="b-round-box_dropdown-list b-round-box js-dropdown-list b-round-box_dropdown-list_search g-hidden">
+		<div class="top-line all-line">
+			<div class="l-t-c left-side all-corn all-one-bg"></div>
+			<div class="r-t-c right-side all-corn all-one-bg"></div>
+		</div>
+		<div class="b-round-box_cont">
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">EN</span>
+						<span class="culture">en</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">EN</span>
+					</span>
+					<span class="text-lang">Англійська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">EL</span>
+						<span class="culture">el</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">EL</span>
+					</span>
+					<span class="text-lang">Грецька</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">DA</span>
+						<span class="culture">da</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">DA</span>
+					</span>
+					<span class="text-lang">Датська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">ES</span>
+						<span class="culture">es</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">ES</span>
+					</span>
+					<span class="text-lang">Іспанська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">IT</span>
+						<span class="culture">it</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">IT</span>
+					</span>
+					<span class="text-lang">Італійська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">KK</span>
+						<span class="culture">kk</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">KK</span>
+					</span>
+					<span class="text-lang">Казахська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">CH</span>
+						<span class="culture">zh-CN</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">CH</span>
+					</span>
+					<span class="text-lang">Китайська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">LA</span>
+						<span class="culture">la</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">LA</span>
+					</span>
+					<span class="text-lang">Латинська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">NL</span>
+						<span class="culture">nl</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">NL</span>
+					</span>
+					<span class="text-lang">Нідерландська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">DE</span>
+						<span class="culture">de</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">DE</span>
+					</span>
+					<span class="text-lang">Німецька</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">NO</span>
+						<span class="culture">nb-no</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">NO</span>
+					</span>
+					<span class="text-lang">Норвезька</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">PL</span>
+						<span class="culture">pl</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">PL</span>
+					</span>
+					<span class="text-lang">Польська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">PT</span>
+						<span class="culture">pt-br</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">PT</span>
+					</span>
+					<span class="text-lang">Португальська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">RU</span>
+						<span class="culture">ru</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">RU</span>
+					</span>
+					<span class="text-lang">Російська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">TT</span>
+						<span class="culture">tt</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">TT</span>
+					</span>
+					<span class="text-lang">Татарська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">TR</span>
+						<span class="culture">tr</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">TR</span>
+					</span>
+					<span class="text-lang">Турецька</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">HU</span>
+						<span class="culture">hu</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">HU</span>
+					</span>
+					<span class="text-lang">Угорська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">UK</span>
+						<span class="culture">uk</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">UK</span>
+					</span>
+					<span class="text-lang">Українська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">FI</span>
+						<span class="culture">fi</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">FI</span>
+					</span>
+					<span class="text-lang">Фінська</span>
+				</div>
+				<div class="list-item js-list-item">
+					<div class="b-data-for-js">
+						<span class="name">FR</span>
+						<span class="culture">fr</span>
+					</div>
+					<span class="name-lang">
+						<span class="name-lang_border">FR</span>
+					</span>
+					<span class="text-lang">Французька</span>
+				</div>
+		</div>
+		<div class="bottom-line all-line">
+			<div class="l-b-c left-side all-corn all-one-bg"></div>
+			<div class="r-b-c right-side all-corn all-one-bg"></div>
+		</div>
+	</div>
+	<input type="hidden" name="SearchDestLang" value="ru" class="js-culture-name" disabled=&quot;disabled&quot; />
+</div>
+
+											</div>
+										</td>
+									</tr>
+								</table>
+							</div>
+						</td>
+						<td class="b-search-panel__field_tr"></td>
+					</tr>
+					<tr>
+						<td class="b-search-panel__field_bl"></td>
+						<td class="b-search-panel__field_br"></td>
+					</tr>
+				</table>
+			</td>
+			<td class="b-search-panel__navigation_button">
+				<div class="b-button b-button_main">
+					<div class="center all-bg">
+						<div class="left all all-bg"></div>
+						<div class="cover">
+							<input type="submit" tabindex="110" value="Перекласти" class="button" />
+						</div>
+						<div class="right all all-bg"></div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr class="b-search-panel__language js-search-panel-controls">
+			<td class="b-search-panel__language_cell">
+				<table class="b-language-settings js-swap-container">
+					<tr>
+						<td class="b-language-settings__srclang">
+							<select class="js-swap-first b-select b-select__search-panel" id="SearchSrcLang" name="SearchSrcLang" tabindex="104"><option selected="selected" value="en">Англійська</option>
+<option value="el">Грецька</option>
+<option value="da">Датська</option>
+<option value="es">Іспанська</option>
+<option value="it">Італійська</option>
+<option value="kk">Казахська</option>
+<option value="zh-CN">Китайська</option>
+<option value="la">Латинська</option>
+<option value="nl">Нідерландська</option>
+<option value="de">Німецька</option>
+<option value="nb-no">Норвезька</option>
+<option value="pl">Польська</option>
+<option value="pt-br">Португальська</option>
+<option value="ru">Російська</option>
+<option value="tt">Татарська</option>
+<option value="tr">Турецька</option>
+<option value="hu">Угорська</option>
+<option value="uk">Українська</option>
+<option value="fi">Фінська</option>
+<option value="fr">Французька</option>
+</select>
+						</td>
+
+						<td class="b-language-settings__swaplang js-interpretations-tab-exclude ">
+							<img class="b-swap-trigger js-swap-trigger" width="32" height="23" src="/Content/1.7.15477.697/img/arrow_left_right.gif" alt="&lt;-&gt;" title="Змінити напрямок перекладу" />
+						</td>
+						<td class="b-language-settings__destlang js-interpretations-tab-exclude ">
+							<select class="js-swap-second b-select b-select__search-panel" id="SearchDestLang" name="SearchDestLang" tabindex="105"><option value="en">Англійська</option>
+<option value="el">Грецька</option>
+<option value="da">Датська</option>
+<option value="es">Іспанська</option>
+<option value="it">Італійська</option>
+<option value="kk">Казахська</option>
+<option value="zh-CN">Китайська</option>
+<option value="la">Латинська</option>
+<option value="nl">Нідерландська</option>
+<option value="de">Німецька</option>
+<option value="nb-no">Норвезька</option>
+<option value="pl">Польська</option>
+<option value="pt-br">Португальська</option>
+<option selected="selected" value="ru">Російська</option>
+<option value="tt">Татарська</option>
+<option value="tr">Турецька</option>
+<option value="hu">Угорська</option>
+<option value="uk">Українська</option>
+<option value="fi">Фінська</option>
+<option value="fr">Французька</option>
+</select>
+						</td>
+						<td class="b-language-settings__vk">
+							<img id="keyboardInputInitiator" title="Відкрити/закрити віртуальну клавіатуру" width="33" height="17"
+								alt="Віртуальна клавіатура" src="/Content/1.7.15477.697/img/keyboard.png" class="js-track-hit"
+								data-track-hit-uri="/Clicks/SearchPanel/VirtualKeyboard" />
+						</td>
+						<td class="b-language-settings__type">
+							<a href="#" class="b-language-settings__type_advanced js-examples-tab js-type-search-advanced g-hidden js-track-hit"
+								data-track-hit-uri="/Clicks/SearchPanel/SwitchToAdvanced">
+								Розширений пошук
+							</a>
+							<a href="#" class="b-language-settings__type_simple js-examples-tab js-type-search-simple g-hidden js-track-hit"
+								data-track-hit-uri="/Clicks/SearchPanel/SwitchToSimple">
+								Простий пошук
+							</a>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td></td>
+		</tr>
+		<tfoot class="g-hidden js-advanced-search js-examples-tab">
+			<tr class="b-search-panel__advanced">
+				<td class="b-search-panel__advanced__translate">
+					<table class="b-search-panel__field">
+						<tr>
+							<td class="b-search-panel__field_tl"></td>
+							<td class="b-search-panel__field_text" rowspan="2">
+								<div class="b-search-panel__field-wrap">
+									<textarea autocomplete="off" class="text general-text-field virtual-keyboard js-jq-watermark js-suggests-load js-submit-search-form auto-resizable" cols="20" id="translation" lang="ru" maxlength="150" name="translation" rows="2" tabindex="102" title="Введіть переклад">
+</textarea>
+								</div>
+							</td>
+							<td class="b-search-panel__field_tr"></td>
+						</tr>
+						<tr>
+							<td class="b-search-panel__field_bl"></td>
+							<td class="b-search-panel__field_br"></td>
+						</tr>
+					</table>
+				</td>
+				<td></td>
+			</tr>
+			<tr class="b-search-panel__advanced js-search-panel-controls">
+				<td colspan="2" class="b-search-panel__advanced__capitalise">
+					<label class="case" for="caseSensitive">
+						<input id="caseSensitive" name="caseSensitive" tabindex="106" type="checkbox" value="true" class="js-case-sensitive"  />
+						Враховувати регістр&nbsp;
+					</label>
+				</td>
+				<td></td>
+			</tr>
+		</tfoot>
+	</table>
+	<div class="b-data-for-js">
+
+		<span id="ActualSearchText">children</span>
+		<span id="ActualTranslation"></span>
+		<span id="ActualSrcLang">en</span>
+		<span id="ActualDestLang">ru</span>
+		<span id="ActualCaseSensivity">False</span>
+	</div>
+</form>
+				</div>
+				<div class="b-search-panel__grad">
+					<div class="b-search-panel__grad__lt"></div>
+					<div class="b-search-panel__grad__rt"></div>
+					<div class="b-search-panel__grad__rb"></div>
+
+				</div>
+			</div>
+
+
+<div class="b-menu-tabs">
+	<div class="b-menu-tabs__helper"></div>
+
+
+<div class="b-roundbox__menutabs_active js-active-tab " classToShow="js-translations-tab" submitButtonTitle="Перекласти" searchMode="Translations">
+	<div class="b-roundbox__menutabs_active__top">
+		<div class="b-roundbox_active__menutabs__lt"></div>
+		<div class="b-roundbox_active__menutabs__rt"></div>
+	</div>
+	<div class="b-roundbox__menutabs_active__cont">
+		<span class="b-roundbox__menutabs_active__text">Переклади</span>
+	</div>
+	<div class="b-roundbox__menutabs_active__bottom">
+		<div class="b-roundbox__menutabs_active__lb"></div>
+		<div class="b-roundbox__menutabs_active__rb"></div>
+		<div class="b-roundbox__menutabs_active__b-line"></div>
+	</div>
+</div>
+<div class="b-roundbox__menutabs js-inactive-tab g-hidden">
+	<div class="b-roundbox__menutabs__top">
+		<div class="b-roundbox__menutabs__lt"></div>
+		<div class="b-roundbox__menutabs__rt"></div>
+	</div>
+	<div class="b-roundbox__menutabs__cont">
+		<a class="js-mode-tab b-roundbox__menutabs__link" href="/uk/Search/en-ru/children">Переклади</a>
+	</div>
+	<div class="b-roundbox__menutabs__bottom">
+		<div class="b-roundbox__menutabs__lb"></div>
+		<div class="b-roundbox__menutabs__rb"></div>
+		<div class="b-roundbox__menutabs__b-line"></div>
+	</div>
+</div>
+<div class="b-roundbox__menutabs_active js-active-tab g-hidden" classToShow="js-examples-tab" submitButtonTitle="Знайти" searchMode="Examples">
+	<div class="b-roundbox__menutabs_active__top">
+		<div class="b-roundbox_active__menutabs__lt"></div>
+		<div class="b-roundbox_active__menutabs__rt"></div>
+	</div>
+	<div class="b-roundbox__menutabs_active__cont">
+		<span class="b-roundbox__menutabs_active__text">Приклади</span>
+	</div>
+	<div class="b-roundbox__menutabs_active__bottom">
+		<div class="b-roundbox__menutabs_active__lb"></div>
+		<div class="b-roundbox__menutabs_active__rb"></div>
+		<div class="b-roundbox__menutabs_active__b-line"></div>
+	</div>
+</div>
+<div class="b-roundbox__menutabs js-inactive-tab ">
+	<div class="b-roundbox__menutabs__top">
+		<div class="b-roundbox__menutabs__lt"></div>
+		<div class="b-roundbox__menutabs__rt"></div>
+	</div>
+	<div class="b-roundbox__menutabs__cont">
+		<a class="js-mode-tab b-roundbox__menutabs__link" href="/uk/Search/en-ru/children?searchMode=Examples">Приклади</a>
+	</div>
+	<div class="b-roundbox__menutabs__bottom">
+		<div class="b-roundbox__menutabs__lb"></div>
+		<div class="b-roundbox__menutabs__rb"></div>
+		<div class="b-roundbox__menutabs__b-line"></div>
+	</div>
+</div>
+<div class="b-roundbox__menutabs_active js-active-tab g-hidden" classToShow="js-phrases-tab" submitButtonTitle="Знайти" searchMode="Phrases">
+	<div class="b-roundbox__menutabs_active__top">
+		<div class="b-roundbox_active__menutabs__lt"></div>
+		<div class="b-roundbox_active__menutabs__rt"></div>
+	</div>
+	<div class="b-roundbox__menutabs_active__cont">
+		<span class="b-roundbox__menutabs_active__text">Словосполучення</span>
+	</div>
+	<div class="b-roundbox__menutabs_active__bottom">
+		<div class="b-roundbox__menutabs_active__lb"></div>
+		<div class="b-roundbox__menutabs_active__rb"></div>
+		<div class="b-roundbox__menutabs_active__b-line"></div>
+	</div>
+</div>
+<div class="b-roundbox__menutabs js-inactive-tab ">
+	<div class="b-roundbox__menutabs__top">
+		<div class="b-roundbox__menutabs__lt"></div>
+		<div class="b-roundbox__menutabs__rt"></div>
+	</div>
+	<div class="b-roundbox__menutabs__cont">
+		<a class="js-mode-tab b-roundbox__menutabs__link" href="/uk/Search/en-ru/children?searchMode=Phrases">Словосполучення</a>
+	</div>
+	<div class="b-roundbox__menutabs__bottom">
+		<div class="b-roundbox__menutabs__lb"></div>
+		<div class="b-roundbox__menutabs__rb"></div>
+		<div class="b-roundbox__menutabs__b-line"></div>
+	</div>
+</div>
+<div class="b-roundbox__menutabs_active js-active-tab g-hidden" classToShow="js-interpretations-tab" submitButtonTitle="Знайти" searchMode="Interpretations">
+	<div class="b-roundbox__menutabs_active__top">
+		<div class="b-roundbox_active__menutabs__lt"></div>
+		<div class="b-roundbox_active__menutabs__rt"></div>
+	</div>
+	<div class="b-roundbox__menutabs_active__cont">
+		<span class="b-roundbox__menutabs_active__text">Тлумачення</span>
+	</div>
+	<div class="b-roundbox__menutabs_active__bottom">
+		<div class="b-roundbox__menutabs_active__lb"></div>
+		<div class="b-roundbox__menutabs_active__rb"></div>
+		<div class="b-roundbox__menutabs_active__b-line"></div>
+	</div>
+</div>
+<div class="b-roundbox__menutabs js-inactive-tab ">
+	<div class="b-roundbox__menutabs__top">
+		<div class="b-roundbox__menutabs__lt"></div>
+		<div class="b-roundbox__menutabs__rt"></div>
+	</div>
+	<div class="b-roundbox__menutabs__cont">
+		<a class="js-mode-tab b-roundbox__menutabs__link" href="/uk/Search/en-ru/children?searchMode=Interpretations">Тлумачення</a>
+	</div>
+	<div class="b-roundbox__menutabs__bottom">
+		<div class="b-roundbox__menutabs__lb"></div>
+		<div class="b-roundbox__menutabs__rb"></div>
+		<div class="b-roundbox__menutabs__b-line"></div>
+	</div>
+</div>
+		<div class="b-menu-tabs_link js-search-panel-controls">
+			<ul class="b-links-box b-links-box_top">
+				<li class="list-item question">
+					<a class="reference" href="http://forum.lingvo.ru/actualforum.aspx" target="_blank" title="Запитати на форумі">
+						<span class="icons-link"></span>
+					</a>
+				</li>
+					<li class="list-item google">
+						<a class="reference" href="http://www.google.ru/search?hl=ru&amp;q=children&amp;lr=lang_en" target="_blank" title="Шукати в Google">
+							<span class="icons-link"></span>
+						</a>
+					</li>
+				<li class="list-item wikipedia">
+					<a class="reference" href="http://www.wikipedia.org/search-redirect.php?search=children&amp;language=en" target="_blank" title="Шукати в Wikipedia">
+						<span class="icons-link"></span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	<div class="clear"></div>
+</div>
+		</div>
+	</div>
+</div>
+		<div id="lingvoua_top_useful_info" class="b-useful-info-after-searchform"></div>
+
+	<div id="lingvoua_top_useful_info" class="b-useful-info-after-searchform"></div>
+
+
+<div class="b-search-results">
+
+
+
+<div class="b-data-for-js js-additional-search-parameters">
+
+</div>
+
+
+	<div class="bookmark-abbyy">
+		<div class="b-bookmarks b-bookmarks_blue">
+			<div class="center">
+				<div class="left all"></div>
+				<div class="cover">
+					<span class="tab">
+						Словники ABBYY Lingvo
+						(En-Ru)
+					</span>
+				</div>
+				<div class="right all"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="b-round-box b-round-box_info-baloon ">
+		<div class="top-line all-line">
+			<div class="l-t-c left-side all-corn all-one-bg"></div>
+			<div class="r-t-c right-side all-corn all-one-bg"></div>
+		</div>
+		<div class="b-round-box_cont">
+						<div class="head">
+							<h3 class="header">Дивіться також:</h3>
+						</div>
+						<div class="body">
+<a class="links wordforms" href="/uk/Search/en-ru/child">child</a>						</div>
+		</div>
+		<div class="bottom-line all-line">
+			<div class="l-b-c left-side all-corn all-one-bg"></div>
+			<div class="r-b-c right-side all-corn all-one-bg"></div>
+		</div>
+	</div>
+		<div class="ao-gc">
+			<div class="ao-u first">
+				<div class="lingvo lingvo-dictionaries">
+	<div class="data card">
+		<div class="js-article-html">
+			<h2><span class="Bold">children</span></h2><span class="name-dictionaries"><a class="helpopen" href="/uk/LingvoDictionaries/Details?dictionary=LingvoUniversal%20(En-Ru)">LingvoUniversal (En-Ru)</a></span><p class="P">[<img class="transcription" alt="transcription" title="transcription" src="/Handlers/TranscriptionHandler.ashx?Text='%CA%A7%C9%AAldr(%C9%99)n">] <span class="Abbrev" title="британский вариант английского языка; употребляется в Великобритании">брит.</span> <span class="soundAll js-voice-trans"><span class="soundJS js-lingvo-sound" id="sound9db31bd6446f4ddb89fb890772612476" data-flash-url="/soundPlayer.swf?song_url=/Sound?FileName=Y2hpbGRyZW4ud2F2%26DictionaryName=LingvoUniversal (En-Ru)"></span><noscript><span class="soundNoScript"><object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="20" height="28" align="middle"><param name="movie" value="/soundPlayer.swf?song_url=/Sound?FileName=Y2hpbGRyZW4ud2F2%26DictionaryName=LingvoUniversal (En-Ru)">
+          <param name="quality" value="high">
+          <param name="bgcolor" value="#ffffff"><embed quality="high" bgcolor="#ffffff" width="28" height="28" align="middle" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" src="/soundPlayer.swf?song_url=/Sound?FileName=Y2hpbGRyZW4ud2F2%26DictionaryName=LingvoUniversal (En-Ru)"></embed></object></span></noscript></span>/ <span class="Abbrev" title="американский вариант английского языка; употребляется в США">амер.</span> <span class="soundAll js-voice-trans"><span class="soundJS js-lingvo-sound" id="soundc5d5b232f2f74aad94412c2c4414a219" data-flash-url="/soundPlayer.swf?song_url=/Sound?FileName=MTk5MS53YXY=%26DictionaryName=LingvoUniversal (En-Ru)"></span><noscript><span class="soundNoScript"><object codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="20" height="28" align="middle"><param name="movie" value="/soundPlayer.swf?song_url=/Sound?FileName=MTk5MS53YXY=%26DictionaryName=LingvoUniversal (En-Ru)">
+          <param name="quality" value="high">
+          <param name="bgcolor" value="#ffffff"><embed quality="high" bgcolor="#ffffff" width="28" height="28" align="middle" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" src="/soundPlayer.swf?song_url=/Sound?FileName=MTk5MS53YXY=%26DictionaryName=LingvoUniversal (En-Ru)"></embed></object></span></noscript></span></p>
+<p class="P1"><span class="comment"><span class="Abbrev" title="множественное число">мн.</span> <span class="" style="color:#008000">от </span><a href="/uk/Search/en-ru/child">child</a></span></p>
+		</div>
+	</div>
+</div>
+
+			</div>
+		</div>
+		<div class="ao-gc">
+			<div class="ao-u first">
+				<div class="lingvo lingvo-dictionaries">
+	<div class="data card">
+		<div class="js-article-html">
+			<h2><span class="Bold">children</span></h2><span class="name-dictionaries"><a class="helpopen" href="/uk/LingvoDictionaries/Details?dictionary=LingvoComputer%20(En-Ru)">LingvoComputer (En-Ru)</a></span><p class="P1"><a href="/uk/Search/GlossaryItemExtraInfo?text=children&amp;translation=%d0%b4%d0%be%d1%87%d0%b5%d1%80%d0%bd%d0%b8%d0%b5%20%d0%b7%d0%b0%d0%bf%d0%b8%d1%81%d0%b8&amp;srcLang=en&amp;destLang=ru" title="Показати приклади вживання" class="show-examples"><span class="translation">дочерние записи</span></a></p>
+		</div>
+	</div>
+</div>
+
+			</div>
+		</div>
+		<div class="ao-gc">
+			<div class="ao-u first">
+				<div class="lingvo lingvo-dictionaries">
+	<div class="data card">
+		<div class="js-article-html">
+			<h2><span class="Bold">children</span></h2><span class="name-dictionaries"><a class="helpopen" href="/uk/LingvoDictionaries/Details?dictionary=Medical%20(En-Ru)">Medical (En-Ru)</a></span><p class="P1"><span class="Abbrev" title="множественное число">pl</span></p>
+<p class="P1"><a href="/uk/Search/GlossaryItemExtraInfo?text=children&amp;translation=%d0%b4%d0%b5%d1%82%d0%b8&amp;srcLang=en&amp;destLang=ru" title="Показати приклади вживання" class="show-examples"><span class="translation">дети</span></a></p>
+		</div>
+	</div>
+</div>
+
+			</div>
+		</div>
+	<div class="ao-u first">
+		<div class="b-reverse border-green">
+
+
+<div class="b-bookmarks b-bookmarks_green">
+	<div class="center">
+		<div class="left all"></div>
+		<div class="cover">
+			<span class="tab">
+				Словники ABBYY Lingvo
+				(Ru-En)
+			</span>
+		</div>
+		<div class="right all"></div>
+	</div>
+</div>
+
+<div class="b-round-box_reverse-warn b-round-box">
+	<div class="top-line all-line">
+		<div class="l-t-c left-side top-side all-corn all-one-bg"></div>
+		<div class="r-t-c right-side top-side all-corn all-one-bg"></div>
+	</div>
+	<div class="b-round-box_cont">
+		<span class="icon all-one-bg"></span>
+		<span class="text">Ці переклади знайдено у словниках зворотного напрямку. Статті зі словників зворотного напрямку можуть відображатися не повністю.</span>
+	</div>
+	<div class="bottom-line all-line">
+		<div class="l-b-c left-side bottom-side all-corn all-one-bg"></div>
+		<div class="r-b-c right-side bottom-side all-corn all-one-bg"></div>
+	</div>
+</div>
+
+<div class="data">
+		<p class="header-glossary"><strong>children</strong></p>
+		<div class="card block">
+			<ul class="list">
+				<li class="list-item">
+					<a class="show-examples" href="/uk/Search/LingvoArticlesAndExtraInfo?text=children&amp;translation=%d0%b2%d0%bd%d1%83%d0%ba&amp;srcLang=en&amp;destLang=ru&amp;dictionaries=LingvoUniversal (Ru-En)&amp;dictionaries=Universal (Ru-En)&amp;author=" title="Показати приклади вживання">внук</a>
+				</li>
+				<li class="list-item">
+					<a class="show-examples" href="/uk/Search/LingvoArticlesAndExtraInfo?text=children&amp;translation=%d0%b4%d0%b5%d1%82%d0%b2%d0%be%d1%80%d0%b0&amp;srcLang=en&amp;destLang=ru&amp;dictionaries=LingvoUniversal (Ru-En)&amp;dictionaries=Universal (Ru-En)&amp;author=" title="Показати приклади вживання">детвора</a>
+				</li>
+				<li class="list-item">
+					<a class="show-examples" href="/uk/Search/LingvoArticlesAndExtraInfo?text=children&amp;translation=%d0%b4%d0%b5%d1%82%d0%ba%d0%b0&amp;srcLang=en&amp;destLang=ru&amp;dictionaries=Universal (Ru-En)&amp;author=" title="Показати приклади вживання">детка</a>
+				</li>
+				<li class="list-item">
+					<a class="show-examples" href="/uk/Search/LingvoArticlesAndExtraInfo?text=children&amp;translation=%d0%bc%d0%b0%d0%bb%d0%be%d0%bb%d0%b5%d1%82%d0%bd%d0%b8%d0%b9&amp;srcLang=en&amp;destLang=ru&amp;dictionaries=Universal (Ru-En)&amp;author=" title="Показати приклади вживання">малолетний</a>
+				</li>
+				<li class="list-item">
+					<a class="show-examples" href="/uk/Search/LingvoArticlesAndExtraInfo?text=children&amp;translation=%d1%80%d0%b5%d0%b1%d1%8f%d1%82%d0%b0&amp;srcLang=en&amp;destLang=ru&amp;dictionaries=LingvoUniversal (Ru-En)&amp;dictionaries=Universal (Ru-En)&amp;author=" title="Показати приклади вживання">ребята</a>
+				</li>
+				<li class="list-item">
+					<a class="show-examples" href="/uk/Search/LingvoArticlesAndExtraInfo?text=children&amp;translation=%d1%80%d0%b5%d0%b1%d1%8f%d1%82%d0%b8%d1%88%d0%ba%d0%b8&amp;srcLang=en&amp;destLang=ru&amp;dictionaries=LingvoUniversal (Ru-En)&amp;dictionaries=Universal (Ru-En)&amp;author=" title="Показати приклади вживання">ребятишки</a>
+				</li>
+				<li class="list-item">
+					<a class="show-examples" href="/uk/Search/LingvoArticlesAndExtraInfo?text=children&amp;translation=%d1%80%d0%b5%d0%b1%d1%8f%d1%82%d0%bd%d1%8f&amp;srcLang=en&amp;destLang=ru&amp;dictionaries=Universal (Ru-En)&amp;author=" title="Показати приклади вживання">ребятня</a>
+				</li>
+			</ul>
+		</div>
+</div>
+
+		</div>
+	</div>
+	<div class="ao-gc">
+		<div class="ao-u first">
+
+
+<div class="b-glossary">
+		<div class="b-glossary_users data-empty border-sky">
+			<div class="b-bookmarks b-bookmarks_sky">
+				<div class="center">
+					<div class="left all"></div>
+					<div class="cover">
+						<span class="tab">
+							Переклади користувачів
+						</span>
+					</div>
+					<div class="right all"></div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="translation-nofound">
+				Знаєте, як перекладається <span class="target">children</span>?
+			</div>
+			<div class="b-button b-button_blue b-button_add">
+				<div class="center">
+					<div class="left all"></div>
+					<div class="cover">
+						<a class="butt-link js-login-popup" data-login-reason="Щоб додати переклад, увійдіть під своїм акаунтом. Для цього введіть свої e-mail і пароль." href="/uk/Glossaries/CreateTranslation?srcLang=en&amp;destLang=ru&amp;srcText=children">Додати переклад</a>
+					</div>
+					<div class="right all"></div>
+				</div>
+			</div>
+		</div>
+</div>
+
+		</div>
+	</div>
+	<div class="ao-gc">
+		<div class="ao-u first">
+
+<div class="b-glossary border-sea">
+	<div class="b-bookmarks b-bookmarks_sea">
+		<div class="center">
+			<div class="left all"></div>
+			<div class="cover">
+				<span class="tab">
+					Закриті словники
+				</span>
+			</div>
+			<div class="right all"></div>
+		</div>
+	</div>
+	<div class="b-glossary__data-dict">
+		<div class="b-scroll-dict-lside">
+			<div class="b-scroll-dict__l-t-с"></div>
+			<div class="b-scroll-dict__l-b-c"></div>
+			<div class="b-scroll-dict__r-t-l"></div>
+			<div class="b-scroll-dict__r-b-l"></div>
+		</div>
+		<div class="b-scroll-dict js-scroll-bar" title="">
+			<div class="b-scroll-dict__scroller__head js-glossary-gallery-head">	</div>
+			<div class="b-scroll-dict__scroller js-scroller">
+					<div class="b-scroll-dict__group">
+								<span class="b-scroll-dict__icon js-scroll-step">
+									<span class="b-scroll-dict__icon__name">
+										AmericanEnglish (En-Ru)
+									</span>
+									<a class="b-scroll-dict__icon__link" href="/uk/LingvoDictionaries/Details?dictionary=AmericanEnglish%20(En-Ru)" title="Англійсько-російській словник: американський варіант.">
+										<img alt="" width="100" height="100" src="/Content/1.7.15477.697/img/dict/100gif/General_Dictionary.gif" />
+										<span class="b-scroll-dict__icon__number">
+											1
+										</span>
+									</a>
+								</span>
+						<div class="clear"></div>
+						<span class="b-scroll-dict__groupname js-glossary-gallery-groupname">
+								ABBYY Press
+						</span>
+						<div class="b-scroll-dict__group_l js-left-corn-group"></div>
+						<div class="b-scroll-dict__group_r  js-right-corn-group"></div>
+					</div>
+					<div class="b-scroll-dict__group">
+								<span class="b-scroll-dict__icon js-scroll-step">
+									<span class="b-scroll-dict__icon__name">
+										Learning (En-Ru)
+									</span>
+									<a class="b-scroll-dict__icon__link" href="/uk/LingvoDictionaries/Details?dictionary=Learning%20(En-Ru)" title="Англійсько-російський навчальний словник.">
+										<img alt="" width="100" height="100" src="/Content/1.7.15477.697/img/dict/100gif/General_Dictionary.gif" />
+										<span class="b-scroll-dict__icon__number">
+											1
+										</span>
+									</a>
+								</span>
+						<div class="clear"></div>
+						<span class="b-scroll-dict__groupname js-glossary-gallery-groupname">
+								Русский язык-Медиа
+						</span>
+						<div class="b-scroll-dict__group_l js-left-corn-group"></div>
+						<div class="b-scroll-dict__group_r  js-right-corn-group"></div>
+					</div>
+			</div>
+		</div>
+		<div class="b-scroll-dict-rside js-glossary-gallery-rside">
+			<div class="b-scroll-dict__r-t-с"></div>
+			<div class="b-scroll-dict__r-b-c"></div>
+			<div class="b-scroll-dict__l-t-l"></div>
+			<div class="b-scroll-dict__l-b-l"></div>
+		</div>
+	</div>
+	<div class="clear"></div>
+	<a class="b-glossary__data-dict__link" href="http://www.abbyy.ua/buy/">Купити Lingvo x5</a>
+</div>
+
+		</div>
+	</div>
+
+
+
+
+<div class="b-user-links">
+	<ul class="b-links-box b-links-box_bottom">
+		<li class="list-item question">
+			<a class="reference" href="http://forum.lingvo.ru/actualforum.aspx" target="_blank">
+				<span class="links">Запитати на форумі</span>
+				<span class="icons-link"></span>
+			</a>
+		</li>
+			<li class="list-item google">
+				<a class="reference" href="http://www.google.ru/search?hl=ru&amp;q=children&amp;lr=lang_en" target="_blank">
+					<span class="links">Шукати в Google</span>
+					<span class="icons-link"></span>
+				</a>
+			</li>
+		<li class="list-item wikipedia">
+			<a class="reference" href="http://www.wikipedia.org/search-redirect.php?search=children&amp;language=en" target="_blank">
+				<span class="links">Шукати в Wikipedia</span>
+				<span class="icons-link"></span>
+			</a>
+		</li>
+
+	</ul>
+</div>
+
+</div>
+
+
+				</div>
+				<div class="b-right-panel">
+
+<div class="search-history b-rubberbg-box b-rubberbg-box_sh">
+	<div class="l-t-part all-part"></div>
+	<div class="b-rubberbg-box_cont">
+			<p class="text-style">
+				<a class="js-login-popup" href="http://www.abbyyonline.com/uk/Account/LogOn/?service=lingvoua&amp;back=/uk/Search/en-ru/children">Увійдіть</a> під своїм акаунтом, щоб побачити історію ваших запитів.
+			</p>
+	</div>
+	<div class="l-b-part all-part"></div>
+</div>
+
+	<div class="useful-info">
+		<div id="lingvoua_left_useful_info"></div>
+	</div>
+
+					<div class="js-parent-sidebar">
+
+<div class="b-sidebarmenu b-sidebarmenu_dict  js-sidebar-menu ">
+		<div class="b-sidebarmenu_dict__helper js-sidebarmenu-helper"></div>
+	<a class="b-sidebarmenu__link" href="/uk/LingvoDictionaries" target="">
+		<span class="b-sidebarmenu__link-cover">
+			<span class="b-sidebarmenu__link-text">
+				Усі словники
+			</span>
+			<span class="b-sidebarmenu__iefix"></span>
+		</span>
+	</a>
+</div>
+
+
+
+<div class="b-sidebarmenu b-sidebarmenu_bonus  js-sidebar-menu ">
+	<a class="b-sidebarmenu__link" href="/uk/Bonuses" target="">
+		<span class="b-sidebarmenu__link-cover">
+			<span class="b-sidebarmenu__link-text">
+				Доступ до словників Lingvo x5
+			</span>
+			<span class="b-sidebarmenu__iefix"></span>
+		</span>
+	</a>
+</div>
+
+
+<div class="b-sidebarmenu b-sidebarmenu_authors  js-sidebar-menu js-sidebar-menu-authors">
+	<a class="b-sidebarmenu__link" href="/uk/Home/Authors" target="">
+		<span class="b-sidebarmenu__link-cover">
+			<span class="b-sidebarmenu__link-text">
+				Авторами та перекладачами
+			</span>
+			<span class="b-sidebarmenu__iefix"></span>
+		</span>
+	</a>
+</div>
+
+
+
+<div class="b-sidebarmenu b-sidebarmenu_foryoursite  js-sidebar-menu ">
+	<a class="b-sidebarmenu__link" href="/uk/Partner" target="">
+		<span class="b-sidebarmenu__link-cover">
+			<span class="b-sidebarmenu__link-text">
+				Переклад для вашого сайту
+			</span>
+			<span class="b-sidebarmenu__iefix"></span>
+		</span>
+	</a>
+</div>
+
+
+
+<div class="b-sidebarmenu b-sidebarmenu_forum  js-sidebar-menu ">
+	<a class="b-sidebarmenu__link" href="http://forum.lingvo.ru/actualforum.aspx" target="_blank">
+		<span class="b-sidebarmenu__link-cover">
+			<span class="b-sidebarmenu__link-text">
+				Форум Lingvo
+			</span>
+			<span class="b-sidebarmenu__iefix"></span>
+		</span>
+	</a>
+</div>
+
+
+
+<div class="b-sidebarmenu b-sidebarmenu_help  js-sidebar-menu ">
+	<a class="b-sidebarmenu__link" href="/uk/Home/Help" target="">
+		<span class="b-sidebarmenu__link-cover">
+			<span class="b-sidebarmenu__link-text">
+				Допомога
+			</span>
+			<span class="b-sidebarmenu__iefix"></span>
+		</span>
+	</a>
+</div>
+
+
+	<noscript>
+
+<div class="b-sidebarmenu b-sidebarmenu_addtrans  js-sidebar-menu ">
+	<a class="b-sidebarmenu__link" href="/uk/Glossaries/CreateTranslation" target="">
+		<span class="b-sidebarmenu__link-cover">
+			<span class="b-sidebarmenu__link-text">
+				Додати переклад
+			</span>
+			<span class="b-sidebarmenu__iefix"></span>
+		</span>
+	</a>
+</div>
+
+	</noscript>
+	<div class="clear"></div>
+</div>
+					<br />
+
+
+	<div class="b-slidesidebar  SidebarCreateTranslationForm js-slidesidebar" id="SidebarCreateTranslationForm">
+		<div class="b-slidesidebar__data">
+				<div class="b-slidesidebar__head js-slidesidebar-head js-track-hit" data-track-hit-uri="/Clicks/SidebarCreateTranslationForm/Expand">
+		<h4 class="b-slidesidebar__head__text">Додати переклад</h4>
+	</div>
+	<div class="b-slidesidebar__body js-slidesidebar-body">
+<div class="b-slidesidebar__login">
+	<a href="http://www.abbyyonline.com/uk/Account/LogOn/?service=lingvoua&back=/uk/Search/en-ru/children" class="js-login-popup" data-login-reason="Увійдіть, щоб додати переклад.">Увійдіть</a>, щоб додати переклад.
+</div>			</div>
+
+		</div>
+		<div class="b-slidesidebar__grad">
+			<div class="b-slidesidebar__grad_lt"></div>
+			<div class="b-slidesidebar__grad_rt"></div>
+			<div class="b-slidesidebar__grad_rb"></div>
+			<div class="b-slidesidebar__grad_lb"></div>
+		</div>
+	</div>
+
+
+	<div class="b-slidesidebar b-slidesidebar_close FeedbackForm js-slidesidebar" id="FeedbackForm">
+		<div class="b-slidesidebar__data">
+				<div class="b-slidesidebar__head js-slidesidebar-head js-track-hit" data-track-hit-uri="/Clicks/FeedbackForm/Expand">
+		<h4 class="b-slidesidebar__head__text">Написати відгук</h4>
+	</div>
+	<div class="b-slidesidebar__body js-slidesidebar-body">
+<form action="/uk/Home/SendFeedback" class="js-sendfeedback-form" method="post">			<div class="user-actions_cont">
+				<textarea class="js-jq-watermark TextArea feedback-text auto-resizable" cols="20" id="FeedbackMessage" name="FeedbackMessage" rows="2" title="Скористайтеся формою, щоб надіслати нам ваші запитання і коментарі.">
+</textarea>
+<textarea class="js-jq-watermark TextArea feedback-email auto-resizable js-check-valid-email" cols="20" id="Email" name="Email" rows="2" title="Ваш e-mail">
+</textarea>				<div class="g-hidden error js-side-bar-feedback-length-error" >
+					Текст відгуку занадто довгий.
+				</div>
+				<p class="g-hidden error js-sendfeedback-emailError" >
+					Некоректна адреса електронної пошти.
+				</p>
+				<p class="js-resultmsg g-hidden"></p>
+				<div class="b-button b-button_blue">
+					<div class="center">
+						<div class="left all"></div>
+						<div class="cover">
+							<input type="submit" value="Надіслати" class="button js-ajax-form-submit" />
+						</div>
+						<div class="right all"></div>
+					</div>
+				</div>
+			</div>
+</form>	</div>
+
+		</div>
+		<div class="b-slidesidebar__grad">
+			<div class="b-slidesidebar__grad_lt"></div>
+			<div class="b-slidesidebar__grad_rt"></div>
+			<div class="b-slidesidebar__grad_rb"></div>
+			<div class="b-slidesidebar__grad_lb"></div>
+		</div>
+	</div>
+
+					<br />
+
+
+
+				</div>
+				<br class="clear" />
+		</div><!-- bd -->
+		<span class="js-loading g-hidden">
+			Триває завантаження...
+			<img width="16" height="16" alt="" src="/Content/1.7.15477.697/img/loading.gif" />
+		</span>
+	</div>
+
+<div class="ft">
+		<div class="footermenu-container">
+			<ul class="footermenu">
+				<li><a href="http://www.abbyyonline.com/uk/Help/About/lingvopro">Про проект</a></li>
+				<li><a href="http://www.abbyyonline.com/uk/Help/Eula/lingvopro">Умови</a></li>
+				<li><a href="http://www.abbyyonline.com/uk/Help/Privacy/lingvopro">Конфіденційність</a></li>
+				<li><a href="/uk/Home/Advertising">Реклама на сайті</a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+			<nobr>© 2008-2011 <a href="http://www.abbyy.ua/" target="_blank">ABBYY</a></nobr>
+			<a target="_blank" href="http://www.abbyy.ua/products">Усі продукти ABBYY</a>
+		</div>
+</div>
+
+
+	<script type="text/javascript">
+		Startup(function () {
+			if (window.yaCounter) { window.yaCounter.reachGoal("LP_TRANSLATIONS_TAB"); }
+		});
+	</script>
+
+
+
+	<!-- Google Analytics -->
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-11972401-1']);
+		_gaq.push(['_setDomainName', 'none']);
+		_gaq.push(['_setAllowHash', false]);
+		_gaq.push(['_trackPageview']);
+
+			_gaq.push(['SecondTracker._setAccount', 'UA-16903277-2']);
+			_gaq.push(['SecondTracker._trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+	<!-- /Google Analytics -->
+	<!-- Yandex.Metrika -->
+	<div style="display:none">
+		<script type="text/javascript">
+			(function (w, c) {
+				(w[c] = w[c] || []).push(function () {
+					try {
+
+								var ya_params = { 'Users': 'Not authenticated' };
+
+						w.yaCounter = new Ya.Metrika(515897, ya_params);
+						yaCounter.trackLinks(true);
+
+
+								w.yaCounterUa = new Ya.Metrika({id:10154935, enableAll: true, trackHash:true});
+
+					} catch (e) { }
+				});
+			})(window, 'yandex_metrika_callbacks');
+		</script>
+	</div>
+	<script src="http://mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
+	<noscript><div style="position:absolute;left:-9999px;"><img src="http://mc.yandex.ru/watch/515897" alt="" /></div></noscript>
+		<noscript><div style="position:absolute;left:-9999px;"><img src="http://mc.yandex.ru/watch/10154935" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika -->
+	<!-- Gemius -->
+		<script type="text/javascript">
+		<!--		//--><![CDATA[//><!--
+			var pp_gemius_identifier = new String('bQ.rsI7MiGIu8Y00sfi7F5PZzdsiaNtKhzGMt548El..M7');
+		//--><!]]>
+		</script>
+		<script type="text/javascript" src="/ContentScriptsManualInclude/xgemius.js"></script>
+	<!-- /Gemius -->
+
+
+<script type="text/javascript">
+
+	(function (w) {
+		function loadScript(url) {
+			var sc = document.createElement('script');
+			sc.type = 'text/javascript';
+			sc.async = true;
+			sc.src = url;
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(sc, s);
+		}
+		Startup(function () {
+
+			loadScript('//www.abbyyonline.com/Content/common.js?ver=1.7.15477.697');
+		});
+		loadScript('/Content/1.7.15477.697/JsStandard');
+	})(window);
+</script>
+
+	<script type="text/javascript" src="/ContentScriptsManualInclude/adriver.core.2.modified.js"></script>
+
+<!--[if IE 6]>
+<script type="text/javascript" src="/ContentScripts/Disabled/DD_belatedPNG.js?ver=1.7.15477.697"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('#container .left_top, #container .right_top, #container .left_bottom, #container .right_bottom, #container .right_center, #container .left_center, .ie-fixPNG');
+</script>
+<![endif]-->
+
+
+
+<script type="text/javascript">
+	var g_keyboardLangs = new Array();
+g_keyboardLangs["US Int'l"]="Англійська";
+g_keyboardLangs["Greek"]="Грецька";
+g_keyboardLangs["Danish"]="Датська";
+g_keyboardLangs["Spanish Es"]="Іспанська";
+g_keyboardLangs["Italian"]="Італійська";
+g_keyboardLangs["Kazakh"]="Казахська";
+g_keyboardLangs["Latin"]="Латинська";
+g_keyboardLangs["Dutch"]="Нідерландська";
+g_keyboardLangs["German"]="Німецька";
+g_keyboardLangs["Norwegian"]="Норвезька";
+g_keyboardLangs["Polish Prog"]="Польська";
+g_keyboardLangs["Portuguese Br"]="Португальська";
+g_keyboardLangs["Russian"]="Російська";
+g_keyboardLangs["Татарча"]="Татарська";
+g_keyboardLangs["Turkish-Q"]="Турецька";
+g_keyboardLangs["Hungarian"]="Угорська";
+g_keyboardLangs["Ukrainian"]="Українська";
+g_keyboardLangs["Finnish"]="Фінська";
+g_keyboardLangs["French"]="Французька";
+</script>
+
+</body>
+</html>
