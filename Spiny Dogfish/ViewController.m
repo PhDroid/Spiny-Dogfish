@@ -174,15 +174,17 @@
     theSearchBar.showsCancelButton = NO;
 }
 
+
+
 enum State {
     None,
     Searching,
     FinishedSearching,
     ShowTranslation
-};
+} state;
 
-- (void)switchState:(int) state {
-    switch (state) {
+- (void)switchState:(enum State) theState {
+    switch (theState) {
         case None:
             break;
         case Searching:
@@ -210,7 +212,17 @@ enum State {
         default:
             //todo: throw error
             break;
-    }    
+    }
+    state = theState;
+}
+
+- (BOOL)searchBarShouldBeginEditing:(UISearchBar *)theSearchBar{
+    if(state == Searching) {
+        return false;
+    } else {
+        [self switchState: FinishedSearching];
+        return true;
+    }
 }
 
 -(void)makeProgress{
