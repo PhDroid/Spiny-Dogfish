@@ -262,6 +262,7 @@ NSMutableData *_data;
     Eng2RuPostProcessor *processor = [[Eng2RuPostProcessor alloc] init];
     [processor process:result];
     [self switchState:ShowTranslation];
+    NSLog(@"Translation: %@", [processor getTranslation]);
     self.textView.text = [processor fixIndentation:[processor getTranslation]];
 }
 
