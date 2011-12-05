@@ -55,7 +55,7 @@ NSMutableString *translation;
     NSString * transcriptionModeTrigger = @"";
     int phase = 0;
     int phase3WordCount = 0;
-    const int PHASE3_EXPECTED_WORD_COUNT = 2;
+    const int PHASE3_EXPECTED_WORD_COUNT = 3;
     NSString *phase3PrevChar = @"";
     bool phase4Writing = false;
     for (NSUInteger i = 0; i < endOfInput; i++) {
@@ -227,7 +227,6 @@ typedef enum {
             }
         }
     }
-    NSLog(result);
     return result;
 }
 
@@ -284,7 +283,6 @@ typedef enum {
             }
         }
     }
-    NSLog(result);
     return result;
 }
 
