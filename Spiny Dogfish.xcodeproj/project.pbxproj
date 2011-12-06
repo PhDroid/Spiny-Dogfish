@@ -29,6 +29,8 @@
 		B77A25131486D0DA00316BE1 /* SimpleStack.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BE0 /* SimpleStack.m */; };
 		B77A25131486D0DA00316BE4 /* Eng2RuParsingException.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BE3 /* Eng2RuParsingException.m */; };
 		B77A25131486D0DA00316BE7 /* html-children.txt in Resources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BE6 /* html-children.txt */; };
+		B77A25131486D0DA00316BE9 /* ruen-zany.html in Resources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BE8 /* ruen-zany.html */; };
+		B77A25131486D0DA00316BEB /* ruen-application.html in Resources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BEA /* ruen-application.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		B77A25131486D0DA00316BE3 /* Eng2RuParsingException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Eng2RuParsingException.m; sourceTree = "<group>"; };
 		B77A25131486D0DA00316BE5 /* Eng2RuParsingException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Eng2RuParsingException.h; sourceTree = "<group>"; };
 		B77A25131486D0DA00316BE6 /* html-children.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "html-children.txt"; sourceTree = "<group>"; };
+		B77A25131486D0DA00316BE8 /* ruen-zany.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ruen-zany.html"; sourceTree = "<group>"; };
+		B77A25131486D0DA00316BEA /* ruen-application.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "ruen-application.html"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +183,8 @@
 		B77A25111486D0DA00316BD7 /* en2ru-html */ = {
 			isa = PBXGroup;
 			children = (
+				B77A25131486D0DA00316BEA /* ruen-application.html */,
+				B77A25131486D0DA00316BE8 /* ruen-zany.html */,
 				B77A25131486D0DA00316BE6 /* html-children.txt */,
 				B77A25131486D0DA00316BDE /* html-random-2011-11.txt */,
 				B77A25131486D0DA00316BD8 /* word-test.txt */,
@@ -280,6 +286,8 @@
 				B77A25131486D0DA00316BD9 /* word-test.txt in Resources */,
 				B77A25131486D0DA00316BDF /* html-random-2011-11.txt in Resources */,
 				B77A25131486D0DA00316BE7 /* html-children.txt in Resources */,
+				B77A25131486D0DA00316BE9 /* ruen-zany.html in Resources */,
+				B77A25131486D0DA00316BEB /* ruen-application.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

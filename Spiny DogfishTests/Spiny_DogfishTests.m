@@ -98,6 +98,42 @@
     }
 }
 
+- (void)test_translate_ruen_zany {
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"ruen-zany"
+                                                     ofType:@"html"];
+    NSError *error;
+    NSString* content = [NSString stringWithContentsOfFile:path
+                                                  encoding:NSUTF8StringEncoding
+                                                     error:&error];
+
+    Eng2RuHTMLParser *parser = [[Eng2RuHTMLParser alloc] init];
+    @try {
+        NSMutableString *result = [parser parseHTMLString:content];
+        NSString *expected = @"test LingvoUniversal (En-Ru) [ =\"/Handlers/TranscriptionHandler.ashx?Text=test\"] брит.                      / амер.                      1. сущ. 1) проверка , испытание ; тест 2) а) проверочная , контрольная работа ; тест б) психол.  тест 3) мерило ; критерий 4) мед. ; хим.  исследование , анализ ; проверка 5) хим.  реактив 6) пробирная чашка для определения пробы  ( драгоценного металла ) 2. гл. 1) а) подвергать испытанию , проверке б) подвергаться испытанию , проходить тест в) амер.  показать в результате испытания , дать результат ; обнаруживать определённые свойства в результате испытаний 2) а) = test out тестировать ; проверять с помощью тестов б) экзаменовать 3) проверять , убеждаться 4) а) хим.  подвергать действию реактива ; брать пробу б) производить опыты в) определять пробу  ( драгоценного металла ) 3. прил. испытательный , пробный , контрольный , проверочный Розгорнути статтю &#187; &#171; Згорнути статтю ";
+        STAssertTrue( [result isEqualToString: expected], @"Not expected result: %@", result);
+    } @catch (Eng2RuNotFoundException *e) {
+        STFail(@"Parsing this word should not give errors.");
+    }
+}
+
+- (void)test_translate_ruen_application {
+    NSString* path = [[NSBundle mainBundle] pathForResource:@"ruen-application"
+                                                     ofType:@"html"];
+    NSError *error;
+    NSString* content = [NSString stringWithContentsOfFile:path
+                                                  encoding:NSUTF8StringEncoding
+                                                     error:&error];
+
+    Eng2RuHTMLParser *parser = [[Eng2RuHTMLParser alloc] init];
+    @try {
+        NSMutableString *result = [parser parseHTMLString:content];
+        NSString *expected = @"test LingvoUniversal (En-Ru) [ =\"/Handlers/TranscriptionHandler.ashx?Text=test\"] брит.                      / амер.                      1. сущ. 1) проверка , испытание ; тест 2) а) проверочная , контрольная работа ; тест б) психол.  тест 3) мерило ; критерий 4) мед. ; хим.  исследование , анализ ; проверка 5) хим.  реактив 6) пробирная чашка для определения пробы  ( драгоценного металла ) 2. гл. 1) а) подвергать испытанию , проверке б) подвергаться испытанию , проходить тест в) амер.  показать в результате испытания , дать результат ; обнаруживать определённые свойства в результате испытаний 2) а) = test out тестировать ; проверять с помощью тестов б) экзаменовать 3) проверять , убеждаться 4) а) хим.  подвергать действию реактива ; брать пробу б) производить опыты в) определять пробу  ( драгоценного металла ) 3. прил. испытательный , пробный , контрольный , проверочный Розгорнути статтю &#187; &#171; Згорнути статтю ";
+        STAssertTrue( [result isEqualToString: expected], @"Not expected result: %@", result);
+    } @catch (Eng2RuNotFoundException *e) {
+        STFail(@"Parsing this word should not give errors.");
+    }
+}
+
 - (void)test_process_enru_test {
     NSString *src = @"test LingvoUniversal (En-Ru) [ =\"/Handlers/TranscriptionHandler.ashx?Text=test\"] брит.                      / амер.                      1. сущ. 1) проверка , испытание ; тест 2) а) проверочная , контрольная работа ; тест б) психол.  тест 3) мерило ; критерий 4) мед. ; хим.  исследование , анализ ; проверка 5) хим.  реактив 6) пробирная чашка для определения пробы  ( драгоценного металла ) 2. гл. 1) а) подвергать испытанию , проверке б) подвергаться испытанию , проходить тест в) амер.  показать в результате испытания , дать результат ; обнаруживать определённые свойства в результате испытаний 2) а) = test out тестировать ; проверять с помощью тестов б) экзаменовать 3) проверять , убеждаться 4) а) хим.  подвергать действию реактива ; брать пробу б) производить опыты в) определять пробу  ( драгоценного металла ) 3. прил. испытательный , пробный , контрольный , проверочный Розгорнути статтю &#187; &#171; Згорнути статтю ";
     Eng2RuPostProcessor *processor = [[Eng2RuPostProcessor alloc]init];
