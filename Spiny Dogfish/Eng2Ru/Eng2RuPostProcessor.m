@@ -6,6 +6,7 @@
 
 
 #import "Eng2RuPostProcessor.h"
+#import "Eng2RuNotFoundException.h"
 
 
 @implementation Eng2RuPostProcessor
@@ -27,7 +28,88 @@ NSMutableString *translation;
     return translation;
 }
 
--(void) process: (NSMutableString *) translationSrc {
+-(void) processRuEn: (NSMutableString *) translationSrc {
+    int endOfInput = translationSrc.length-1;
+    NSString *stressChar = @"´";
+
+    //append words in the beginning to have the word
+    word = [[NSMutableString alloc] initWithString:@""];
+    dictionary = [[NSMutableString alloc] initWithString:@""];
+
+
+    NSString *ruEnPattern = @"Ru-En";
+    NSRange ruEnMatch;
+    ruEnMatch = [translationSrc rangeOfString: ruEnPattern];
+
+    int whitespaceCounter = 0;
+    NSUInteger endOfWord = 0;
+    for (NSUInteger i = ruEnMatch.location; i >= 0; i--) {
+        NSString *m = [translationSrc substringWithRange:NSMakeRange(i, 1)];
+        if ([m isEqualToString:@" "]) {
+            whitespaceCounter++;
+        }
+
+        if (whitespaceCounter == 1 &&
+                ![m isEqualToString:@" "]) {
+            [dictionary appendString:m];
+        }
+        if (whitespaceCounter == 2 &&
+                ![m isEqualToString:@" "]) {
+            endOfWord = i;
+        }
+    }
+
+    [dictionary appendFormat: @" (Ru-En)"];
+
+    whitespaceCounter = 0;
+    for (NSUInteger i = 0; i < endOfWord; i++){
+        NSString *m = [translationSrc substringWithRange:NSMakeRange(i, 1)];
+        if ([m isEqualToString: @" "]) {
+            whitespaceCounter++;
+        }
+        
+        if (whitespaceCounter == 1 &&
+                [m isEqualToString: @" "]) {
+            [word appendString:stressChar];
+        } else if (![m isEqualToString:@" "]) {
+            [word appendString:m];
+        }
+    }
+
+    //trim last six words
+    whitespaceCounter = 0;
+    const int WHITESPACES_FOR_SIX_WORDS = 7;
+    for (NSUInteger i = translationSrc.length-1; i >= 0; i--) {
+        NSString *m = [translationSrc substringWithRange:NSMakeRange(i, 1)];
+        if ([m isEqualToString:@" "]) {
+            whitespaceCounter++;
+        }
+        if (whitespaceCounter == WHITESPACES_FOR_SIX_WORDS) {
+            if (i > 0) {
+                endOfInput = i;
+            }
+            break;
+        }
+    }
+
+    transcriptionURL = [[NSMutableString alloc] initWithString:@""];
+    translation = [[NSMutableString alloc] initWithString:@""];
+    whitespaceCounter = 0;
+    for (NSUInteger i = ruEnMatch.location; i < endOfInput; i++) {
+        NSString *m = [translationSrc substringWithRange:NSMakeRange(i, 1)];
+        bool isWhitespace = [m isEqualToString:@" "];
+        if (isWhitespace) {
+            whitespaceCounter++;
+        }
+        if (whitespaceCounter < 1) {
+            //do nothing;
+        } else if (!isWhitespace) {
+            [translation appendString:m];
+        }
+    }
+}
+
+-(void) processEnRu: (NSMutableString *) translationSrc {
     int endOfInput = translationSrc.length-1;
     
     //trim last six words
@@ -134,6 +216,25 @@ NSMutableString *translation;
                 [translation appendString:m];
             }
         }
+    }
+}
+
+-(void) process: (NSMutableString *) translationSrc {
+    NSString *enRuPattern = @"En-Ru";
+    NSString *ruEnPattern = @"Ru-En";
+
+    NSRange enRuMatch;
+    NSRange ruEnMatch;
+
+    enRuMatch = [translationSrc rangeOfString: enRuPattern];
+    ruEnMatch = [translationSrc rangeOfString: ruEnPattern];
+
+    if (enRuMatch.location != NSNotFound){
+        [self processEnRu:translationSrc];
+    } else if (ruEnMatch.location != NSNotFound) {
+        [self processRuEn:translationSrc];
+    } else {
+        [Eng2RuNotFoundException raise:@"Translation block was not found or language not in (RU, EN)"];
     }
 }
 
