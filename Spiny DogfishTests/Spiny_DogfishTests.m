@@ -27,6 +27,12 @@
 }
 
 //todo: test translate and process of hello.html
+//todo: add email En-Ru translation test
+//todo: add self-criticism En-Ru translation test
+//todo: add use En-Ru translation test
+//todo: add usage En-Ru process test
+//todo: add брит Ru-En process test
+//todo: add сомнительный Ru-En translate and process test
 
 - (void)test_translate_enru_random {
     NSString* path = [[NSBundle mainBundle] pathForResource:@"word-random"
