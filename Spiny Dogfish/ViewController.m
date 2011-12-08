@@ -39,11 +39,6 @@
 
     //todo: load from SQL databases
     NSMutableArray *items = [[NSMutableArray alloc] initWithObjects:
-                      @"Closure",
-                      @"America",
-                      @"Voltage",
-                      @"Merchant",
-                      @"Demo",
                       nil];
     
     self.allItems = items;
