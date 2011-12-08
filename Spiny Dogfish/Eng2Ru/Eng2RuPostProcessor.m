@@ -411,7 +411,19 @@ typedef enum {
         } else {
             [word appendString:m];
             if (i == translation.length-1) {
-                [result appendFormat:@" %@", word];
+                if (result.length > 0) {
+                    NSString *res_last = [result substringWithRange:NSMakeRange(result.length-1, 1)];
+
+                    if ([res_last isEqualToString:@"("] ||
+                        [res_last isEqualToString:@"\n"] ||
+                        [res_last isEqualToString:@" "]) {
+                        [result appendString: word];
+                    } else {
+                        [result appendFormat:@" %@", word];
+                    }
+                } else {
+                    [result appendString:word];
+                }
             }
         }
     }
