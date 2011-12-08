@@ -371,9 +371,6 @@ typedef enum {
                 NSString *w_last = [word substringWithRange:NSMakeRange(word.length-1, 1)];
                 if ([w_last isEqualToString:@"."] &&
                         wordCount == 0){
-                    if (result.length > 0) {
-                        [result appendString:@"\n"];
-                    }
                     [result appendFormat:@"%@\n", word];
                 } else {
                     if (result.length > 0) {
