@@ -21,6 +21,16 @@
     [super tearDown];
 }
 
+- (void)test_process_enru_wayfarer_indent {
+    //todo: move to proper testcase
+    NSString *src = @"сущ. ; книжн. путник , странник";
+    NSString *expected = @"сущ.; книжн.\n"
+            "путник, странник";
+    Eng2RuPostProcessor *processor = [[Eng2RuPostProcessor alloc]init];
+    NSMutableString *result = [processor fixIndentation:src];
+    STAssertTrue([result isEqualToString:expected], @"Not expected result: %@", result);
+}
+
 - (void)test_process_ruen_foreign_indent {
     //заморское
     NSString *src = @"народно-поэт. , уст. и ирон. overseas , foreign";
