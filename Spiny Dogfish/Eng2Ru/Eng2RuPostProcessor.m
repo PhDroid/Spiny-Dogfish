@@ -102,16 +102,32 @@ NSMutableString *translation;
     transcriptionURL = [[NSMutableString alloc] initWithString:@""];
     translation = [[NSMutableString alloc] initWithString:@""];
     whitespaceCounter = 0;
+    bool transcriptionMode = false;
     for (int i = ruEnMatch.location; i < endOfInput; i++) {
         NSString *m = [translationSrc substringWithRange:NSMakeRange((NSUInteger)i, 1)];
         bool isWhitespace = [m isEqualToString:@" "];
         if (isWhitespace) {
             whitespaceCounter++;
         }
-        if (whitespaceCounter < 1) {
+        
+        if ([m isEqualToString: @"["]){
+            transcriptionMode = true;
+            continue;
+        }
+        
+        if ([m isEqualToString: @"]"]){
+            transcriptionMode = false;
+            continue;
+        }
+        
+        if (whitespaceCounter < 1 || transcriptionMode) {
             //do nothing;
         } else if (!isWhitespace) {
             [translation appendString:m];
+        } else {
+            if (translation.length > 0 &&
+                    ![[translation substringWithRange:NSMakeRange(translation.length-1, 1)] isEqualToString:@" "])
+            [translation appendString:@" "];
         }
     }
 }

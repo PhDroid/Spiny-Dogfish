@@ -37,7 +37,7 @@
     STAssertTrue([[processor getWord] isEqualToString:@"прилож´ение"], @"Not expected result: %@", [processor getWord]);
     STAssertTrue([[processor getDictionary] isEqualToString:@"Universal (Ru-En)"], @"Not expected result: %@", [processor getDictionary]);
     STAssertTrue([[processor getTranscriptionUrl] isEqualToString:@""], @"Not expected result: %@", [processor getTranscriptionUrl]);
-    STAssertTrue([[processor getTranslation] isEqualToString:@"с. 1) ( прикладывание ) apposition , affixing 2) ( приложенные документы и т.п. ) enclosure , attachment 3) ( к журналу и т.п. ) appendix  ( pl  -ices , -ixes ) ; supplement ; ( к договору ) appendix , schedule 4) грам.  apposition 5) ( применение ) application 6) информ.  ( прикладная программа ) application ; ( прикладной модуль программы ) plug-in Розгорнути статтю &#187; &#171; Згорнути статтю "], @"Not expected result: %@", [processor getTranslation]);
+    STAssertTrue([[processor getTranslation] isEqualToString:@"с. 1) ( прикладывание ) apposition , affixing 2) ( приложенные документы и т.п. ) enclosure , attachment 3) ( к журналу и т.п. ) appendix ( pl -ices , -ixes ) ; supplement ; ( к договору ) appendix , schedule 4) грам. apposition 5) ( применение ) application 6) информ. ( прикладная программа ) application ; ( прикладной модуль программы ) plug-in"], @"Not expected result: %@", [processor getTranslation]);
 }
 
 @end
