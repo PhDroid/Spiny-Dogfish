@@ -375,6 +375,11 @@ typedef enum {
                 } else {
                     if (result.length > 0) {
                         NSString *res_last = [result substringWithRange:NSMakeRange(result.length-1, 1)];
+                        if ([w_last isEqualToString:@")"] &&
+                                ![res_last isEqualToString:@"\n"]){
+                            [result appendString:@"\n"];
+                        }
+
                         if ([res_last isEqualToString:@"("] ||
                                 [res_last isEqualToString:@"\n"] ||
                                 [res_last isEqualToString:@" "]) {
