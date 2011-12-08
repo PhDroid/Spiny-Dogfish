@@ -26,6 +26,8 @@
     [super tearDown];
 }
 
+//todo: test translate and process of hello.html
+
 - (void)test_translate_enru_random {
     NSString* path = [[NSBundle mainBundle] pathForResource:@"word-random"
                                                      ofType:@"txt"];
