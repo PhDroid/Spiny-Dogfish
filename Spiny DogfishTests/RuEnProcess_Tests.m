@@ -24,10 +24,10 @@
     NSString *src = @"прик о льный Universal (Ru-En) жарг. zany ";
     Eng2RuPostProcessor *processor = [[Eng2RuPostProcessor alloc]init];
     [processor process:[[NSMutableString alloc] initWithString:src]];
-    STAssertTrue([[processor getWord] isEqualToString:@"test"], @"Not expected result: %@", [processor getWord]);
-    STAssertTrue([[processor getDictionary] isEqualToString:@"LingvoUniversal (En-Ru)"], @"Not expected result: %@", [processor getDictionary]);
-    STAssertTrue([[processor getTranscriptionUrl] isEqualToString:@"/Handlers/TranscriptionHandler.ashx?Text=test"], @"Not expected result: %@", [processor getTranscriptionUrl]);
-    STAssertTrue([[processor getTranslation] isEqualToString:@"1. сущ. 1) проверка , испытание ; тест 2) а) проверочная , контрольная работа ; тест б) психол.  тест 3) мерило ; критерий 4) мед. ; хим.  исследование , анализ ; проверка 5) хим.  реактив 6) пробирная чашка для определения пробы  ( драгоценного металла ) 2. гл. 1) а) подвергать испытанию , проверке б) подвергаться испытанию , проходить тест в) амер.  показать в результате испытания , дать результат ; обнаруживать определённые свойства в результате испытаний 2) а) = test out тестировать ; проверять с помощью тестов б) экзаменовать 3) проверять , убеждаться 4) а) хим.  подвергать действию реактива ; брать пробу б) производить опыты в) определять пробу  ( драгоценного металла ) 3. прил. испытательный , пробный , контрольный , проверочный"], @"Not expected result: %@", [processor getTranslation]);
+    STAssertTrue([[processor getWord] isEqualToString:@"прик´ольный"], @"Not expected result: %@", [processor getWord]);
+    STAssertTrue([[processor getDictionary] isEqualToString:@"Universal (Ru-En)"], @"Not expected result: %@", [processor getDictionary]);
+    STAssertTrue([[processor getTranscriptionUrl] isEqualToString:@""], @"Not expected result: %@", [processor getTranscriptionUrl]);
+    STAssertTrue([[processor getTranslation] isEqualToString:@"жарг. zany"], @"Not expected result: %@", [processor getTranslation]);
 }
 
 - (void)test_process_ruen_application {
