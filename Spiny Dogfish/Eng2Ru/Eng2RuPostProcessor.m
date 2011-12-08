@@ -299,12 +299,12 @@ typedef enum {
 
                 } else if ([w_last isEqualToString: @")"] &&
                             [self isDigit:w_before_last]) {
-                    [result appendFormat:@"\n\t%@", word];
+                    [result appendFormat:@"\n  %@", word];
 
                 } else if ([w_last isEqualToString: @")"] &&
                             word.length == 2 &&
                             ![self isDigit:w_before_last]) {
-                    [result appendFormat:@"\n\t\t%@", word];
+                    [result appendFormat:@"\n    %@", word];
 
                 } else {
                     if (result.length > 0 &&
