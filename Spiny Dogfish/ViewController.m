@@ -200,7 +200,7 @@ enum State {
             self.progressView.hidden = true;
             self.tableView.hidden = false;
             self.textView.hidden = true;
-            [self.searchDisplayController.searchResultsTableView becomeFirstResponder];
+            [self.tableView becomeFirstResponder];
             break;
         case ShowTranslation:
             self.searchDisplayController.searchResultsTableView.hidden = true;
@@ -263,6 +263,7 @@ NSMutableData *_data;
 -(void)dataCardNotFound {
     //todo:Handle the error properly
     NSLog( @"word not found" );
+    [self switchState:FinishedSearching];
 }
 
 -(void)dataCardParsed:(NSMutableString *)result {
