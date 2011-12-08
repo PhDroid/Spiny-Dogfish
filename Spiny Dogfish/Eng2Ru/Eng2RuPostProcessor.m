@@ -51,7 +51,7 @@ NSMutableString *translation;
 
         if (whitespaceCounter == 1 &&
                 ![m isEqualToString:@" "]) {
-            [dictionary insertString:@"m" atIndex:0];
+            [dictionary insertString:m atIndex:0];
         }
         if (whitespaceCounter == 2 &&
                 ![m isEqualToString:@" "]) {
