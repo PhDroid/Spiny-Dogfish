@@ -54,7 +54,7 @@ NSMutableString *translation;
             [dictionary insertString:m atIndex:0];
         }
         if (whitespaceCounter == 2 &&
-                ![m isEqualToString:@" "]) {
+                [m isEqualToString:@" "]) {
             endOfWord = i;
             break;
         }
