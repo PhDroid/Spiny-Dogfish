@@ -77,19 +77,25 @@ NSMutableString *translation;
         }
     }
 
-    //trim last six words
-    whitespaceCounter = 0;
-    const int WHITESPACES_FOR_SIX_WORDS = 7;
-    for (int i = translationSrc.length-1; i >= 0; i--) {
-        NSString *m = [translationSrc substringWithRange:NSMakeRange((NSUInteger)i, 1)];
-        if ([m isEqualToString:@" "]) {
-            whitespaceCounter++;
-        }
-        if (whitespaceCounter == WHITESPACES_FOR_SIX_WORDS) {
-            if (i > 0) {
-                endOfInput = i;
+    //trim last six words if needed
+    NSString *expandCollapsePattern = @"&#187; &#171;";
+    NSRange expandCollapseMatch;
+    expandCollapseMatch = [translationSrc rangeOfString: expandCollapsePattern];
+
+    if(expandCollapseMatch.location != NSNotFound) {
+        whitespaceCounter = 0;
+        const int WHITESPACES_FOR_SIX_WORDS = 7;
+        for (int i = translationSrc.length-1; i >= 0; i--) {
+            NSString *m = [translationSrc substringWithRange:NSMakeRange((NSUInteger)i, 1)];
+            if ([m isEqualToString:@" "]) {
+                whitespaceCounter++;
             }
-            break;
+            if (whitespaceCounter == WHITESPACES_FOR_SIX_WORDS) {
+                if (i > 0) {
+                    endOfInput = i;
+                }
+                break;
+            }
         }
     }
 
@@ -113,19 +119,25 @@ NSMutableString *translation;
 -(void) processEnRu: (NSMutableString *) translationSrc {
     int endOfInput = translationSrc.length-1;
     
-    //trim last six words
-    int whitespaceCounter = 0;
-    const int WHITESPACES_FOR_SIX_WORDS = 7;
-    for (int i = translationSrc.length-1; i >= 0; i--) {
-        NSString *m = [translationSrc substringWithRange:NSMakeRange((NSUInteger)i, 1)];
-        if ([m isEqualToString:@" "]) {
-            whitespaceCounter++;
-        }
-        if (whitespaceCounter == WHITESPACES_FOR_SIX_WORDS) {
-            if (i > 0) {
-                endOfInput = i;
+    //trim last six words if needed
+    NSString *expandCollapsePattern = @"&#187; &#171;";
+    NSRange expandCollapseMatch;
+    expandCollapseMatch = [translationSrc rangeOfString: expandCollapsePattern];
+
+    if(expandCollapseMatch.location != NSNotFound) {
+        int whitespaceCounter = 0;
+        const int WHITESPACES_FOR_SIX_WORDS = 7;
+        for (int i = translationSrc.length-1; i >= 0; i--) {
+            NSString *m = [translationSrc substringWithRange:NSMakeRange((NSUInteger)i, 1)];
+            if ([m isEqualToString:@" "]) {
+                whitespaceCounter++;
             }
-            break;
+            if (whitespaceCounter == WHITESPACES_FOR_SIX_WORDS) {
+                if (i > 0) {
+                    endOfInput = i;
+                }
+                break;
+            }
         }
     }
 
@@ -133,7 +145,7 @@ NSMutableString *translation;
     dictionary = [[NSMutableString alloc] initWithString:@""];
     transcriptionURL = [[NSMutableString alloc] initWithString:@""];
     translation = [[NSMutableString alloc] initWithString:@""];
-    whitespaceCounter = 0;
+    int whitespaceCounter = 0;
     bool transcriptionModeWriting = false;
     NSString * transcriptionModeTrigger = @"";
     int phase = 0;
