@@ -42,28 +42,29 @@ NSMutableString *translation;
     ruEnMatch = [translationSrc rangeOfString: ruEnPattern];
 
     int whitespaceCounter = 0;
-    NSUInteger endOfWord = 0;
-    for (NSUInteger i = ruEnMatch.location; i >= 0; i--) {
-        NSString *m = [translationSrc substringWithRange:NSMakeRange(i, 1)];
+    int endOfWord = 0;
+    for (int i = ruEnMatch.location; i >= 0; i--) {
+        NSString *m = [translationSrc substringWithRange:NSMakeRange((NSUInteger)i, 1)];
         if ([m isEqualToString:@" "]) {
             whitespaceCounter++;
         }
 
         if (whitespaceCounter == 1 &&
                 ![m isEqualToString:@" "]) {
-            [dictionary appendString:m];
+            [dictionary insertString:@"m" atIndex:0];
         }
         if (whitespaceCounter == 2 &&
                 ![m isEqualToString:@" "]) {
             endOfWord = i;
+            break;
         }
     }
 
     [dictionary appendFormat: @" (Ru-En)"];
 
     whitespaceCounter = 0;
-    for (NSUInteger i = 0; i < endOfWord; i++){
-        NSString *m = [translationSrc substringWithRange:NSMakeRange(i, 1)];
+    for (int i = 0; i < endOfWord; i++){
+        NSString *m = [translationSrc substringWithRange:NSMakeRange((NSUInteger)i, 1)];
         if ([m isEqualToString: @" "]) {
             whitespaceCounter++;
         }
@@ -79,8 +80,8 @@ NSMutableString *translation;
     //trim last six words
     whitespaceCounter = 0;
     const int WHITESPACES_FOR_SIX_WORDS = 7;
-    for (NSUInteger i = translationSrc.length-1; i >= 0; i--) {
-        NSString *m = [translationSrc substringWithRange:NSMakeRange(i, 1)];
+    for (int i = translationSrc.length-1; i >= 0; i--) {
+        NSString *m = [translationSrc substringWithRange:NSMakeRange((NSUInteger)i, 1)];
         if ([m isEqualToString:@" "]) {
             whitespaceCounter++;
         }
@@ -95,8 +96,8 @@ NSMutableString *translation;
     transcriptionURL = [[NSMutableString alloc] initWithString:@""];
     translation = [[NSMutableString alloc] initWithString:@""];
     whitespaceCounter = 0;
-    for (NSUInteger i = ruEnMatch.location; i < endOfInput; i++) {
-        NSString *m = [translationSrc substringWithRange:NSMakeRange(i, 1)];
+    for (int i = ruEnMatch.location; i < endOfInput; i++) {
+        NSString *m = [translationSrc substringWithRange:NSMakeRange((NSUInteger)i, 1)];
         bool isWhitespace = [m isEqualToString:@" "];
         if (isWhitespace) {
             whitespaceCounter++;
@@ -115,8 +116,8 @@ NSMutableString *translation;
     //trim last six words
     int whitespaceCounter = 0;
     const int WHITESPACES_FOR_SIX_WORDS = 7;
-    for (NSUInteger i = translationSrc.length-1; i >= 0; i--) {
-        NSString *m = [translationSrc substringWithRange:NSMakeRange(i, 1)];
+    for (int i = translationSrc.length-1; i >= 0; i--) {
+        NSString *m = [translationSrc substringWithRange:NSMakeRange((NSUInteger)i, 1)];
         if ([m isEqualToString:@" "]) {
             whitespaceCounter++;
         }
@@ -140,8 +141,8 @@ NSMutableString *translation;
     const int PHASE3_EXPECTED_WORD_COUNT = 3;
     NSString *phase3PrevChar = @"";
     bool phase4Writing = false;
-    for (NSUInteger i = 0; i < endOfInput; i++) {
-        NSString *m = [translationSrc substringWithRange:NSMakeRange(i, 1)];
+    for (int i = 0; i < endOfInput; i++) {
+        NSString *m = [translationSrc substringWithRange:NSMakeRange((NSUInteger)i, 1)];
         bool isWhitespace = [m isEqualToString:@" "];
         if (isWhitespace) {
             whitespaceCounter++;
@@ -255,8 +256,8 @@ typedef enum {
     NSMutableString *result = [[NSMutableString alloc] initWithString:@""];
     NSMutableString *word = [[NSMutableString alloc] initWithString:@""];
     IndentLevel level = None;
-    for(NSUInteger i = 0; i < translation.length; i++) {
-        NSString *m = [translation substringWithRange:NSMakeRange(i, 1)];
+    for(int i = 0; i < translation.length; i++) {
+        NSString *m = [translation substringWithRange:NSMakeRange((NSUInteger)i, 1)];
         if ([m isEqualToString:@" "]) {
             if (word.length > 1) {
                 NSString *w_last = [word substringWithRange:NSMakeRange(word.length-1, 1)];
@@ -335,8 +336,8 @@ typedef enum {
     NSMutableString *result = [[NSMutableString alloc] initWithString:@""];
     NSMutableString *word = [[NSMutableString alloc] initWithString:@""];
     int *wordCount = 0;
-    for(NSUInteger i = 0; i < translation.length; i++) {
-        NSString *m = [translation substringWithRange:NSMakeRange(i, 1)];
+    for(int i = 0; i < translation.length; i++) {
+        NSString *m = [translation substringWithRange:NSMakeRange((NSUInteger)i, 1)];
         if ([m isEqualToString:@" "]) {
             if (word.length > 1) {
                 NSString *w_last = [word substringWithRange:NSMakeRange(word.length-1, 1)];
