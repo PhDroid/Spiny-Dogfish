@@ -36,6 +36,7 @@
 		B77A25131486D0DA00316BF2 /* RuEnIndent_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BF1 /* RuEnIndent_Tests.m */; };
 		B77A25131486D0DA00316BF5 /* EnRuTranslate_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BF4 /* EnRuTranslate_Tests.m */; };
 		B77A25131486D0DA00316BF8 /* EnRuProcess_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BF7 /* EnRuProcess_Tests.m */; };
+		B77A25131486D0DA00316BFB /* EnRuIndent_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BFA /* EnRuIndent_Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,8 @@
 		B77A25131486D0DA00316BF6 /* EnRuTranslate_Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnRuTranslate_Tests.h; sourceTree = "<group>"; };
 		B77A25131486D0DA00316BF7 /* EnRuProcess_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnRuProcess_Tests.m; sourceTree = "<group>"; };
 		B77A25131486D0DA00316BF9 /* EnRuProcess_Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnRuProcess_Tests.h; sourceTree = "<group>"; };
+		B77A25131486D0DA00316BFA /* EnRuIndent_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnRuIndent_Tests.m; sourceTree = "<group>"; };
+		B77A25131486D0DA00316BFC /* EnRuIndent_Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnRuIndent_Tests.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +180,8 @@
 		B75A9CE3148156C30095D36A /* Spiny DogfishTests */ = {
 			isa = PBXGroup;
 			children = (
+				B77A25131486D0DA00316BFC /* EnRuIndent_Tests.h */,
+				B77A25131486D0DA00316BFA /* EnRuIndent_Tests.m */,
 				B77A25131486D0DA00316BF9 /* EnRuProcess_Tests.h */,
 				B77A25131486D0DA00316BF7 /* EnRuProcess_Tests.m */,
 				B77A25131486D0DA00316BF6 /* EnRuTranslate_Tests.h */,
@@ -366,6 +371,7 @@
 				B77A25131486D0DA00316BF2 /* RuEnIndent_Tests.m in Sources */,
 				B77A25131486D0DA00316BF5 /* EnRuTranslate_Tests.m in Sources */,
 				B77A25131486D0DA00316BF8 /* EnRuProcess_Tests.m in Sources */,
+				B77A25131486D0DA00316BFB /* EnRuIndent_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

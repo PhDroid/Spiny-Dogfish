@@ -283,7 +283,7 @@ typedef enum {
 -(NSMutableString *) fixComplexIndentation: (NSString *)translation {
     NSMutableString *result = [[NSMutableString alloc] initWithString:@""];
     NSMutableString *word = [[NSMutableString alloc] initWithString:@""];
-    IndentLevel level = None;
+
     for(int i = 0; i < translation.length; i++) {
         NSString *m = [translation substringWithRange:NSMakeRange((NSUInteger)i, 1)];
         if ([m isEqualToString:@" "]) {
@@ -296,35 +296,16 @@ typedef enum {
                         [result appendString:@"\n"];
                     }
                     [result appendString:word];
-                    level = LevelOne;
+
                 } else if ([w_last isEqualToString: @")"] &&
                             [self isDigit:w_before_last]) {
                     [result appendFormat:@"\n\t%@", word];
-                    switch (level) {
-                        case LevelOne:
-                            level = LevelTwo;
-                            break;
-                        case LevelTwo:
-                            break;
-                        case LevelThree:
-                            level = LevelTwo;
-                            break;
-                        default:
-                            [NSException raise:@"Invalid level value" format:@"level of %d is invalid", level];
-                    }
+
                 } else if ([w_last isEqualToString: @")"] &&
                             word.length == 2 &&
                             ![self isDigit:w_before_last]) {
                     [result appendFormat:@"\n\t\t%@", word];
-                    switch (level) {
-                        case LevelTwo:
-                            level = LevelThree;
-                            break;
-                        case LevelThree:
-                            break;
-                        default:
-                            [NSException raise:@"Invalid level value" format:@"level of %d is invalid", level];
-                    }
+
                 } else {
                     if (result.length > 0 &&
                             [[result substringWithRange:NSMakeRange(result.length-1, 1)] isEqualToString:@"("]) {
