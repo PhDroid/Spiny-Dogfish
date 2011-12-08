@@ -377,18 +377,15 @@ typedef enum {
                         NSString *res_last = [result substringWithRange:NSMakeRange(result.length-1, 1)];
                         if ([w_last isEqualToString:@")"] &&
                                 ![res_last isEqualToString:@"\n"]){
-                            [result appendString:@"\n"];
-                        }
-
-                        if ([res_last isEqualToString:@"("] ||
+                            [result appendFormat:@"\n%@", word];
+                        } else if ([res_last isEqualToString:@"("] ||
                                 [res_last isEqualToString:@"\n"] ||
                                 [res_last isEqualToString:@" "]) {
                             [result appendString: word];
                         } else {
                             [result appendFormat:@" %@", word];
                         }
-                    }
-                    else {
+                    } else {
                         [result appendString:word];
                     }
                 }
@@ -400,6 +397,9 @@ typedef enum {
                 } else if ([word isEqualToString:@""] ||
                         [word isEqualToString:@" "]) {
                     //skip
+                } else if (result.length > 0 &&
+                        [[result substringWithRange:NSMakeRange(result.length-1, 1)] isEqualToString:@"("]){
+                    [result appendString:word];
                 } else {
                     [result appendFormat:@" %@", word];
                 }
