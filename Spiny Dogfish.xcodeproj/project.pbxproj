@@ -34,6 +34,7 @@
 		B77A25131486D0DA00316BEE /* RuEnProcess_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BED /* RuEnProcess_Tests.m */; };
 		B77A25131486D0DA00316BF0 /* enru-hello.html in Resources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BEF /* enru-hello.html */; };
 		B77A25131486D0DA00316BF2 /* RuEnIndent_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BF1 /* RuEnIndent_Tests.m */; };
+		B77A25131486D0DA00316BF5 /* EnRuTranslate_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BF4 /* EnRuTranslate_Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,8 @@
 		B77A25131486D0DA00316BEF /* enru-hello.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "enru-hello.html"; sourceTree = "<group>"; };
 		B77A25131486D0DA00316BF1 /* RuEnIndent_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuEnIndent_Tests.m; sourceTree = "<group>"; };
 		B77A25131486D0DA00316BF3 /* RuEnIndent_Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuEnIndent_Tests.h; sourceTree = "<group>"; };
+		B77A25131486D0DA00316BF4 /* EnRuTranslate_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnRuTranslate_Tests.m; sourceTree = "<group>"; };
+		B77A25131486D0DA00316BF6 /* EnRuTranslate_Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnRuTranslate_Tests.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +174,8 @@
 		B75A9CE3148156C30095D36A /* Spiny DogfishTests */ = {
 			isa = PBXGroup;
 			children = (
+				B77A25131486D0DA00316BF6 /* EnRuTranslate_Tests.h */,
+				B77A25131486D0DA00316BF4 /* EnRuTranslate_Tests.m */,
 				B77A25131486D0DA00316BF3 /* RuEnIndent_Tests.h */,
 				B77A25131486D0DA00316BF1 /* RuEnIndent_Tests.m */,
 				B77A25131486D0DA00316BED /* RuEnProcess_Tests.m */,
@@ -354,6 +359,7 @@
 				B75A9CEB148156C30095D36A /* Spiny_DogfishTests.m in Sources */,
 				B77A25131486D0DA00316BEE /* RuEnProcess_Tests.m in Sources */,
 				B77A25131486D0DA00316BF2 /* RuEnIndent_Tests.m in Sources */,
+				B77A25131486D0DA00316BF5 /* EnRuTranslate_Tests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,7 +26,7 @@
     [super tearDown];
 }
 
-//todo: test translate and process of hello.html
+//todo: test process of hello.html
 //todo: add email En-Ru translation test
 //todo: add self-criticism En-Ru translation test
 //todo: add use En-Ru translation test
