@@ -21,6 +21,16 @@
     [super tearDown];
 }
 
+- (void)test_process_ruen_foreign_indent {
+    //заморское
+    NSString *src = @"народно-поэт. , уст. и ирон. overseas , foreign";
+    NSString *expected = @"народно-поэт., уст. и ирон.\n"
+            "overseas, foreign";
+    Eng2RuPostProcessor *processor = [[Eng2RuPostProcessor alloc]init];
+    NSMutableString *result = [processor fixIndentation:src];
+    STAssertTrue([result isEqualToString:expected], @"Not expected result: %@", result);
+}
+
 - (void)test_process_ruen_application_indent {
     NSString *src = @"с. 1) ( прикладывание ) apposition , affixing 2) ( приложенные документы и т.п. ) enclosure , attachment 3) ( к журналу и т.п. ) appendix ( pl -ices , -ixes ) ; supplement ; ( к договору ) appendix , schedule 4) грам. apposition 5) ( применение ) application 6) информ. ( прикладная программа ) application ; ( прикладной модуль программы ) plug-in";
     NSString *expected = @"с.\n"
