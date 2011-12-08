@@ -32,6 +32,7 @@
 //todo: add usage En-Ru process test
 //todo: add брит Ru-En process test
 //todo: add сомнительный Ru-En translate and process test
+//todo: add Point En-Ru translate and process test
 
 - (void)test_translate_enru_random {
     NSString* path = [[NSBundle mainBundle] pathForResource:@"word-random"
