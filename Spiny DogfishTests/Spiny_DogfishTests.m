@@ -27,7 +27,7 @@
 }
 
 //todo: add email En-Ru translation test
-//todo: add self-criticism En-Ru translation test
+//todo: add self- En-Ru translation test
 //todo: add use En-Ru translation test
 //todo: add usage En-Ru process test
 //todo: add брит Ru-En process test
