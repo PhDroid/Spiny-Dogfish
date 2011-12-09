@@ -37,6 +37,8 @@
 		B77A25131486D0DA00316BF5 /* EnRuTranslate_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BF4 /* EnRuTranslate_Tests.m */; };
 		B77A25131486D0DA00316BF8 /* EnRuProcess_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BF7 /* EnRuProcess_Tests.m */; };
 		B77A25131486D0DA00316BFB /* EnRuIndent_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316BFA /* EnRuIndent_Tests.m */; };
+		B77A25131486D0DA00316C03 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316C02 /* icon.png */; };
+		B77A25131486D0DA00316C05 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316C04 /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +98,8 @@
 		B77A25131486D0DA00316BF9 /* EnRuProcess_Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnRuProcess_Tests.h; sourceTree = "<group>"; };
 		B77A25131486D0DA00316BFA /* EnRuIndent_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnRuIndent_Tests.m; sourceTree = "<group>"; };
 		B77A25131486D0DA00316BFC /* EnRuIndent_Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnRuIndent_Tests.h; sourceTree = "<group>"; };
+		B77A25131486D0DA00316C02 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		B77A25131486D0DA00316C04 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,7 @@
 				B75A9CD5148156C30095D36A /* ViewController.m */,
 				B75A9CC6148156C30095D36A /* Supporting Files */,
 				B77A25131486D0DA00316BDD /* Eng2Ru */,
+				B77A25131486D0DA00316C01 /* icon */,
 			);
 			path = "Spiny Dogfish";
 			sourceTree = "<group>";
@@ -236,6 +241,15 @@
 				B75A9CF3148156C30095D36B /* Eng2RuHTMLParser.h */,
 			);
 			path = Eng2Ru;
+			sourceTree = "<group>";
+		};
+		B77A25131486D0DA00316C01 /* icon */ = {
+			isa = PBXGroup;
+			children = (
+				B77A25131486D0DA00316C04 /* icon@2x.png */,
+				B77A25131486D0DA00316C02 /* icon.png */,
+			);
+			path = icon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +331,8 @@
 				B77A25131486D0DA00316BE9 /* ruen-zany.html in Resources */,
 				B77A25131486D0DA00316BEB /* ruen-application.html in Resources */,
 				B77A25131486D0DA00316BF0 /* enru-hello.html in Resources */,
+				B77A25131486D0DA00316C03 /* icon.png in Resources */,
+				B77A25131486D0DA00316C05 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
