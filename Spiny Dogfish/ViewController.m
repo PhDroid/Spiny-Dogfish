@@ -257,7 +257,7 @@ enum State {
         (NSString *) dictionary:
         (NSString *) transcription:
         (NSString *) translation {
-    NSString *url = @"http://localhost:8080/submit";
+    NSString *url = @"http://spinyanalytics.appspot.com/submit";
     NSMutableString *body = [[NSMutableString alloc] initWithString:@"{\n"];
     [body appendFormat:@"\"word\":\"%@\",\n", [word stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     [body appendFormat:@"\"dictionary\":\"%@\",\n", [dictionary stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
