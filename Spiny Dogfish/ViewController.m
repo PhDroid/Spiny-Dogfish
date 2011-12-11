@@ -253,6 +253,38 @@ enum State {
     [self switchState:Searching];
 }
 
+-(void)sendDebugStatistics:(NSString *) word:
+        (NSString *) dictionary:
+        (NSString *) transcription:
+        (NSString *) translation {
+    NSString *url = @"http://localhost:8080/submit";
+    NSMutableString *body = [[NSMutableString alloc] initWithString:@"{\n"];
+    [body appendFormat:@"\"word\":\"%@\",\n", [word stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    [body appendFormat:@"\"dictionary\":\"%@\",\n", [dictionary stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    [body appendFormat:@"\"transcription\":\"%@\",\n", [transcription stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    [body appendFormat:@"\"translation\":\"%@\"\n", [translation stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    [body appendString:@"}"];
+
+    NSLog( @"debug url§: %@", url);
+    NSLog( @"debug body: %@", body);
+
+    NSObject *dummy = [[NSObject alloc] init];
+
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    [request setURL:[NSURL URLWithString: [url stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] ]];
+    [request setHTTPMethod:@"POST"];
+    [request addValue:@"SpinyDogfish/1.0" forHTTPHeaderField:@"User-Agent"];
+    [request addValue:@"text/plain" forHTTPHeaderField:@"Content-type"];
+    [request setValue:[NSString stringWithFormat:@"%d",
+            [body length]]
+            forHTTPHeaderField:@"Content-length"];
+    [request setHTTPBody:[body
+            dataUsingEncoding:NSUTF8StringEncoding]];
+    [[NSURLConnection alloc] initWithRequest:request delegate:dummy startImmediately:TRUE];
+
+}
+
+
 NSMutableData *_data;
 
 -(void)dataCardNotFound {
@@ -262,17 +294,16 @@ NSMutableData *_data;
 }
 
 -(void)dataCardParsed:(NSMutableString *)result {
-    //todo: paste real word here
-//    NSMutableArray *items = [[NSMutableArray alloc] initWithObjects:
-//                              self.searchBar.text,
-//                              nil];
-//    self.searchResults = items;
-//    [self.searchDisplayController.searchResultsTableView reloadData];
     Eng2RuPostProcessor *processor = [[Eng2RuPostProcessor alloc] init];
     [processor process:result];
-    [self switchState:ShowTranslation];
     NSLog(@"Translation: %@", [processor getTranslation]);
     self.textView.text = [processor fixIndentation:[processor getTranslation]];
+    [self switchState:ShowTranslation];
+    [self sendDebugStatistics:
+            [processor getWord] :
+            [processor getDictionary] :
+            [processor getTranscriptionUrl] :
+            [processor getTranslation]];
 }
 
 -(void)connection:(NSURLConnection*)connection didReceiveResponse:(NSURLResponse*)response
