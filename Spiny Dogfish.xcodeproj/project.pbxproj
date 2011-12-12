@@ -40,6 +40,7 @@
 		B77A25131486D0DA00316C03 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316C02 /* icon.png */; };
 		B77A25131486D0DA00316C05 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316C04 /* icon@2x.png */; };
 		B77A25131486D0DA00316C09 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316C08 /* iRate.m */; };
+		B77A25131486D0DA00316C0B /* 503-err.html in Resources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316C0A /* 503-err.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		B77A25131486D0DA00316C04 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		B77A25131486D0DA00316C07 /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRate.h; sourceTree = "<group>"; };
 		B77A25131486D0DA00316C08 /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
+		B77A25131486D0DA00316C0A /* 503-err.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "503-err.html"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 		B77A25111486D0DA00316BD7 /* en2ru-html */ = {
 			isa = PBXGroup;
 			children = (
+				B77A25131486D0DA00316C0A /* 503-err.html */,
 				B77A25131486D0DA00316BEF /* enru-hello.html */,
 				B77A25131486D0DA00316BEA /* ruen-application.html */,
 				B77A25131486D0DA00316BE8 /* ruen-zany.html */,
@@ -346,6 +349,7 @@
 				B77A25131486D0DA00316BF0 /* enru-hello.html in Resources */,
 				B77A25131486D0DA00316C03 /* icon.png in Resources */,
 				B77A25131486D0DA00316C05 /* icon@2x.png in Resources */,
+				B77A25131486D0DA00316C0B /* 503-err.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
