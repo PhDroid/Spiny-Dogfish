@@ -22,7 +22,7 @@
 @synthesize searchResults;
 @synthesize searching;
 
-- (void)configureIRate{
++ (void)configureIRate{
     //configure iRate
     [iRate sharedInstance].appStoreID = 123456789; // App Id
     [iRate sharedInstance].daysUntilPrompt = 7;
@@ -35,10 +35,10 @@
     [iRate sharedInstance].rateButtonLabel = @"Sure, why not";
     [iRate sharedInstance].remindButtonLabel = @"Later";
 
-    [iRate sharedInstance].debug = YES;
+    //[iRate sharedInstance].debug = YES;
 }
 
-- (void)initialize{
++ (void)initialize{
     [self configureIRate];
 }
 
