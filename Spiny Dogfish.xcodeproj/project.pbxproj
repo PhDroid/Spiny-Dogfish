@@ -54,12 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B74695BB14969BAE009AAA2F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B75A9CBB148156C30095D36A /* Spiny Dogfish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spiny Dogfish.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75A9CBF148156C30095D36A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B75A9CC1148156C30095D36A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B75A9CC3148156C30095D36A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B75A9CC7148156C30095D36A /* Spiny Dogfish-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Spiny Dogfish-Info.plist"; sourceTree = "<group>"; };
-		B75A9CC9148156C30095D36A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B75A9CC9148156C30095D36A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B75A9CCB148156C30095D36A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B75A9CCD148156C30095D36A /* Spiny Dogfish-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spiny Dogfish-Prefix.pch"; sourceTree = "<group>"; };
 		B75A9CCE148156C30095D36A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -321,6 +322,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ru,
 			);
 			mainGroup = B75A9CB0148156C20095D36A;
 			productRefGroup = B75A9CBC148156C30095D36A /* Products */;
@@ -423,7 +425,8 @@
 		B75A9CC8148156C30095D36A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B75A9CC9148156C30095D36A /* en */,
+				B75A9CC9148156C30095D36A /* Localizable.strings */,
+				B74695BB14969BAE009AAA2F /* Localizable.strings */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

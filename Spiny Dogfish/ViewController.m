@@ -22,23 +22,24 @@
 @synthesize searchResults;
 @synthesize searching;
 
-+ (void)configureIRate{
++ (void)configureIRate {
     //configure iRate
     [iRate sharedInstance].appStoreID = 123456789; // App Id
     [iRate sharedInstance].daysUntilPrompt = 7;
     [iRate sharedInstance].usesUntilPrompt = 13;
     [iRate sharedInstance].remindPeriod = 7;
 
-    [iRate sharedInstance].messageTitle = @"Rate me";
-    [iRate sharedInstance].message = @"Would you like to rate Spiny Dogfish application on App Store?";
-    [iRate sharedInstance].cancelButtonLabel = @"No, never";
-    [iRate sharedInstance].rateButtonLabel = @"Sure, why not";
-    [iRate sharedInstance].remindButtonLabel = @"Later";
+    [iRate sharedInstance].messageTitle = NSLocalizedString(@"Rate me", @"Rate me message title");
+    [iRate sharedInstance].message = NSLocalizedString(@"Would you like to rate Spiny Dogfish application on App Store?",
+                        @"Message body");
+    [iRate sharedInstance].cancelButtonLabel = NSLocalizedString(@"No, never", @"Cancel label value");
+    [iRate sharedInstance].rateButtonLabel = NSLocalizedString(@"Sure, why not", @"Rate label value");
+    [iRate sharedInstance].remindButtonLabel = NSLocalizedString(@"Later", @"Remind label value");
 
-    //[iRate sharedInstance].debug = YES;
+    [iRate sharedInstance].debug = YES;
 }
 
-+ (void)initialize{
++ (void)initialize {
     [self configureIRate];
 }
 
