@@ -10,6 +10,7 @@
 #import "Eng2RuHTMLParser.h"
 #import "Eng2RuNotFoundException.h"
 #import "Eng2RuPostProcessor.h"
+#import "iRate.h"
 
 @implementation ViewController
 @synthesize searchBar;
@@ -20,6 +21,26 @@
 @synthesize allItems;
 @synthesize searchResults;
 @synthesize searching;
+
+- (void)configureIRate{
+    //configure iRate
+    [iRate sharedInstance].appStoreID = 123456789; // App Id
+    [iRate sharedInstance].daysUntilPrompt = 7;
+    [iRate sharedInstance].usesUntilPrompt = 13;
+    [iRate sharedInstance].remindPeriod = 7;
+
+    [iRate sharedInstance].messageTitle = @"Rate me";
+    [iRate sharedInstance].message = @"Would you like to rate Spiny Dogfish application on App Store?";
+    [iRate sharedInstance].cancelButtonLabel = @"No, never";
+    [iRate sharedInstance].rateButtonLabel = @"Sure, why not";
+    [iRate sharedInstance].remindButtonLabel = @"Later";
+
+    [iRate sharedInstance].debug = YES;
+}
+
+- (void)initialize{
+    [self configureIRate];
+}
 
 - (void)didReceiveMemoryWarning
 {

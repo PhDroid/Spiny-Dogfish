@@ -12,6 +12,6 @@
 
 -(void)push:(NSObject *)object;
 -(NSObject *)pop;
-@property ( nonatomic) int length;
+@property (nonatomic) int length;
 
 @end
