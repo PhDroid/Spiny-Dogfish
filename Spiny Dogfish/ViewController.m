@@ -24,7 +24,7 @@
 
 + (void)configureIRate {
     //configure iRate
-    [iRate sharedInstance].appStoreID = 123456789; // App Id
+    [iRate sharedInstance].appStoreID = 492543900; // App Id
     [iRate sharedInstance].daysUntilPrompt = 7;
     [iRate sharedInstance].usesUntilPrompt = 13;
     [iRate sharedInstance].remindPeriod = 7;
@@ -76,6 +76,7 @@
     [self setTableView:nil];
     [self setProgressView:nil];
     [self setTableView:nil];
+    
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

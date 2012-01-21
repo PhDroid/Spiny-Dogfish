@@ -13,7 +13,6 @@
 		B75A9CCA148156C30095D36A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B75A9CC8148156C30095D36A /* InfoPlist.strings */; };
 		B75A9CCC148156C30095D36A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B75A9CCB148156C30095D36A /* main.m */; };
 		B75A9CD0148156C30095D36A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B75A9CCF148156C30095D36A /* AppDelegate.m */; };
-		B75A9CD3148156C30095D36A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B75A9CD1148156C30095D36A /* MainStoryboard.storyboard */; };
 		B75A9CD6148156C30095D36A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B75A9CD5148156C30095D36A /* ViewController.m */; };
 		B75A9CDE148156C30095D36A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A9CDD148156C30095D36A /* SenTestingKit.framework */; };
 		B75A9CDF148156C30095D36A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A9CBF148156C30095D36A /* UIKit.framework */; };
@@ -41,6 +40,7 @@
 		B77A25131486D0DA00316C05 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316C04 /* icon@2x.png */; };
 		B77A25131486D0DA00316C09 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316C08 /* iRate.m */; };
 		B77A25131486D0DA00316C0B /* 503-err.html in Resources */ = {isa = PBXBuildFile; fileRef = B77A25131486D0DA00316C0A /* 503-err.html */; };
+		B7D09A3314CAE4A500334790 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7D09A3214CAE4A500334790 /* MainView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +65,6 @@
 		B75A9CCD148156C30095D36A /* Spiny Dogfish-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spiny Dogfish-Prefix.pch"; sourceTree = "<group>"; };
 		B75A9CCE148156C30095D36A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B75A9CCF148156C30095D36A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B75A9CD2148156C30095D36A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		B75A9CD4148156C30095D36A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		B75A9CD5148156C30095D36A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B75A9CDC148156C30095D36A /* Spiny DogfishTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Spiny DogfishTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +105,7 @@
 		B77A25131486D0DA00316C07 /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRate.h; sourceTree = "<group>"; };
 		B77A25131486D0DA00316C08 /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
 		B77A25131486D0DA00316C0A /* 503-err.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "503-err.html"; sourceTree = "<group>"; };
+		B7D09A3214CAE4A500334790 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,13 +167,13 @@
 			children = (
 				B75A9CCE148156C30095D36A /* AppDelegate.h */,
 				B75A9CCF148156C30095D36A /* AppDelegate.m */,
-				B75A9CD1148156C30095D36A /* MainStoryboard.storyboard */,
 				B75A9CD4148156C30095D36A /* ViewController.h */,
 				B75A9CD5148156C30095D36A /* ViewController.m */,
 				B75A9CC6148156C30095D36A /* Supporting Files */,
 				B77A25131486D0DA00316BDD /* Eng2Ru */,
 				B77A25131486D0DA00316C01 /* icon */,
 				B77A25131486D0DA00316C06 /* iRate */,
+				B7D09A3214CAE4A500334790 /* MainView.xib */,
 			);
 			path = "Spiny Dogfish";
 			sourceTree = "<group>";
@@ -341,7 +341,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B75A9CCA148156C30095D36A /* InfoPlist.strings in Resources */,
-				B75A9CD3148156C30095D36A /* MainStoryboard.storyboard in Resources */,
 				B77A25131486D0DA00316BD7 /* word-random.txt in Resources */,
 				B77A25131486D0DA00316BD9 /* word-test.txt in Resources */,
 				B77A25131486D0DA00316BDF /* html-random-2011-11.txt in Resources */,
@@ -352,6 +351,7 @@
 				B77A25131486D0DA00316C03 /* icon.png in Resources */,
 				B77A25131486D0DA00316C05 /* icon@2x.png in Resources */,
 				B77A25131486D0DA00316C0B /* 503-err.html in Resources */,
+				B7D09A3314CAE4A500334790 /* MainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,14 +431,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		B75A9CD1148156C30095D36A /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B75A9CD2148156C30095D36A /* en */,
-			);
-			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
 		B75A9CE6148156C30095D36A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -456,8 +448,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -470,7 +464,9 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -481,15 +477,19 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1.0;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -501,6 +501,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spiny Dogfish/Spiny Dogfish-Prefix.pch";
 				INFOPLIST_FILE = "Spiny Dogfish/Spiny Dogfish-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -512,6 +513,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Spiny Dogfish/Spiny Dogfish-Prefix.pch";
 				INFOPLIST_FILE = "Spiny Dogfish/Spiny Dogfish-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
