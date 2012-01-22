@@ -61,11 +61,12 @@
 
     //todo: load from SQL databases
     NSMutableArray *items = [[NSMutableArray alloc] initWithObjects:
-                      nil];
+                      @"Armor",@"Quest",@"Sudden",nil];
     
     self.allItems = items;
 
     [self.tableView reloadData];
+    NSLog(@"viewDidLoad executed");
 }
 
 - (void)viewDidUnload
@@ -77,40 +78,24 @@
     [self setProgressView:nil];
     [self setTableView:nil];
     
+    [self setView:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    
+    NSLog(@"viewDidUnload executed");
 }
 
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-}
-
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-}
-
-- (void)viewWillDisappear:(BOOL)animated
-{
-	[super viewWillDisappear:animated];
-}
-
-- (void)viewDidDisappear:(BOOL)animated
-{
-	[super viewDidDisappear:animated];
-}
-
+- (void)viewWillAppear:(BOOL)animated { [super viewWillAppear:animated]; }
+- (void)viewDidAppear:(BOOL)animated { [super viewDidAppear:animated]; }
+- (void)viewWillDisappear:(BOOL)animated { [super viewWillDisappear:animated]; }
+- (void)viewDidDisappear:(BOOL)animated { [super viewDidDisappear:animated]; }
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)theTableView {
-    return 1;
-}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)theTableView { return 1; }
 
 - (NSInteger)tableView:(UITableView *)theTableView
  numberOfRowsInSection:(NSInteger)section
@@ -174,6 +159,7 @@
     }
     [self filterContentForSearchText:searchText];
     [self.tableView reloadData];
+    NSLog(@"textDidChange executed");
 }
 
 - (void)searchBarCancelButtonClicked:(UISearchBar *)theSearchBar
@@ -184,13 +170,9 @@
 }
 
 #pragma mark UISearchBarDelegate
-- (void)searchBarTextDidBeginEditing:(UISearchBar *)theSearchBar {
-    theSearchBar.showsCancelButton = YES;
-}
+- (void)searchBarTextDidBeginEditing:(UISearchBar *)theSearchBar { theSearchBar.showsCancelButton = YES; }
 
-- (void)searchBarTextDidEndEditing:(UISearchBar *)theSearchBar {
-    theSearchBar.showsCancelButton = NO;
-}
+- (void)searchBarTextDidEndEditing:(UISearchBar *)theSearchBar { theSearchBar.showsCancelButton = NO; }
 
 
 
